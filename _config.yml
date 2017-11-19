@@ -25,8 +25,12 @@ github_username:  Hussain Alafaireet
 # Build settings
 markdown: kramdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 theme: minima
 
+=======
+theme: minima
+>>>>>>> parent of f33c746... more theme testing
 plugins:
   - jekyll-feed
 
