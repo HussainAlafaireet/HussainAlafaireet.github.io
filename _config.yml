@@ -24,7 +24,9 @@ github_username:  Hussain Alafaireet
 
 # Build settings
 markdown: kramdown
+<<<<<<< HEAD
 theme: minima
+
 plugins:
   - jekyll-feed
 
