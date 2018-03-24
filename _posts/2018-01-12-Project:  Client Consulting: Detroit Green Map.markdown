@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Project:  SI 501 Client Consulting Project"
+title:  "Project:  Client Consulting: Detroit Green Map"
 date:   2018-01-12 19:12:11 -0500
 categories: Portfolio Project
 ---
 
-The project covers the project I worked on for my Fall 2017 SI 501:  Contextual Inquiry class at the University of Michigan's Master's in Information Science program.  In SI 501, student teams act as consultants for real-world clients, using an analysis methodology called *Contextual Inquiry* to investigate the clients' problems and come up with solution.  I worked with 3 other students over the course of a four month project period, as a team called *3 Data Scientists and an HCI Guy* (I was the HCI guy, by the way).  Together, we analyzed the client's problem, developed recommendations, and presented them to the client.
+This entry covers a consulting project I worked on in Fall 2018.  I worked on a consulting team with 3 other members to assist a local non-profit called **Detroit Green Map**.  Together, we analyzed the client's specified problem, developed recommendations, and presented them to the client.
 
 ### Client Problem
 Our client was a local area non-profit organization focusing encouraging the efforts of local business to become more environmentally conscious.  The client organization had experienced a growth surge in recent years, and found it’s communication, documentation, and project management structure to be unable to fully manage the new team structure.  The organization was a virtual team, with remote team members in a variety of locations.  The decentralized nature of the team was an additional factor exacerbating the problems with the new team size.  The client wanted our team to review the organization's current processes and tooling, and make suggestions to improve communication and project management within the team.
