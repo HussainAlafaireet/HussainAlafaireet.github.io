@@ -28,7 +28,7 @@ resume: UX Design/Reseach Resume
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
