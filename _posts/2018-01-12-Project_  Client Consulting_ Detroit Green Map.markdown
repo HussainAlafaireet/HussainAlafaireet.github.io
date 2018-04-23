@@ -5,7 +5,7 @@ date:   2018-01-12 19:12:11 -0500
 categories: Portfolio Project
 ---
 
-This entry covers a consulting project I worked on in Fall 2018.  I worked on a consulting team with 3 other members to assist a local non-profit called **Detroit Green Map**.  Together, we analyzed the client's specified problem, developed recommendations, and presented them to the client.
+In fall 2017, I worked on a consulting team to assist a local non-profit called **Detroit Green Map**.  Together, we analyzed the client's specified problem, developed recommendations, and presented them to the client.
 
 ### Client Problem
 Our client was a local area non-profit organization focusing encouraging the efforts of local business to become more environmentally conscious.  The client organization had experienced a growth surge in recent years, and found it’s communication, documentation, and project management structure to be unable to fully manage the new team structure.  The organization was a virtual team, with remote team members in a variety of locations.  The decentralized nature of the team was an additional factor exacerbating the problems with the new team size.  The client wanted our team to review the organization's current processes and tooling, and make suggestions to improve communication and project management within the team.

@@ -3,8 +3,10 @@ layout: post
 title:  "Design Challenge- FODMAPPA Logo"
 date:   2018-03-24 13:42:11 -0500
 categories: Portfolio Project
+thumbnail: /assets/logo_5in.png
 ---
 
+I recently designed a logo for a mobile app to help IBS sufferers manage their FODMAP diets.
 
 ### Design Challenge
 

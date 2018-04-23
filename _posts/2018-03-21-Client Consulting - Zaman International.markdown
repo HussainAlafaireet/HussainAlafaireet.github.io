@@ -2,6 +2,7 @@
 layout: post
 title:  "Project:  Client Consulting: Zaman International"
 date:   2018-03-20 13:42:11 -0500
+excerpt_separator: <!--more-->
 categories: Portfolio Project
 ---
 
@@ -13,7 +14,8 @@ categories: Portfolio Project
 <br>
 
 I worked on a fairly interesting assignment the last week of February 2018.  I was paired up with another aspiring
-UX professional, to act as the eyes and ears for a University of Michigan student design team working with Zaman International.  Zaman International is a Detroit-area non-profit supporting marginalized women and children.  The organization provides a mix of social services, vocational training, and physical donations to its clients.  
+UX professional, to act as the eyes and ears for a University of Michigan student design team working with Zaman International.  Zaman International is a Detroit-area non-profit supporting marginalized women and children.  The organization provides a mix of social services, vocational training, and physical donations to its clients.
+<!--more--> 
 
 ### Client Problem
 Zaman International wants to improve the process donors have when they drop off donations at the Zaman headquarters.  Right now, the process involves a high degree of paper forms and post-donation accounting.  The UofM Design Clinic team is working with Zaman International to develop a tablet-based kiosk system that will provide a quicker and more seemless experience for donors.  To design the system appropriately, the Design Clinic team needed much more in-depth details about the existing donation processes than remote interviews would ever provide.  That's where me and my partner came in!  Our job was to spend a week at the Zaman International headquarters, observing as many aspects of the donation process as possible, and interviewing all of the Zaman employees involved in the process.

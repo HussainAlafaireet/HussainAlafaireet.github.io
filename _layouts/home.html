@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Projects</h1>
 
   {{ content }}
 
@@ -15,7 +15,10 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
+          <a href="{{ post.url }}" ><img src="{{ post.thumbnail }}" />
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {{ post.excerpt | strip_html | truncatewords:35 }}
+
         </h2>
       </li>
     {% endfor %}

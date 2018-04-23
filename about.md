@@ -7,7 +7,17 @@ permalink: /about/
 ![Cover Shot]({{ "/assets/covershot_small.jpg" | absolute_url }})
 </div>
 
-I'm currently a Masters of Information student at the University of Michigan.  In my original college life,
-I was a programmer, primarily with C++.  I've been working in the IT industry for 6+ years, with my last stint being at IBM.  There I performed analytics on IBM mainframes for enterprise-level clients.
+I started off my professional life in software development, where the
+human-computer interaction side stirred my interest more than any
+other aspect of that life. I then spent close to a decade in enterprise IT,
+before deciding that I needed to pivot my career, and make my love of
+user-centered design my profession!
 
-I am currently planning on going into User Experience, specifically within the realms of Augmented and Virtual Reality.
+My goal as a UX professional is to use research and design to create a
+sense of tranquility and mindfulness. Through thoughtful exploration
+of user desires, combined with tempered, targeted design, I seek to
+create products that give people a space of quiet comfort in their busy
+lives.
+
+If you’d like to know more, please check out the rest of my portfolio, or
+[download my resume!](/assets/Hussain_Alafaireet_resume_personal.pdf)

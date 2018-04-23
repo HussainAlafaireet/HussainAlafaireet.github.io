@@ -5,6 +5,8 @@ date:   2018-03-24 13:42:11 -0500
 categories: Portfolio Project
 ---
 
+For a design challenge, I built a fruit collage image, using a botanical image of my favorite fruit as the base.
+
 
 ### Design Challenge
 The goal of this particular design challenge was to develop a fruit collage using a botanical picture of my favorite fruit as the [base](https://www.pinterest.com/pin/470907704772950511/), with a word mixed in.  The word was to correspond with the symbolic of the meaning of the fruit.
