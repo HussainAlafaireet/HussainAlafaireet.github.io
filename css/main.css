@@ -6,3 +6,7 @@ footer {
 footer p {
   color: white;
 }
+
+.center_image {
+  justify-content: center;
+}
