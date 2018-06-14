@@ -12,4 +12,5 @@ footer p {
   justify-content: center;
   align-items: center;
   border-width: 5px;
+  border-color: black;
 }
