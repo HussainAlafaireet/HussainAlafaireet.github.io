@@ -19,7 +19,7 @@ footer p {
   width: 10rem;
 }
 
-.display-4
+html
 {
   font-size: .5rem;
 }
@@ -33,7 +33,7 @@ h4 {
 }
 
 @media only screen and (min-width: 992px) {
-  .display-4{
+  html{
     font-size: 1rem;;
     color: blue;
 
