@@ -14,3 +14,14 @@ footer p {
   border-width: 15px;
   border-color: black;
 }
+
+.card {
+  width: 10rem;
+}
+
+h1
+{
+  font-size: 5px;
+  color:blue;
+  background-color: green;
+}
