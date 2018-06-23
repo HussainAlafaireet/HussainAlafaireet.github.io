@@ -11,6 +11,6 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-width: 5px;
+  border-width: 15px;
   border-color: black;
 }
