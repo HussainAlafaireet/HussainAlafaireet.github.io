@@ -19,9 +19,7 @@ footer p {
   width: 10rem;
 }
 
-h1
+.display-4
 {
-  font-size: 5px;
-  color:blue;
-  background-color: green;
+  font-size: 10px;
 }
