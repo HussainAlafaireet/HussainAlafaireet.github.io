@@ -35,6 +35,8 @@ h4 {
 @media (min-width: 992px) {
   .display-4{
     font-size: initial;
+    font-color: blue;
+
   }
 
 
