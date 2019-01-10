@@ -1,6 +1,31 @@
 
+
+.navbar-light .navbar-brand {
+  font-family: 'M+ M Type-2 (basic latin) Medium';
+  color: #BD2D27;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  font-family: 'M+ M Type-2 (basic latin) Light';
+}
+
+
+.display-4 {
+  font-family: 'M+ M Type-2 (basic latin) Medium';
+  color: #BD2D27;
+}
+.lead {
+  font-family: 'M+ C Type-2 (basic latin) Light';
+}
+
+
+
 footer {
-  background-color: #415071;
+  background-color: #BD2D27;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
@@ -29,7 +54,7 @@ p {
 }
 
 h4 {
-  font-size: :20px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
