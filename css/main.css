@@ -1,7 +1,13 @@
 
 
+
+@font-face {
+  font-family: Mplus2mMedium;
+  src: url(assets\fonts\mplus-2m-medium.ttf);
+}
+
 .navbar-light .navbar-brand {
-  font-family: 'M+ M Type-2 (basic latin) Medium';
+  font-family: 'Mplus2mMedium';
   color: #BD2D27;
 }
 
