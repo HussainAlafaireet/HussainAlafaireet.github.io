@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Mplus2mMedium;
-  src: url(assets\fonts\mplus-2m-medium.ttf);
+  src: url(/assets/fonts/mplus-2m-medium.ttf);
 }
 
 .navbar-light .navbar-brand {
