@@ -6,22 +6,27 @@
   src: url(/assets/fonts/mplus-2m-medium.ttf);
 }
 
+@font-face {
+  font-family: Mplus2mLight;
+  src: url(/assets/fonts/mplus-2m-light.ttf);
+}
+
 .navbar-light .navbar-brand {
   font-family: 'Mplus2mMedium';
   color: #BD2D27;
 }
 
 .navbar-expand-lg .navbar-collapse {
-  font-family: 'M+ M Type-2 (basic latin) Light';
+  font-family: 'Mplus2mLight';
 }
 
 
 .display-4 {
-  font-family: 'M+ M Type-2 (basic latin) Medium';
+  font-family: 'Mplus2mMedium;';
   color: #BD2D27;
 }
 .lead {
-  font-family: 'M+ C Type-2 (basic latin) Light';
+  font-family: 'Mplus2mLight';
 }
 
 
