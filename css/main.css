@@ -59,7 +59,6 @@ body{
 
 
 footer {
-  background-color: #BD2D27;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -67,7 +66,8 @@ footer {
 }
 
 footer p {
-  color: white;
+  color: #BD2D27;
+  font-family: 'Mplus2mMedium';
 }
 
 .central_image {
@@ -97,7 +97,7 @@ h4 {
 
 @media only screen and (min-width: 992px) {
   html{
-    font-size: 1rem;;
+    font-size: 1rem;
     color: blue;
 
   }
