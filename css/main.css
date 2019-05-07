@@ -51,9 +51,6 @@ h3 {
   color: #BD2D27;
 }
 
-p {
-  font-family: 'M+ P Type-2 (basic latin) Light';
-}
 
 strong{
   font-family: 'M+ P Type-2 (basic latin) Medium';
@@ -95,12 +92,17 @@ html
 }
 
 p {
-  font-size: 15px
+  font-family: 'M+ P Type-2 (basic latin) Light';
 }
 
 h4 {
   font-family: 'M+ C Type-2 (basic latin) Medium';
   font-size: 20px;
+}
+
+.card-text {
+  font-family: 'Mplus2mLight';
+  color: #BD2D27;
 }
 
 @media only screen and (min-width: 992px) {
