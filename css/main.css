@@ -51,6 +51,9 @@ h3 {
   color: #BD2D27;
 }
 
+ol {
+  font-family: 'M+ M Type-2 (basic latin) Light';
+}
 
 strong{
   font-family: 'M+ P Type-2 (basic latin) Medium';
@@ -92,16 +95,20 @@ html
 }
 
 p {
-  font-family: 'M+ P Type-2 (basic latin) Light';
+  font-family: 'M+ M Type-2 (basic latin) Light';
 }
 
 h4 {
   font-family: 'M+ C Type-2 (basic latin) Medium';
-  font-size: 20px;
+}
+
+figcaption {
+  font-family: 'Mplus2cMedium';
+  font-size: 230rem;
 }
 
 .card-text {
-  font-family: 'Mplus2mLight';
+  font-family: 'Mplus2mMedium';
   color: #BD2D27;
 }
 
@@ -178,4 +185,8 @@ h4 {
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
+}
+
+figure {
+  margin:1em;
 }
