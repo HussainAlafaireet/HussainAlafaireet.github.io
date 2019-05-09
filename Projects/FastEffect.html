@@ -68,9 +68,32 @@
     </div>
   </div>
   <div class="container" role="main">
+
+    <h2>Project Summary</h2>
+
+    <p>I joined Fast Effect, a creative media content company in Royal Oak, Michigan, as an AR Project/Design lead
+      intern in the summer
+      of 2018. Over the course of my internship, I oversaw the development of a prototype Augmented Reality presention
+      software known as
+      <strong>AR Presenter</strong>. This software was designed to allow tech company representatives to give stable
+      AR-based product presentations, even in venues that
+      are crowded, loud, have poor lighting, and low-internet connectivity. My main accomplishments over the course of
+      this internship were:
+
+      <ul>
+        <li><strong>Scoping the project from the ground up.</strong></li>
+        <li><strong>Conducting a Stakeholder Analysis to assess client needs.</strong></li>
+        <li><strong>Introducing Fast Effect to multiple User-Centered Design techniques.</strong></li>
+        <li><strong>Developing the interaction design for an AR application.</strong></li>
+        <li><strong>Managing 2 design/development sprints to develop a prototype of said AR application.</strong></li>
+        <li><strong>Sucessfully demoing the application to the client, and receiving authorization to continue
+            development.</strong></li>
+      </ul>
+
+
+    </p>
+
     <h2>Project Outcome</h2>
-
-
     <h3>AR Presenter</h3>
 
     <p>
@@ -79,6 +102,39 @@
       presenters to build a "presentation" out of individual components, which can then be presented to
       viewers in a controlled manner. However, in this product, the "slides" are AR objects with triggerable
       interactions, and the "presentation" is a curated list AR objects that the presenter can switch between at will.
+      The presenter has a "presenter"
+      version of the AR Presenter app controls the experience, with the presentee Hololens mirroring the
+      presenter-triggered changes.
+
+      <h4>AR Presenter Features</h4>
+      <ul>
+        <li><strong>Adaptive Location Selection: </strong>In order to navigate a potentially confusing trade/tech show
+          environment, the presenter has the option
+          of placing a "marker" hologram to designate the physical location that best suits the presentation at hand.
+        </li>
+        <li><strong>Controlled Presenter Experience: </strong>While in presentation mode, the presenter has full control
+          over the experience,
+          with the ability to switch between pieces of AR content, and the ability to trigger specific interactions on
+          them, which are then reflected in the presentee view in real-time.</li>
+        <li><strong>Standalone Mode: </strong>In situations where a presenter isn't available, presentations can be run
+          in
+          a "standalone" mode, with presentees able to use
+          simplified versions of the presenter controls to walk through the experience.</li>
+        <li><strong>"Parts" Ecosystem: </strong>The presentation system is modular. The AR Presenteer app has a
+          dedicated
+          mode for building presentations, utilizing a library
+          of AR content that can be expanded as needed.</li>
+        <li><strong>"Safe" Shared Experience Environment: </strong>Many trade show and other outreach environments has
+          factors that interfere
+          with the shared experiences as originally envisoned by Microsoft. Room scanning is disrupted by abrupt changes
+          in venue space, poor lighting,
+          or simply high traffic flow (which can trick the Hololens into that the layout of the room has changed). AR
+          Presenter utilizes a sharing experience revolving
+          around a local wireless router packaged with the system, married to a single shared anchor placed when the
+          presentation is started. This ensures a usable
+          shared experience even in crowded venue spaces.</li>
+      </ul>
+
     </p>
 
     <h4>Main Presenter Experience</h4>
@@ -96,6 +152,63 @@
       <div class="col-1"></div>
     </div>
 
+    <p>The core of the AR Presenter experience is the presenter-led scenario. In this scenario, Max, a presenter from
+      car technology
+      manufacturer "Company M" is giving a presentation on a new car componenet system. Max and his
+      presentees are
+      all wearing Hololens. Max starts by activating the "presenter" version of the AR Presenter app on their
+      Hololens unit. Upon
+      startup, Max can then use the Hololens "tap to place" gesture to place a starting hologram at the
+      desired location where the presentation will
+      take place. The placement of this hologram initites the presentation session, creating a shared world anchor, and
+      transmitting that
+      anchor to the presentee Hololens units via a shared local network packaged with the app. The presentees can now
+      see the hologram at the same location
+      Max has placed it.
+    </p>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9">
+        <figure class="figure">
+          <img src="/assets/FE_Internship/ar_presenter_presenter_view.png"
+            alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+            class="img-fluid">
+          <figcaption class="figure-caption text-center">AR Presenter Prototype - Presenter View</figcaption>
+        </figure>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <p>Continuing on with the presenter scenario, Max is now in the presentation proper. He is presented with a view of
+      the car
+      hologram he will be demoing, and has controls that let him control it. Max can use the main presentation bar in
+      the bottom-middle
+      of his view to switch between AR objects. Max can then use the secondary "interactions" menu in the bottom-right
+      to trigger pre-built
+      interactions. In this case, Max has hit the "Animate" button to trigger the yellow "radar" interaction.
+    </p>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9">
+        <figure class="figure">
+          <img src="/assets/FE_Internship/ar_presenter_attendee_view.png"
+            alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Attendee Reset Menu option."
+            class="img-fluid">
+          <figcaption class="figure-caption text-center">AR Presenter Prototype - Attendee View</figcaption>
+        </figure>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <p>The presentees then see the radar animation played out on their view. In the standard presentation mode,
+      presentees can only
+      view AR presentations as the presenter controls them. Presentees have one menu option however - in the event that
+      their app
+      unexpectedly disconnects from the shared presentation, the presentee has a reconnect button to allow them to reset
+      the sharing functionality and
+      reconnect them to the presentation.</p>
 
 
 
@@ -271,18 +384,18 @@
     </div>
 
     <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
-    <figure class="figure">
-      <img src="/assets/FE_Internship/persona_workspace.jpg"
-        alt="Photo showing personas setup near Sainy's workspace at Fast Effect" class="img-fluid">
-      <figcaption class="figure-caption text-center">I kept persona copies posted at my desk to maintain focus on
-        client
-        needs.</figcaption>
-    </figure>
-  </div>
-  <div class="col-2"></div>
-</div>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <figure class="figure">
+          <img src="/assets/FE_Internship/persona_workspace.jpg"
+            alt="Photo showing personas setup near Sainy's workspace at Fast Effect" class="img-fluid">
+          <figcaption class="figure-caption text-center">I kept persona copies posted at my desk to maintain focus on
+            client
+            needs.</figcaption>
+        </figure>
+      </div>
+      <div class="col-2"></div>
+    </div>
 
     <h4>Brainstorming</h4>
 
@@ -314,24 +427,165 @@
       interaction design for the application. I built an initial set of interaction design sketches that outline the
       main
       interaction areas of the application:
-      <ol>
-        <li>Place Hologram View</li>
-        <li>Main Menu View</li>
-        <li>Presentation Dialogue View</li>
-        <li>Presentation Play View</li>
-        <li>Presentation Parts Content Play View</li>
-        <li>Curved Button UI Element</li>
-        <li>AR Parts View</li>
-        <li>Anticipated System Architecture</li>
-      </ol>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch1.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch2.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch3.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch4.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch5.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch6.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch7.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch8.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_sketch9.PNG"
+              alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
+              class="img-fluid">
+            <figcaption class="figure-caption text-center"></figcaption>
+          </figure>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+
     </p>
 
     <h4>Client Pitch and Feedback</h4>
-
+    <p>After the initial interaction design had been worked out, it was time to present the AR Presenter concept to the client.
+      I prepared a pitch presentation deck, which included the main insights we had learned from the Stakeholder Analysis, mockups of the primary views in the 
+      application, and both a short-term plan (to develop an initial prototype), and a long-term plan (to develop secondary features an an ecoysystem of AR content).
+      <br>
+      The client was overall pleased with the AR Presenter concept, and authorized the creation of an initial prototype.  The client also provided additional Feedback
+      on the concept, which was incorporated into the planning for the initial prototype.
+    </p>
 
 
     <h3>Development and Demo</h3>
 
+    <h4>Prototyping Development Planning</h4>
+    My next task was to plan the development cycle for the intial AR prototype.  We had committed to having the prototype in two weeks.  With help 
+    from my company mentor, I developed plans for two one-week sprints.  These sprints were broken down by functional area, with Graphic Design, Application Development, and 3-D Artist
+    each receiving tasks.  My role within the sprints was two-fold.  I acted as overall project/design lead, with final say over any design decisions that needed to be made during the sprints.
+    I also acted as a secondary application developer, assisting the primary developer on the creation of the core application functinality.
+
+    Once I had developed a plan, I held a kick-off meeting with the technical team to present the client feedback and sprint plan.  Having this formal meeting ensured that 
+    all members of the technical team were on the same page, and gave them a venue to check the feasibility of the sprint plan and ask for any additional resources they needed.  
+    Providing this venue was a good move, as the primary developer requested from me a further breakdown of the application design, with more granualar steps than the initial set of design sketches.
+    I provided this breakdown as my initial task during the sprint.
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/FE_Internship/arp_process_flow.PNG"
+              alt="Photo showing personas setup near Sainy's workspace at Fast Effect" class="img-fluid">
+            <figcaption class="figure-caption text-center">Sample of AR Presenter Process Flow Diagram.</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <h4>Development Sprint</h4>
+
+      While still 
 
     <h3>Personal Reflection</h3>
 

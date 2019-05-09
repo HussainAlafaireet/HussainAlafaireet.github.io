@@ -55,6 +55,10 @@ ol {
   font-family: 'M+ M Type-2 (basic latin) Light';
 }
 
+ul {
+  font-family: 'M+ M Type-2 (basic latin) Light';
+}
+
 strong{
   font-family: 'M+ P Type-2 (basic latin) Medium';
   color: #BD2D27;
@@ -189,4 +193,5 @@ figcaption {
 
 figure {
   margin:1em;
+  border-style: solid;
 }
