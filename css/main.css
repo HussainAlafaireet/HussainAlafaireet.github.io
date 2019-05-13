@@ -69,11 +69,12 @@ body{
 }
 
 
-footer {
-  position: fixed;
-  left: 0;
+.footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
+  height: 1em;
+  
 }
 
 footer p {
@@ -96,10 +97,11 @@ footer p {
 html
 {
   font-size: .5rem;
+  position: relative; min-height: 100%;
 }
 
 p {
-  font-family: 'M+ M Type-2 (basic latin) Light';
+  font-family: 'M+ P Type-2 (basic latin) Light';
 }
 
 h4 {
@@ -192,6 +194,7 @@ figcaption {
 }
 
 figure {
-  margin:1em;
-  border-style: solid;
+  margin:2em;
+  
 }
+
