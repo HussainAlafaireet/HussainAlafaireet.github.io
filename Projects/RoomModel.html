@@ -59,77 +59,324 @@
     <div class="container" role="main">
 
       <h1>The Room Model - A Vision of an XR Browser</h1>
-      
+
 
       <h2>Project Overview - Extending CSS to Control Augmented Reality</h2>
-      <p>I participated in a research project controlled by Mozilla and the University of Michigan.  The overall aim 
-          of the project was to develop visions and future directions for the concept of a <strong> Mixed Reality internet browser</strong> 
-          - a browser that can intermix traditional 2-D internet content with Augmented and Virtual Reality content.
-  
-            <br>
-          I worked on one question within this overall vision. How can we 
-          extend the specifications of CSS to control the look, behavior, and position of this AR content in an intelligent way?
-        </p>
+      <p>I participated in a research project controlled by Mozilla and the University of Michigan. The overall aim
+        of the project was to develop visions and future directions for the concept of a <strong> Mixed Reality internet
+          browser</strong>
+        - a browser that can intermix traditional 2-D internet content with Augmented and Virtual Reality content.
+
+        <br>
+        I worked on one question within this overall vision. How can we
+        extend the specifications of CSS to control the look, behavior, and position of this AR content in an
+        intelligent way?
+      </p>
 
       <h2>My Contributions - Thinker and Implementer</h2>
       <p>I made 3 main contributions to this project:
         <ol>
-          <li>I developed the concept of the "Room Model" - a multi-faceted model for intelligent AR object placement.</li>
-          <li>I developed a "playground" with which to explore the idea of controlling AR object layouts via simulated physics.</li>
-          <li>I generated a view of how a future CSS specification might be written to cover both of the above concepts</li>
+          <li>I developed the concept of the "Room Model" - a multi-faceted model for intelligent AR object placement.
+          </li>
+          <li>I developed a "playground" with which to explore the idea of controlling AR object layouts via simulated
+            physics.</li>
+          <li>I generated a view of how a future CSS specification might be written to cover both of the above concepts
+          </li>
         </ol>
       </p>
 
       <h2>Problem to be Solved - How Can We Make AR Controllable on the Web?</h2>
       Cascading Style Sheets (CSS) are used today to control the overall
-          look and feel of webpages.  However, in thinking about the concept of an XR Browser, it becomes obvious that today's CSS 
-          specifications dont cover the use of AR content integrated into the Web.  For web programmers to integrate and control AR content using their 
-          existing skillsets, the CSS specifications need to be extended to cover AR.  My goal for this project was to develop a vision of how this new specification
-          would function.
+      look and feel of webpages. However, in thinking about the concept of an XR Browser, it becomes obvious that
+      today's CSS
+      specifications dont cover the use of AR content integrated into the Web. For web programmers to integrate and
+      control AR content using their
+      existing skillsets, the CSS specifications need to be extended to cover AR. My goal for this project was to
+      develop a vision of how this new specification
+      would function.
       <h2>Brainstorming - Building the Walls of the Room Model </h2>
-      <p>My first step was to look at pre-existing work in the space of AR layout control, and beging brainstorming solutions to
-        extend that work.  Two areas of my research stuck out to me the most.  The first area was the Box Model built into the current CSS specification.  This model is the 
-      underlying basis of layout in CSS.  I felt that if I could extend this model to cover AR objects and 3-D space, doing so would allow an easier
-    transition for web programmers when using AR content.  This approach lead to the underlying basis of the Room Model: The AR Cube. </p>
+      <h3>The AR Cube - How do we control individual pieces of AR content?</h3>
+      <p>My first step was to look at pre-existing work in the space of AR layout control, and beging brainstorming
+        solutions to
+        extend that work. Two areas of my research stuck out to me the most. The first area was the Box Model built into
+        the current CSS specification. This model is the
+        underlying basis of layout in CSS. I felt that if I could extend this model to cover AR objects and 3-D space,
+        doing so would allow an easier
+        transition for web programmers when using AR content. This approach lead to the underlying basis of the Room
+        Model: The AR Cube. </p>
 
-    <div class="row">
+      <div class="row">
         <div class="col-6">
           <figure class="figure">
             <img src="/assets/RoomModel/rm_cube_01.jpg" alt="" class="img-fluid">
-            <figcaption class="figure-caption text-center">The Anchor model that acted as the basis of the Room Model</figcaption>
+            <figcaption class="figure-caption text-center">The Anchor model that acted as the basis of the Room Model
+            </figcaption>
           </figure>
         </div>
         <div class="col-6">
           <figure class="figure">
             <img src="/assets/RoomModel/rm_cube_02.jpg" alt="" class="img-fluid">
-            <figcaption class="figure-caption text-center">An expanded sketch of the Anchor Model, with styling discussion. </figcaption>
+            <figcaption class="figure-caption text-center">An expanded sketch of the Anchor Model, with styling
+              discussion. </figcaption>
           </figure>
         </div>
       </div>
 
-      <p>The AR Cube, like the Box Model before it, encloses content (in this case AR content) within a bounded area.  The basics 
-        of the AR cube are quite similar to the Box model, with an inner "content" area, and an external border (which can be invisible or visible).
-        However, even at this early stage, new, AR specific elements were worked in.  For example, I was considering a concept in which the AR cube has a 
-        "forcefield" around it, that bounces other content off of it.  This concept would be revisited later in the project.
+      <p>The AR Cube, like the Box Model before it, encloses content (in this case AR content) within a bounded area.
+        The basics
+        of the AR cube are quite similar to the Box model, with an inner "content" area, and an external border (which
+        can be invisible or visible).
+        However, even at this early stage, new, AR specific elements were worked in. For example, I was considering a
+        concept in which the AR cube has a
+        "forcefield" around item. This forcefield concept roughly corresponds to the "margin" property in CSS, as a
+        preventative measure to ensure content pieces don't overlap with each other. The forcefield around a piece of AR
+        content would "bounce" other AR content away from its designated area.
+        <br>
+        Even at this early stage, ideas like the forcefield showed how naturally the use of simulated physics fit into
+        the mix of CSS extension. Use of physics
+        would return multiple times over the course of the project.
+
 
         <br>
         <br>
-        After building a concept for how each individual AR object might look in an extended CSS, it was time to develop how an 
-        entire room might look like.  Fortunately, previous research into "spatial AR" (Thomas et al. 2014) helped develop a concept.
-        In the concept of spatial AR, all AR content in a physical space is anchored above flat surfaces such as tables.  Placing AR objects near surfaces like these
-        gives users specific locations and context that helps them understand how the AR object works.  
+        After building a concept for how each individual AR object might look in an extended CSS, it was time to develop
+        how an
+        entire room might look like. Fortunately, previous research into "spatial AR" (Thomas et al. 2014) helped
+        develop a concept.
+        In the concept of spatial AR, all AR content in a physical space is anchored above flat surfaces such as tables.
+        Placing AR objects near surfaces like these
+        gives users specific locations and context that helps them understand how the AR object works.
         <br>
         <br>
-        Taking the idea of spatial AR and applying to the concept of CSS AR Extensions, I developed the core concept of the Room Model - also a model about spatial placement based on context.
+        Taking the idea of spatial AR and applying to the concept of CSS AR Extensions, I developed the core concept of
+        the Room Model - also a model about spatial placement based on context.
+        The Room Model is built around the concept of <strong>anchors</strong>. Anchors refer to physical objects in a
+        given environment that have some kind of context with which
+        to justify placing an AR object near. In keeping with spatial AR, tables are the most common example of anchors.
+        However, the Room Model posits the idea of
+        a wider variety of anchors. Posters, windows, monitors, and light sources are all additional examples of anchor
+        type. The Room Model further posits that specific types
+        of anchors afford different AR interactions to be controlled with CSS. A table might have a volumetric cube
+        hovering above it, a poster might have plane-shaped AR placed above it, etc.
+
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <figure class="figure">
+              <img src="/assets/RoomModel/window_sketch.jpg" alt="" class="img-fluid">
+              <figcaption class="figure-caption text-center">Brainstorming sketch of the “Window” anchor type, and what
+                kinds of styling options it might have.</figcaption>
+            </figure>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        Here is an example of one specific type of anchor - one built to overlay a physical window. This "window anchor"
+        is shaped as a 2-D plane, in keeping
+        with the idea that a see-through window is usable on either side. The window anchor has two unique behaviors to
+        be controlled by CSS. The first is the ability to "flip"
+        the AR content in order to reverse what AR content is being shown on each side of the window. The second unique
+        behavior is to control if the window anchor is in fact double-sided, or if only one side of
+        the plane should have active AR content.
+        <br>
+
+        To further demostrate the window anchor concept, I built two demos in the Aframe Web-based VR standard.
+        <br>
+
+        
+        <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" width="320" height="240" controls muted >
+                <source src="/assets/RoomModel/RoomModelBaseWindowDemo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <br>
+        <br>
+        This video shows a Aframe VR-based demo of how the "flippable" behavior might look in practice.
+        <br>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" width="320" height="240" controls muted >
+                <source src="/assets/RoomModel/RoomModel_Window_with_Colliders_demo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br>
+        <br>
+
+        This video shows a demo showing the "forcefield" concept to control AR object overlap. This implementation
+        attaches collider areas (the multi-colored bands in the video)
+        to two AR objects. The backend code in this demo actually has the two objects initially overlapping the same
+        physical space, as the colliders detect a collision, the two objects are
+        forced apart a set distance.
+        <br>
+
+        <h3>The Room Model - How do we control an entire room of AR objects?</h3>
+
+        Now that I had developed a basic set of prototypes of how each individual piece of AR content could be
+        controlled with CSS, it was time to
+        look at prototyping how an entire room might be controlled intelligently. For this part of the ideation process,
+        I built a set
+        of Photoshop mockups to create an initial vision of how the Room Model might control a room, based on the
+        underlying principles of spatial AR.
       </p>
 
-      
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/RoomModel/css_prototype-01.jpg" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Room Model - Initial Object Scan</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <p>This particular rendition of the Room Model does assume the existence of an <strong>object scanner</strong> - a
+        computer vision component
+        capable of recognizing objects in the environment. In the first step of the Room Model process, the object
+        scanner activates and begins scanning a user's room.</p>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/RoomModel/css_prototype-02.jpg" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Room Model - Establishing a Room</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <p>This initial scan of the room establishes the overall dimensions of the room and establishes an overall area
+        that AR content could be placed in.
+        The overall Room Model functionality would then generate some base HTML representing the room.
+      </p>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/RoomModel/css_prototype-03.jpg" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Room Model - Detecting Possible Anchor Points</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <p>In the next phase of the Room Model setup, the object scanner scans for potential anchor points that can be
+        used as specific locations to place
+        AR content. Within the overall room HTML, the Room Model then generates initial HTML for each anchor point it
+        identifies.
+      </p>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/RoomModel/css_prototype-04.jpg"  alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Room Model - Established Room with Anchor Points Identified
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <p>The Room Model has now set up the room for AR content placement. Specific physical objects ripe for AR content
+        have been
+        identified. In addition, free space between physical objects that could also have AR objects placed in them are
+        identified.
+      </p>
+
+
       <h2>Physics-Based Layouts - A Switch In Direction</h2>
+      
+      <p>Now that the initial ideation has established the core concepts of the AR Cube and the Room Model, it was time to start moving towards more robust prototypes that moved
+        towards real-world application.  As the concept of using physics to actually control the interactions of AR objects had come up within the Room Model, developing a more functional physics-based interaction
+        system was the next major goal.  
+        <br>
+        <h3>Pre-implementation Brainstorming - What Strategies can be used for Physics-based Layouts?</h3>
+        Before I starting developing the physics-based interaction system, I needed to have a stronger idea of what the end goal interactions might be.
+        How would a physic-based system control the exact physical locations of AR content in a coherent way?  What stategies could a physic-based layout control use?  In particular,
+        what stategies should be used when a set of AR content is moved from one room to another?
+        After a round of brainstorming on potential solutions, I settled on 3 initial strategies for AR room layout control via physics - blackhole, location, and anchor-matching.  
+        To more fully-flesh out my paper-based brainstorming, I built an AFrame demo for each strategy, using, for the moment, canned animations rather than physics.
+        <br>
+      </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/Room_Model_Blackhole_Demo.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <p>
+        The first physics-layout control strategy, "blackhole" revolves around the concept of a "master" object that's automatically placed in the center 
+        of a given room.  When AR objects are moved into this room, the blackhole strategy pulls all AR objects to the center of the room.  The blackhole strategy is used as a
+        default or "safe" strategy, when there are enough unknowns that other strategies won't work.  This strategy guaruntees an initially usable AR object layout, as it pulls 
+        all AR objects to a centralized location that will be accesible in most rooms.  However, this stategy will never result in an ideal layout that's truly convenient for the user, and therefore
+        should only be used as a fallback solution. 
+      </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/Room_Model_Positioning_demo.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <p>
+        The second control strategy, "location" looks at how AR objects were positined in the users' previous room, and attempts to place the AR objects in the same
+        spacially-relative position in the new room.  This strategy would potentially work well for room tranfers where the rooms are of similar dimensions, but is otherwise 
+        the most limited of the three strategies.
+      </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/Room_Model_AnchorMatching_demo.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <p>
+        The third strategy, "anchor matching", revolves around the concept of "anchors" that was previously defined in the Room Model.  This strategies looks at what physical
+        anchors each piece of AR content was connecting to in the original room.  It then attempts to find a matching physical anchor to place the content near (i.e if an AR object was originally
+        placed near a window, this strategy will attempt to find a window in the new room to place that AR object near to).  This is the most interesting and potentially useful strategy,
+        as it attempts to take the end-user context behind AR placement into account when switching rooms.
+      </p>
+      <h3>Physics Playground Implementations - Let me play with ALL the layouts!</h3>
+      Discussion with of the physics-based layouts with my academic stakeholder lead to the decision to create a "physics playground" - a virtual environment in which
+      we could test various physics-based layout strategies to find which ones worked well.  I therefore educated myself on the methods AFrame uses to simulate physics, and then built a playground that my stakeholder
+      could use to test various layout controls.
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/RoomModel_Physic_playground_demo1.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/RoomModel_physics_playground_demo2.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" width="320" height="240" controls muted >
+              <source src="/assets/RoomModel/RoomModel_Physics_Layout_demo.mp4" type="video/mp4">
+          </video>
+      </div>
+
+
 
       <h2>Defining the CSS - Putting it all together</h2>
 
+      <h2>AFrame Demos</h2>
+
       <h2>Final Steps</h2>
-      
+
+      <h2>References</h2>
+      <p>B. H. Thomas et al., "Spatial augmented reality — A tool for 3D data visualization," 2014 IEEE VIS International Workshop on 3DVis (3DVis), Paris, 2014, pp. 45-50.
+          doi: 10.1109/3DVis.2014.7160099</p>
+
 
 
     </div>
