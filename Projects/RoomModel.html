@@ -87,14 +87,14 @@
       </p>
 
       <h2>Problem to be Solved - How Can We Make AR Controllable on the Web?</h2>
-      Cascading Style Sheets (CSS) are used today to control the overall
+      <p>Cascading Style Sheets (CSS) are used today to control the overall
       look and feel of webpages. However, in thinking about the concept of an XR Browser, it becomes obvious that
       today's CSS
       specifications dont cover the use of AR content integrated into the Web. For web programmers to integrate and
       control AR content using their
       existing skillsets, the CSS specifications need to be extended to cover AR. My goal for this project was to
       develop a vision of how this new specification
-      would function.
+      would function.</p>
       <h2>Brainstorming - Building the Walls of the Room Model </h2>
       <h3>The AR Cube - How do we control individual pieces of AR content?</h3>
       <p>My first step was to look at pre-existing work in the space of AR layout control, and beging brainstorming
@@ -447,111 +447,121 @@
         <p>The Core AR Object Properties correspond to the AR Cube, in that they define the basic characteristics of an
           individual AR object. These basic properties are:
           <ul>
-            <li><strong>Mass:</strong> 
+            <li><strong>Mass:</strong>
             </li>
-            <li><strong>Positioning:</strong> 
-              
+            <li><strong>Positioning:</strong>
+
             <li><strong>Anchor Type:</strong> </li>
             <li><strong>Collision Type Property:</strong> </li>
           </ul>
 
           <div class="row">
-              <div class="col-2"></div>
-              <div class="col-8">
-                <figure class="figure">
-                  <img src="/assets/RoomModel/corecssmockup.PNG" alt="" class="img-fluid">
-                  <figcaption class="figure-caption text-center">Example CSS Mockup code for the core definintion of a Physic Model AR Object</figcaption>
-                </figure>
-              </div>
-              <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-8">
+              <figure class="figure">
+                <img src="/assets/RoomModel/corecssmockup.PNG" alt="" class="img-fluid">
+                <figcaption class="figure-caption text-center">Example CSS Mockup code for the core definintion of a
+                  Physic Model AR Object</figcaption>
+              </figure>
             </div>
-          
-          <h3>Mass</h3>
-          <p>This numeric property corresponds roughly to specificity/importance in standard
-              CSS, but much more
-              granular. The more mass an
-              AR object has, the more important it is in the overall layout. When collision/overall in AR objects occur,
-              a master-servant relationship is established between the two objects
-              to establish hierarchy. The object with the higher mass in the collision is designated the master. In
-              addition, the mass could control other aspects of AR object interactions, such as the look-and-feel
-              styling.
-              An example, an object with a higher mass might reject attempts to overwrite its styling by a lower-mass
-              object.</p>
-
-            <h3>Positioning</h3>
-            This property is associated with the Room Layout strategies, and are used
-              to determine when
-              an AR object from one room is moved to a new physical space.
-              <ul>
-                  <li><strong>Blackhole:</strong> moves the AR object to a central location within the new room.
-                    Considered to be the
-                    “safe”
-                    option most likely to guarantee a working layout configuration.
-                  </li>
-                  <li><strong>Location</strong> moves the AR object in the new room to a location as relatively
-                    (proportionally) close
-                    to
-                    the object’s positioning in the original room.
-                  </li>
-                  <li><strong>Anchor Matching:</strong> AR object is moved to the physical room object that most closes
-                    matches the
-                    physical
-                    object the AR object was tied to in the original room:
-                  </li>
-                </ul>
-
-            <h3>AnchorType</h3>
-            This property incorporates and controls the "anchor" aspects of the Room Model.  As part of the this model merger, I brainstormed out several additional anchor types:
-            <ul>
-              <li>Ceiling Anchor:  Single large plane</li>
-              <li>Poster Anchor: Smaller Plane</li>
-              <li>Window Anchor:  Double-sided plane</li>
-              <li>Monitor Anchor: Single-sided plane designed for computer/TV screen coverage</li>
-              <li>Table Anchor: Volumetric Cube hovering over the surface area of the table</li>
-              <li>Light Source:  Sphere that orbits the associated light source</li>
-              <li>Free Space:  Volumetric Cube between physical objects.</li>
-            </ul>
-
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                  <figure class="figure">
-                    <img src="/assets/RoomModel/ceilingcssmockup.PNG" alt="" class="img-fluid">
-                    <figcaption class="figure-caption text-center">Brainstorming sketch of the “Window” anchor type, and what
-                      kinds of styling options it might have.</figcaption>
-                  </figure>
-                </div>
-                <div class="col-2"></div>
-              </div>
-
-
-            <h3>CollisionType</h3>
-            This property roughly corresponds to the border/margin property of the CSS box model, and incorporates the functionality 
-            from the Physics Playground.  The goal of this property is to determine what behavior the object should display when collision with another object occurs.  The possible behaviors are:
-            <ul>
-              <li>Lock:  Objects stick together on the spot with no distance separation in-between.</li>
-              <li>Distance:  Stick Together, but at a pre-defined distance.</li>
-              <li>Repel:  Objects forcem themselves away from each other.</li>
-              <li>Sqishiness:  Instead of connection, this collision type enables resizing.  When the objects collide, items with squishiness get smaller.</li>
-              <li>Nothing:  Objects don't build a connection.  Physics forces via mass alone determin movement during collusion.  Objects are not linked post-collision.</li>
-            </ul>
-          
-
-
-
-
-
+            <div class="col-2"></div>
+          </div>
         </p>
 
+        <h3>Mass</h3>
+        <p>This numeric property corresponds roughly to specificity/importance in standard
+          CSS, but much more
+          granular. The more mass an
+          AR object has, the more important it is in the overall layout. When collision/overall in AR objects occur,
+          a master-servant relationship is established between the two objects
+          to establish hierarchy. The object with the higher mass in the collision is designated the master. In
+          addition, the mass could control other aspects of AR object interactions, such as the look-and-feel
+          styling.
+          An example, an object with a higher mass might reject attempts to overwrite its styling by a lower-mass
+          object.</p>
+
+        <h3>Positioning</h3>
+        <p>This property is associated with the Room Layout strategies, and are used
+          to determine when
+          an AR object from one room is moved to a new physical space.
+          <ul>
+            <li><strong>Blackhole:</strong> moves the AR object to a central location within the new room.
+              Considered to be the
+              “safe”
+              option most likely to guarantee a working layout configuration.
+            </li>
+            <li><strong>Location</strong> moves the AR object in the new room to a location as relatively
+              (proportionally) close
+              to
+              the object’s positioning in the original room.
+            </li>
+            <li><strong>Anchor Matching:</strong> AR object is moved to the physical room object that most closes
+              matches the
+              physical
+              object the AR object was tied to in the original room:
+            </li>
+          </ul>
+        </p>
+
+        <h3>AnchorType</h3>
+        <p>
+          This property incorporates and controls the "anchor" aspects of the Room Model. As part of the this model
+          merger, I brainstormed out several additional anchor types:
+          <ul>
+            <li>Ceiling Anchor: Single large plane</li>
+            <li>Poster Anchor: Smaller Plane</li>
+            <li>Window Anchor: Double-sided plane</li>
+            <li>Monitor Anchor: Single-sided plane designed for computer/TV screen coverage</li>
+            <li>Table Anchor: Volumetric Cube hovering over the surface area of the table</li>
+            <li>Light Source: Sphere that orbits the associated light source</li>
+            <li>Free Space: Volumetric Cube between physical objects.</li>
+          </ul>
+        </p>
+
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <figure class="figure">
+              <img src="/assets/RoomModel/ceilingcssmockup.PNG" alt="" class="img-fluid">
+              <figcaption class="figure-caption text-center">Example CSS Mockup code for the AnchorType CSS property.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-2"></div>
+        </div>
 
 
-        <br>
+        <h3>CollisionType</h3>
+        <p>
+          This property roughly corresponds to the border/margin property of the CSS box model, and incorporates the
+          functionality
+          from the Physics Playground. The goal of this property is to determine what behavior the object should
+          display
+          when collision with another object occurs. The possible behaviors are:
+          <ul>
+            <li>Lock: Objects stick together on the spot with no distance separation in-between.</li>
+            <li>Distance: Stick Together, but at a pre-defined distance.</li>
+            <li>Repel: Objects forcem themselves away from each other.</li>
+            <li>Sqishiness: Instead of connection, this collision type enables resizing. When the objects collide,
+              items
+              with squishiness get smaller.</li>
+            <li>Nothing: Objects don't build a connection. Physics forces via mass alone determine movement during
+              collusion. Objects are not linked post-collision.</li>
+          </ul>
+        </p>
+
 
         <br>
 
       </p>
 
       <h2>Final Steps</h2>
+      <p>
+        The results of this project were presented to my primary academic stakeholder, and will be used as the basis for further research
+        into the future of the XR Browser.
+
+
+      </p>
 
       <h2>References</h2>
       <p>B. H. Thomas et al., "Spatial augmented reality — A tool for 3D data visualization," 2014 IEEE VIS
