@@ -67,6 +67,7 @@
           effectively direct attention within a virtual environment?</strong>
         <br>
         <br>
+<<<<<<< HEAD
         We explored this question through the use of a VR game, in which the player is placed into a
         procedurally-generated maze (the maze is different every time you play.) Players have the goal to find the exit
         area of the maze, marked by
@@ -77,6 +78,30 @@
         and
         metallic floor decorations, that the player can use as a trail to find the exit tile. Upon entering the exit
         tile, the player is teleported to a celebration area to enjoy their victory.
+=======
+        To explore this question, we built a VR procedurally generated maze, and experimented with dyamically adding
+        subtle clues to the environment to guide the user to the exit.
+
+        <div class="row">
+          <div class="col-6">
+            <strong>Concept Breakdown</strong>
+            <br>
+            <ul>
+              <li>A procedural generated “escape maze” experience with adaptive lighting and sound design to facilitate
+                challenging maze traversal.
+              </li>
+              <li>The Core Framing is within the context of a haunted environments</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <strong>Core Technical Challenges</strong>
+            <ul>
+              <li>Generating a 3-D VR Maze procedurally.</li>
+              <li>Dynamically adding "clues" to guide the player.</li>
+            </ul>
+          </div>
+        </div>
+>>>>>>> bfe020350c4fde7c3127d02b53dbfda8d8c3b021
 
         <br>
         Below is a video walkthrough of our final version of the maze.
@@ -110,6 +135,7 @@
         less feasible in Head-Mounted Display (HMD) VR, due to the immersion-breaking and potential
         user disorientation that goes with seizing control of the users perspective. VR Experiences therefore need to be
         less direct when wanting to grab the users's attention and direct their view. While overt methods like </p>
+<<<<<<< HEAD
 
 
       <h2>Initial Ideation and Scoping - 4 weeks and so much to do!</h2>
@@ -232,10 +258,96 @@
         lamps (in keeping with our theme about using lights as attention seekers), but also considered using some
         simulation of fireflies for a more organic indicator. I also considered using some sort of metallic design
         that wouldn't directly be a light source, but would catch the light from light sources.
+=======
+
+
+      <h2>Initial Ideation and Scoping</h2>
+
+      <p>This project was occuring in the context of a design challenge to be conducted over the course of a month of
+        development.
+        My partner and I had relatively free rein over the nature and content of the project, but we knew that scoping
+        would be critical. We therefore brainstormed
+        We therefore made a substantial effort during our first brainstorming session to define the scope concretly, and
+        to prioritize
+        our feature set.
+>>>>>>> bfe020350c4fde7c3127d02b53dbfda8d8c3b021
       </p>
 
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure class="figure">
+            <img src="/assets/ProcMaz/pmaze_initial_scoping.jpg" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Brainstorming the initial scope for the Maze experience.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
 
+      <p>
+        Our brainstorming session ended with the following scoping points:
+        <ul>
+          <li><strong>Oculus/Unity Platform:</strong> We came to an agreement that we would be developing the VR
+            experience for the Oculus Rift, as that was the most capable VR platform we
+            had access to. We also decided to develop the experience in the Unity game engine, as we both felt it was
+            the best balance of features and ease of environment construction out of
+            the development environment we both had access to.
+          </li>
+          <li><strong>Procedurally-generated Maze:</strong> We found the idea of a procedurally generated maze to be a
+            fascinating addition to our overall
+            question of organically directing attention. Ordinarily, for a project like this, we would not have
+            considered procedural generation, as building this capability from
+            scratch would have been too technically challenging for the time we had. However, we found a <a
+              href="https://catlikecoding.com/unity/tutorials/maze/">substantial Unity tutorial on procedural maze
+              generation</a>, which we hoped
+            would lead us through the process of building the maze. However, we knew that we would need to test this
+            detail
+          </li>
+          <li><strong>Lighting:</strong> Both of us had used the most basic of Unity's lighting capabilities, but not at
+            the level we needed to for this project. Our primary concern had to do with the
+            adaptive lighting we were already considering. We needed to develop the underlying system for adding dynamic
+            lightings, as well as ensure that the performance impact of the added lighting
+            did not impact the framerate of the experience.
+          </li>
+          <li><strong>A look-and-feel based in folklore/light supernatural horror:</strong> My partner and I both liked
+            the idea of a "haunted" maze with a somewhat supernatural feel, to enhance the feeling of "needing to
+            escape."
+            We did come to the agreement that we didn't want to make a true horror game, as we felt VR was too immersive
+            for that to be comfortable for our players. However, we thought that light supernatural-themed elements
+            would get players
+            more engaged with the experience. We were considering both traditional European and traditional Japanese themes
+            for our supernatural elements.
+            <br>
+            <div class="row">
+                <div class="col-6">
+                  <figure class="figure">
+                    <img src="/assets/ProcMaz/european_inspiration.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption text-center">Reference Images for European supernatural theme.</figcaption>
+                  </figure>
+                </div>
+                <div class="col-6">
+                  <figure class="figure">
+                    <img src="/assets/ProcMaz/japanese_inspiration.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption text-center">Reference Images for European supernatural theme.</figcaption>
+                  </figure>
+                </div>
+              </div>
+        
+          </li>
+          <li><strong>Player Interactions:</strong>Since this was a game, we did want to have a high-degree of player
+            interactions. However, we were
+            not sure to what extent this would be possible within our development window. Our highest priority was a
+            torch the player could use to light the maze, as
+            we were already intending on using light as a theme for our environment. Other achievable interactions
+            included keys with which to open doors, teleportation movement to allow movement without motion sickness,
+            and keys to open doors. As an extreme challenged, we wanted to have a few non-player characters (NPCS) that
+            players could interact with. However,
+            we knew this was a significant technical challenge, and the most likely to be unfeasible.</li>
+        </ul>
+      </p>
 
+<<<<<<< HEAD
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
@@ -248,6 +360,29 @@
         <div class="col-2"></div>
       </div>
 
+=======
+      <h2>Prototype Version 1</h2>
+      <p>The procedural maze source was sound, and we were able to implement the majority of the maze in VR without major issues.  
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Od-LyBgPvvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-2"></div>
+      </div>
+          
+        
+        I then began work on 
+        adding the dynamic lighting/clue system.  First, I needed to design how this system would work.  The system needed 2 main components:
+        <ul>
+          <li>A system to determine the "path" the user should follow to get out of the maze.</li>
+          <li>A system to be able to dynamically insert clues around that path to give hints to users about how to get to the exit.</li>
+        </ul>
+      </p>
+      <h2>Prototype Version 2</h2>
+      <h2>Prototype Version 3</h2>
+>>>>>>> bfe020350c4fde7c3127d02b53dbfda8d8c3b021
 
 
       <p>
@@ -325,6 +460,7 @@
         scanning the tiles in the maze at run-time, and marking the tiles that lead to the exit.
       </p>
 
+<<<<<<< HEAD
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
@@ -396,6 +532,14 @@
       </p>
 
       <h2>Final Version - Working Through the Feedback </h2>
+=======
+      <h2>Final Steps</h2>
+      <p>
+      </p>
+
+      <h2>References</h2>
+      <p></p>
+>>>>>>> bfe020350c4fde7c3127d02b53dbfda8d8c3b021
 
       <p>The final version of our procedural maze project incorporated the Demo feedback in the following ways:
         <ol>
