@@ -938,90 +938,177 @@
               </ul>
             </p>
 
-            <h3>Demo Proposal</h3>
-            <p>We decided to create a medium-fidelity prototype to demonstrate our unified concept to target users. We
-              say
-              medium-fidelity, because our concept is ultimately built around the idea that extremely light-weight,
-              nearly-invisible AR glasses and contacts do not yet exist. Instead, we wanted to use an existing AR
-              glasses
-              system to give our users the first-person perspective on what the experience would be like, assuming that
-              those light-weight system really did exist.
+            <h3>Demo Construction</h3>
+            <p>
 
-              This demo was not intended to be a fully-developed AR application with every feature specified in our
-              system
-              proposal. We had neither the time nor expertise to develop every feature listed in our system proposal.
-              In addition, the “scanning component” of the system proposal requires image processing and context
-              awareness technology that, so far as we were aware, does not yet exist. Our goal was be to instead create
-              a simulation of the overall experience, using an AR app with appropriately design UI components to give
-              the impression of a working app, and prepositioned AR markers that will resemble the experience of
-              “scanning” the environment. <br><br>
+              As the resident AR expert on the team, the responsibility for the design and implementation of the initial
+              prototype. As we had 3 weeks to develop a
+              prototype. My inital plan was to create a "Wizard of Oz" prototype that would simulate the actual intended
+              experience. The primary aspect we "Wizarded"
+              was the environment scanning functionality of LG, as that required computer vision and context awareness
+              technology that we believed did not yet exist.
+              Instead, my plan was to use an simpler AR app with appropriately designed UI components to give
+              the impression of a working app. The app would use prepositioned paper AR markers placed in a physical
+              environment.
+              Upon detecting this markers, the AR app would trigger UI changes that would seems as though the app had
+              scanned the environment.
+              <br> <br>
+              I built the following hardware/software component list based on the hardware we had access to, and
+              software I had at least some familiarity with:
 
-              <strong>Hardware: </strong> We anticipated needing to use the following hardware components to create our
-              product:
+              <br><br>
+
+              <strong>Hardware: </strong>
 
               <ul>
-                <li>Samsung Gear VR/AR glasses (already acquired)</li>
-                <li>Samsung Android-based phone compatible with Samsung Gear VR/AR (already acquired)</li>
-                <li>Image Marker printouts.</li>
-                <li>Earbud Audio Input/Output Solution: We would use earbud with an in-built microphone connected to the
-                  Gear
-                  VR headset as our solution for any audio input/output needs.</li>
+                <li>Samsung Gear VR :The Samsung Gear VR is a VR headset requires a compatible Samsung phone to be
+                  inserted into
+                  it as the display/processing unit. The phone's back camera is kept clear while inserted, so it was my
+                  hope to be able to access the camera and use it to
+                  create an AR experience WITHIN the Gear VR's default VR experience.
+                </li>
+                <li>Samsung Galaxy S7 smartphone: I owned a phone compatible with the Gear VR. </li>
+                <li>Image Marker printouts: As discussed before, my plan was to use Image Targets (small paper cutouts
+                  with distinctive images
+                  that AR apps can easily recognize) to simulate the "scanning" component of the LG concept. We would
+                  pre-position Image Targets along our demonstration
+                  route, and scanning the Image Marker would trigger the corresponding content. As an example, if we
+                  wanted to simulate a stair-exercise, we would pre-position an AR marker on the stairs,
+                  and tie the appropriate UI visuals to appear when the Image Marker was scanned.
+                </li>
               </ul>
 
 
-              <strong>Software: </strong>We anticipated needing to use the following software components to create our
-              product:
+              <strong>Software: </strong> :
 
               <ul>
 
                 <li>AFrame AR/VR framework: We would build the core application in AFrame. AFrame is a web-based
                   framework that
-                  allows for a browser-based AR experience. An advantage of this approach is that the applications
+                  allows for VR/AR experience to run right in a webpage. I was already familiar with the basics of
+                  AFrame, having worked
+                  with it on my own over the previous summer. One advantage of this approach is that the applications
                   developed
                   will run on any device that has a compatible browser (Firefox or Chromium), and access to a camera.
-                  This
-                  gives us the ability to record experiences on both the AR glasses and with a laptop, allowing us to
+                  This would
+                  give us the ability to record experiences on both the AR glasses and with a laptop, allowing us to
                   piece
-                  together an overall video experience using a variety of platforms. We would run our AFrame app off a
-                  Github
-                  Pages website.</li>
+                  together an overall video experience using a variety of platforms. I already had an appropriate
+                  AFrame-enabled website active, and we simply added a new webpage
+                  to the website for our LG prototype app.</li>
                 <li>Oculus VR App: The Gear VR requires the use of a special app that automatically activates when the
                   phone
-                  is inserted into the Gear VR headset. We would run our browser-based AR experience IN the Oculus VR
-                  app.</li>
+                  is inserted into the Gear VR headset. My plan was to run the AFrame experience on a web browser pulled
+                  up within the default Oculus environment.</li>
 
-                  <li>Youtube Gaming: We wanted like to capture the visual experience of our AR app as prospective users
-                  experience it. Our plan was to use the Youtube Gaming app (a smartphone app designed to stream/record mobile games) to capture the screen and
+                <li>Youtube Gaming: We wanted to capture the visual experience of our AR app as prospective users
+                  experience it. Our plan was to use the Youtube Gaming app (a smartphone app designed to stream/record
+                  mobile games) to capture the screen and
                   microphone
-                  output of the Gear VR.</li>
+                  output of the phone as it was placed in the Gear VR. This would allow us to demo the experience at
+                  scale, as several presenters could watch one person actually use the prototype.</li>
               </ul>
 
-              <h3>Demo Construction - My Primary Contribution</h3>
+              <h3>Demo Iteration 1 - Technical Concept Testing</h3>
               <p>
-                I was the resident AR expert on the team, and as such, I drove most of the design for the System
-                Proposal and Demo Proposal.
+                The primary area of unknowns were the use of AFrame within the Gear VR environment, and streaming the
+                resulting app to multiple presentees. As my teammate worked on developing the visual
+                design for the UI components, I began development on a basic proof-of-concept application to test these
+                unknowns. The proof-of-concept was simple, with a single webpage, 2 UI elements that could be switched
+                out with a push
+                of a button. The proof-of-concept revealed three development issues that necessiated a need to re-think
+                the development approach:
+                <ol>
+                  <li>The Gear VR app, while capable of running AFrame in a web browser, prioritized the VR environment
+                    the web browser was in. As discussed before, the Gear VR app runs by default as a virtual reality
+                    environment, and the web browser
+                    is launched as single 2-D window WITHIN that virutal environment. This meant that when the user
+                    turned their head, instead of panning the real-world view in the AFrame browser experience, the
+                    user's view would instead pan around the virtual environment the browser was in, looking away from
+                    the browser window itself. This issue rendered the Gear VR approach unusable.
+                  </li>
+                  <li>The Gear VR's interaction system was not user-friendly. I owned a first-generation Gear VR system,
+                    which did not include a seperate hand-held control unit. Instead, the unit
+                    has a 5-point touchpad located on the right side of the headset itself. The user must interact with
+                    the touchpad by feel, reaching up to the side of their head. While I was able to get the AFrame
+                    website to respond to taps on this touchpad, we found the experience physically awkward, and decided
+                    that we didn't want this to be a part of our prototype.
+                  </li>
+                  <li>We found that the performance strain of using the Gear VR app, the AFrame functionality, and the
+                    Youtube streaming service together was more than
+                    my phone could handle. Streaming performance was exceptionally bad, and battery life was extremely
+                    limited under these conditions.
+                  </li>
+                </ol>
+              </p>
+
+              <h3>Demo Iteration 2 - Rehearsed Route and Full Demo Development</h3>
+
+              <p>Based on these issues, as well as the fact that we had a limited window with which to develop the
+                overall prototype,
+                I pivoted the design to a more simple Wizard-of-Oz approach. We would run the experience directly on a
+                phone, without a headset. This
+                would allow us to run the demo on a newer Google Pixel phone, which was capable of running AFrame and
+                Youtube Gaming streaming with good performance.
+                I also changed the format of the demo experience to match the new platform. We would be running our live
+                demo purely as a livestream, with one of our team members
+                performing the demo on the phone. We would have our team member walk a pre-determined route in the
+                hallways around the demo room, holding the phone in such a manner as to give the impression of a
+                first-person POV AR glasses experience when viewed on the livestream.
+                The team member would then walk the route, provided audio commentary as they did so. <br> <br>
+
+                I decided on one more simplification, given the new changes. I decided to not involve the Image Markers
+                at all, as those, while still relative reliable,
+                can be subject to computer vision recognition issues. Instead, I decided on a "Powerpoint" approach.
+                Each discreet portion within the route would have its own set of pre-built UI elements, with only the
+                first
+                section's UI being visible initially. As the demonstrator walked the route, he would tap on the phone
+                screen upon entering each new route sections. This tap (invisible to the live streamers) would make the
+                previous section's UI
+                invisible, and make the current section visible. Similar to Powerpoint slides, the demonstrator would
+                simply iterate through each UI screen in turn. <br><br>
+
+                To add a small bit of artistry to the whole experience, we built the route to be circular, starting just
+                outside the demo room, and ending with the demonstrator walking into the demo room. We also chose not
+                to inform our demo audience that the demostration was in fact, live, which elicited an enthusiatic
+                reaction from our demonstration viewers when they realized what had just happened.
+
+                Once this new plan had been devised, the development was relatively straightforward. My team mates
+                created the Photoshop UI mockups, and I then
+                pre-positioned them on the AFrame webpage. I then built a Javascript framework to switch what UI element
+                was visble, changing based on taps on the phone screen. All together,
+                12 separate "screens" were created to show the various capabilities of LG. <br><br>
+
+                The demo website remains live at <a
+                  href="https://halafaireet.github.io/lifeasagym/">https://halafaireet.github.io/lifeasagym/</a>
+                <br><br>
+                The code I built is available at <a
+                  href="https://github.com/HAlafaireet/lifeasagym/blob/master/index.html">https://github.com/HAlafaireet/lifeasagym/blob/master/index.html</a>
+                <br><br>
+                Below is a demonstration video showing how this demo approach worked in practice.
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/OIUaA9tzm0I" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
 
               </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <h2>Final Steps</h2>
               <p>
+                Once we had our live demo in place, we built the rest of the final presentation materials. This included
+                a pitch deck that also
+                summarized our primary research findings, as well as a more polished final presentation video that
+                relayed a higher-level narrative scenario. We reused our UI assets
+                from our live demonstration into this final video (which is the video available for view in the Project
+                Overview section of the final document).
 
+                <br><br>
+                Our demonstration attendees reacted quite positively to our pitch deck and live demo. Despite the
+                futuristic nature of our
+                design concept, we were able to successfully deliver a compelling vision of the exercise time-management
+                support Life As A Gym could provide University student in their busy lives.
               </p>
 
     </div>
