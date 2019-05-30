@@ -21,6 +21,7 @@
   src: url(/assets/fonts/mplus-2c-medium.ttf);
 }
 
+
 .navbar-light .navbar-brand {
   font-family: 'Mplus2mMedium';
   color: #BD2D27;
@@ -98,7 +99,7 @@ footer p {
 
 html
 {
-  font-size: .5rem;
+  /*font-size: .5rem;*/
   position: relative; min-height: 100%;
 }
 
