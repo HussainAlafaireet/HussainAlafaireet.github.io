@@ -24,7 +24,7 @@
 
 .navbar-light .navbar-brand {
   font-family: 'Mplus2mMedium';
-  color: #BD2D27;
+  color: #415071;
   background-color: #FFF;
   
 }
@@ -39,21 +39,21 @@
 
 
 .display-4 {
-  font-family: 'Mplus2mMedium';
-  color: #BD2D27;
+  font-family: 'Mplus2mLight';
+  color: #415071;
 }
 .lead {
-  font-family: 'Mplus2mMedium';
+  font-family: 'Mplus2mLight';
 }
 
 h1 {
   font-family: 'M+ C Type-2 (basic latin) Medium';
-  color: #BD2D27;
+  color: #415071;
 }
 
 h3 {
   font-family: 'M+ M Type-2 (basic latin) Light';
-  color: #BD2D27;
+  color: #415071;
 }
 
 ol {
@@ -66,7 +66,7 @@ ul {
 
 strong{
   font-family: 'M+ P Type-2 (basic latin) Medium';
-  color: #BD2D27;
+  color: #415071;
 }
 
 body{
@@ -83,7 +83,7 @@ body{
 }
 
 footer p {
-  color: #BD2D27;
+  color: #415071;
   font-family: 'Mplus2mMedium';
 }
 
@@ -118,7 +118,7 @@ figcaption {
 
 .card-text {
   font-family: 'Mplus2mMedium';
-  color: #BD2D27;
+  color: #415071;
 }
 
 @media only screen and (min-width: 992px) {
