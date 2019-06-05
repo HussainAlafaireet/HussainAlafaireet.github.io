@@ -30,11 +30,11 @@
 }
 
 .navbar-expand-lg .navbar-collapse {
-  font-family: 'Mplus2mLight';
+  font-family: 'Mplus2mMedium';
 }
 
 .nav-link {
-  font-family: 'M+ M Type-2 (basic latin) Light';
+  font-family: 'M+ M Type-2 (basic latin) Medium';
 }
 
 
@@ -52,7 +52,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'M+ M Type-2 (basic latin) Light';
+  font-family: 'M+ M Type-2 (basic latin) Medium';
   color: #415071;
 }
 
@@ -138,6 +138,7 @@ figcaption {
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
+
 }
 .card span.card-title {
     color: #fff;
