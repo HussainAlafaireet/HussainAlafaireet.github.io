@@ -1,90 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:regular,bold,bolditalic&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Karla:regular,bold,bolditalic&display=swap');
 
 
 
-@font-face {
-  font-family: Mplus2mMedium;
-  src: url(/assets/fonts/mplus-2m-medium.ttf);
+
+body {
+  font-family: 'Karla', sans-serif;
 }
 
-@font-face {
-  font-family: Mplus2mLight;
-  src: url(/assets/fonts/mplus-2m-light.ttf);
-}
-
-@font-face {
-  font-family: Mplus2pLight;
-  src: url(/assets/fonts/mplus-2p-light.ttf);
-}
-
-@font-face {
-  font-family: Mplus2cMedium;
-  src: url(/assets/fonts/mplus-2c-medium.ttf);
-}
-
-
-.navbar-light .navbar-brand {
-  font-family: 'Mplus2mMedium';
-  color: #415071;
-  background-color: #FFF;
-  
-}
-
-.navbar-expand-lg .navbar-collapse {
-  font-family: 'Mplus2mMedium';
-}
-
-.nav-link {
-  font-family: 'M+ M Type-2 (basic latin) Medium';
-}
-
-
-.display-4 {
-  font-family: 'Mplus2mLight';
-  color: #415071;
-}
-.lead {
-  font-family: 'Mplus2mLight';
-}
-
-h1 {
-  font-family: 'M+ C Type-2 (basic latin) Medium';
+h1 ,.navbar-light .navbar-brand{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
   color: #415071;
 }
 
-h3 {
-  font-family: 'M+ M Type-2 (basic latin) Medium';
+h2 h3 h4 h5 {
+  font-family: 'Oxygen', sans-serif;
+}
+
+strong,.card-text,h3  {
   color: #415071;
 }
-
-ol {
-  font-family: 'M+ P Type-2 (basic latin) Regular';
-}
-
-ul {
-  font-family: 'M+ P Type-2 (basic latin) Regular';
-}
-
-strong{
-  font-family: 'M+ P Type-2 (basic latin) Medium';
-  color: #415071;
-}
-
-body{
-  padding-bottom: 70px;
-}
-
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 1em;
-  
+
 }
 
 footer p {
   color: #415071;
-  font-family: 'Mplus2mMedium';
+  font-family: 'Oxygen', sans-serif;
 }
 
 .central_image {
@@ -95,34 +44,15 @@ footer p {
   border-color: black;
 }
 
+html {
 
-
-html
-{
-  /*font-size: .5rem;*/
-  position: relative; min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
-p {
-  font-family: 'M+ P Type-2 (basic latin) Regular';
-}
-
-h4 {
-  font-family: 'M+ C Type-2 (basic latin) Medium';
-}
-
-figcaption {
-  font-family: 'Mplus2cMedium';
-  font-size: 230rem;
-}
-
-.card-text {
-  font-family: 'Mplus2mMedium';
-  color: #415071;
-}
 
 @media only screen and (min-width: 992px) {
-  html{
+  html {
     font-size: 1rem;
     color: blue;
 
@@ -140,29 +70,33 @@ figcaption {
   background-clip: padding-box;
 
 }
+
 .card span.card-title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .card .card-image {
   position: relative;
   overflow: hidden;
 }
+
 .card .card-image img {
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
   position: relative;
   z-index: -1;
 }
+
 .card .card-image span.card-title {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 16px;
 }
+
 .card-img-top {
   width: 100%;
   height: 15vw;
@@ -175,35 +109,39 @@ figcaption {
   background-clip: padding-box;
   box-sizing: border-box;
 }
+
 .card .card-content p {
   margin: 0;
   color: inherit;
 }
+
 .card .card-content span.card-title {
   line-height: 48px;
 }
+
 .card .card-action {
   border-top: 1px solid rgba(160, 160, 160, 0.2);
   padding: 16px;
 }
+
 .card .card-action a {
   color: #ffab40;
   margin-right: 16px;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
+
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
 }
 
 figure {
-  margin:2em;
-  
+  margin: 2em;
+
 }
 
 .embed-responsive {
-  margin:2em;
-  
-}
+  margin: 2em;
 
+}
