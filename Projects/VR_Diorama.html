@@ -31,61 +31,62 @@
   <script>
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
       event.preventDefault();
-      $(this).ekkoLightbox();
+      $(this).ekkoLightbox({alwaysShowClose: true,});
     });
   </script>
 </head>
 
 <body>
   <main class="container">
-    <header role="banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-        <a class="navbar-brand" href="/index.html">
-          Sainy Alafaireet
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Projects/FastEffect.html">"AR Presenter" Prototype</a>
-                <a class="dropdown-item" href="/Projects/Lifeasagym.html">Life as a Gym AR Concept</a>
-                <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
-                <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
-                <a class="dropdown-item" href="/Projects/VR_Diorama.html">VR Diorama Prototyping Tool *In-Progress*</a>
-                <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming
-                  Soon*</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aboutme.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/resume.html">Resume</a>
-            </li>
-            <!--<li class="nav-item">
-                  <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+      <header role="banner">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+            <a class="navbar-brand" href="/index.html">
+              Sainy Alafaireet
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/Projects/FastEffect.html">"AR Presenter" Prototype</a>
+                    <a class="dropdown-item" href="/Projects/Lifeasagym.html">Life as a Gym AR Concept</a>
+                    <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
+                    <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
+                    <a class="dropdown-item" href="/Projects/VR_Diorama.html">VR Diorama Prototyping Tool *In-Progress*</a>
+                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming
+                      Soon*</a>
+                      <a class="dropdown-item" href="/Projects/litreflect.html">VR/AR Literature Reflections *In Progress*</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
-                </li>-->
-          </ul>
-        </div>
-      </nav>
-    </header>
+                  <a class="nav-link" href="/aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/resume.html">Resume</a>
+                </li>
+                <!--<li class="nav-item">
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
+              </ul>
+            </div>
+          </nav>
+        </header>
 
     <div class="container" role="main">
 
       <h1>VR Diorama - A more hands-on way of prototyping VR Experiences</h1>
 
 
-      <h2>Project Overview - A Procedurally Generated VR Maze With Dynamic Clues</h2>
+
 
       <h3>*Note* - This is an in-progress project. </h3>
       <br>
@@ -184,21 +185,203 @@
 
       <h2>VR Diorama Build Plans</h2>
       <p>My current plan for creating the initial version of the diorama is as follows:
-        
-      <ol>
-        <li>Measure my Oculus Rift headset as a template for the sizing of the VR Diorama</li>
-        <li>Create a traced pattern for the construction of the VR Diorama</li>
-        <li>Use the pattern to create the initial VR Diorama frame out out of cardboard.</li>
-        <li>Experiment with the magnet method to see how firmly it can be used to attached diorama elements</li>
-        <li>Build a full diorama scene with various elements, including backdrop and floor material.</li>
-        <li>Test with other UX professionals to determine if this prototyping method is a) feasible, and b) actually provides the advantages I anticipate</li>
-      </ol>
+
+        <ol>
+          <li>Measure my Oculus Rift headset as a template for the sizing of the VR Diorama</li>
+          <li>Create a traced pattern for the construction of the VR Diorama</li>
+          <li>Use the pattern to create the initial VR Diorama frame out out of cardboard.</li>
+          <li>Experiment with the magnet method to see how firmly it can be used to attached diorama elements</li>
+          <li>Build a full diorama scene with various elements, including backdrop and floor material.</li>
+          <li>Test with other UX professionals to determine if this prototyping method is a) feasible, and b) actually
+            provides the advantages I anticipate</li>
+        </ol>
 
       </p>
 
-      <div>
+      <h2>VR Diorama Build Attempt #1</h2>
 
+      <p>I began the construction process by measuring the side of my Rift headset, and using those measurements to
+        create a
+        stencil that I could use to cut out a cardboard frame for the VR Diorama.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <figure href="/assets/VR_Diorama/vr_dior_meas.jpg" class="figure" class="darknav" data-toggle="lightbox"
+                data-gallery="build1-gallery" data-footer="Measuring the Rift Headset">
+                <img src="/assets/VR_Diorama/vr_dior_meas.jpg" alt="" class="img-fluid">
+                <figcaption class="figure-caption text-center">
+                  Measuring the Rift Headset
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-3>
+              <figure href="/assets/VR_Diorama/vr_dior_stencil.jpg" class="figure" data-toggle="lightbox"
+                data-gallery="build1-gallery"
+                data-footer="Converting the measurements into a stencil for the side-frame of the VR Diorama headset.">
+                <img src="/assets/VR_Diorama/vr_dior_stencil.jpg" alt="" class="img-fluid">
+                <figcaption class="figure-caption text-center">
+                  Converting the measurements into a stencil for the side-frame of the VR Diorama headset.
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-3>
+              <figure href="/assets/VR_Diorama/vr_dior_stencil_cutout.jpg" class="figure" data-toggle="lightbox"
+                data-gallery="build1-gallery" data-footer="Cut-out headset stencil">
+                <img src="/assets/VR_Diorama/vr_dior_stencil_cutout.jpg" alt="" class="img-fluid">
+                <figcaption class="figure-caption text-center">
+                  Cut-out headset stencil
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-3>
+              <figure href="/assets/VR_Diorama/vr_dior_stencil_cutout.jpg" class="figure" data-toggle="lightbox"
+                data-gallery="build1-gallery" data-footer="Cut-out headset stencil with reinforced version">
+                <img src="/assets/VR_Diorama/vr_dior_stencil_cb.jpg" alt="" class="img-fluid">
+                <figcaption class="figure-caption text-center">
+                  Cut-out headset stencil with reinforced version
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <p>Next, I used the stencil to cut out the frame using a shoebox as the initial base. Once I had the outline cut
+          out, I used tape
+          to reinforce the frame pieces, added eyeholes, and attached a small box to house the diorama content.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3">
+                <figure href="/assets/VR_Diorama/vr_dior_box_mark.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Marking the initial frame cuts using the stencil">
+                  <img src="/assets/VR_Diorama/vr_dior_box_mark.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Marking the initial frame cuts using the stencil
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_box_cut.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Cut-out headset stencil">
+                  <img src="/assets/VR_Diorama/vr_dior_box_cut.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Cut-out headset stencil
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_initial_frame.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Cut-out headset frame">
+                  <img src="/assets/VR_Diorama/vr_dior_initial_frame.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Cut-out headset frame
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_initial_frame.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Narrowing and reinforcing the back of the headset frame">
+                  <img src="/assets/VR_Diorama/vr_dior_reinforce.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Narrowing and reinforcing the back of the headset frame
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="row">
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_diorama_reinforced_frame.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Narrowing and reinforcing the back of the headset frame">
+                  <img src="/assets/VR_Diorama/vr_diorama_reinforced_frame.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Narrowing and reinforcing the back of the headset frame
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_diorama_reinforced_frame.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Reinforcing the sides of the headset frame">
+                  <img src="/assets/VR_Diorama/vr_diorama_reinforced_frame.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Reinforcing the sides of the headset frame
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_diorama_eyeholes.png" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer=" Adding Eyeholes and the Diorama content area">
+                  <img src="/assets/VR_Diorama/vr_diorama_eyeholes.png" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Adding Eyeholes and the Diorama content area
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_initial_box.png" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery2" data-footer="Finished VR Diorama Frame">
+                  <img src="/assets/VR_Diorama/vr_dior_initial_box.png" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Finished VR Diorama Frame
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <p>Next, it was time to test an initial scene in my diorama.  I started by lining the Diorama Content area with a piece of corkwood.
+        I used Legos to assemble a quick fascimile of a car and a building, and a Post-It Note attached to a shortened tookpick to stand as a UI element.  The toothpick
+        sufficed to hold the UI element in place, while the car and building were held down with a piece of duct tape.
+      </p>
+
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3">
+                <figure href="/assets/VR_Diorama/vr_diorama_initial_scene.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery" data-footer="Measuring the Rift Headset">
+                  <img src="/assets/VR_Diorama/vr_diorama_initial_scene.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Measuring the Rift Headset
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_second_scene.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery"
+                  data-footer="Converting the measurements into a stencil for the side-frame of the VR Diorama headset.">
+                  <img src="/assets/VR_Diorama/vr_dior_second_scene.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Converting the measurements into a stencil for the side-frame of the VR Diorama headset.
+                  </figcaption>
+                </figure>
+              </div>
+              <div class=col-md-3>
+                <figure href="/assets/VR_Diorama/vr_dior_second_scne2.jpg" class="figure" data-toggle="lightbox"
+                  data-gallery="build1-gallery" data-footer="Cut-out headset stencil">
+                  <img src="/assets/VR_Diorama/vr_dior_second_scne2.jpg" alt="" class="img-fluid">
+                  <figcaption class="figure-caption text-center">
+                    Cut-out headset stencil
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+  
+          <p>I then played around with actually wearing the diorama were promising enough that I've decided to continue with the 
+            project.  I do need to do some work with the headset frame, since it doesn't contour to the head well, and required that the headset 
+            be held up with the hands.  The Diorama Content area itself, however, worked better than I expected from an initial test.  The tape/toothpick combination held
+            the scene objects in place well, and my head movements didn't disrupt them.  I will however, experiment with magnets and magnetic paper, as that might be a quicker,
+            cleaner way to quickly re-adjust the scene objects.
+          </p>
+
+
 
     </div>
 

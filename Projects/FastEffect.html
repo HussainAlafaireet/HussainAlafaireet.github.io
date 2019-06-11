@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css"
-    href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <title>
-    Sainy Alafaireet's Portfolio Website
-  </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
-  </script>
-</head>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+          href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+        <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <!--Lightbox CSS from Ekko Lightbox-->
+        <link rel="stylesheet" href="/css/main.css">
+        <title>
+          Sainy Alafaireet's Portfolio Website
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+          integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+          integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+          //lightbox javascript from Ekko Lightbox
+        </script>
+      
+        <script>
+          $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({alwaysShowClose: true,});
+          });
+        </script>
+      </head>
 
 <body>
   <main class="container">
@@ -47,7 +60,9 @@
                     <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
                     <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
                     <a class="dropdown-item" href="/Projects/VR_Diorama.html">VR Diorama Prototyping Tool *In-Progress*</a>
-                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming Soon*</a>
+                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming
+                      Soon*</a>
+                      <a class="dropdown-item" href="/Projects/litreflect.html">VR/AR Literature Reflections *In Progress*</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/aboutme.html">About Me</a>
@@ -56,17 +71,18 @@
                   <a class="nav-link" href="/resume.html">Resume</a>
                 </li>
                 <!--<li class="nav-item">
-                  <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
-                </li>-->
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
               </ul>
             </div>
           </nav>
         </header>
 
     <div class="container" role="main">
+      
 
       <h1>"AR Presenter" Prototype</h1>
 
@@ -82,7 +98,8 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-9">
-          <figure class="figure">
+          <figure href="/assets/FE_Internship/ar_presenter_venue_view.png" class="figure" data-toggle="lightbox"
+            data-footer="AR Presenter Prototype - Venue View">
             <img src="/assets/FE_Internship/ar_presenter_venue_view.png"
               alt="Concept Shot of AR Presenter - Tech Show presenter wearing a Hololens controls an AR presentation, while attendees wearing their own Hololens view the holograms the presenter is controlling"
               class="img-fluid">
@@ -150,13 +167,15 @@
 
         <div class="row">
           <div class="col-6">
-            <figure class="figure">
+            <figure href="/assets/FE_Internship/affinity_wall_during.jpg" class="figure" data-toggle="lightbox"
+              data-footer="The team building out the affinity notes">
               <img src="/assets/FE_Internship/affinity_wall_during.jpg" alt="" class="img-fluid">
               <figcaption class="figure-caption text-center">The team building out the affinity notes</figcaption>
             </figure>
           </div>
           <div class="col-6">
-            <figure class="figure">
+            <figure href="/assets/FE_Internship/affinity_wall_after.jpg" class="figure" data-toggle="lightbox"
+              data-footer="The completed affinity wall">
               <img src="/assets/FE_Internship/affinity_wall_after.jpg" alt="" class="img-fluid">
               <figcaption class="figure-caption text-center">The completed affinity wall.</figcaption>
             </figure>
@@ -275,15 +294,18 @@
 
       <div class="row">
         <div class="col-6">
-          <figure class="figure">
-            <img src="/assets/FE_Internship/example_persona.PNG" alt="" Persona Example of Lindsey, a member of the
-              client's outreach team."" class="img-fluid">
+          <figure href="/assets/FE_Internship/example_persona.PNG" class="figure" data-toggle="lightbox" data-footer="Persona of Lindsay: a member of the client's student outreach
+          team">
+            <img src="/assets/FE_Internship/example_persona.PNG" alt=" Persona Example of Lindsey, a member of the
+              client's outreach team." class="img-fluid">
             <figcaption class="figure-caption text-center">Persona of Lindsay: a member of the client's student outreach
               team</figcaption>
           </figure>
         </div>
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/FE_Internship/persona_workspace.jpg" class="figure" data-toggle="lightbox" data-footer="I kept persona copies posted at my desk to maintain focus on
+          client
+          needs.">
             <img src="/assets/FE_Internship/persona_workspace.jpg"
               alt="Photo showing personas setup near Sainy's workspace at Fast Effect" class="img-fluid">
             <figcaption class="figure-caption text-center">I kept persona copies posted at my desk to maintain focus on
@@ -313,17 +335,18 @@
         our
         selection of the guided experience.</p>
 
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-              <figure class="figure">
-                <img src="/assets/FE_Internship/arpresoriginalsketch.jpg"
-                  alt="Photo showing original sketch of the AR Presenter concept" class="img-fluid">
-                <figcaption class="figure-caption text-center">Brainstorming session sketch of AR Presenter</figcaption>
-              </figure>
-            </div>
-            <div class="col-2"></div>
-          </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure href="/assets/FE_Internship/arpresoriginalsketch.jpg" class="figure" data-toggle="lightbox"
+            data-footer="Brainstorming session sketch of AR Presenter">
+            <img src="/assets/FE_Internship/arpresoriginalsketch.jpg"
+              alt="Photo showing original sketch of the AR Presenter concept" class="img-fluid">
+            <figcaption class="figure-caption text-center">Brainstorming session sketch of AR Presenter</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
 
 
       <br>
@@ -336,131 +359,153 @@
         therefore worked out the overall
         interaction design for the application. I built an initial set of interaction design sketches that outline the
         main
-        interaction areas of the application:
+        interaction areas of the application:</p>
 
-        <div class="row">
-
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch1.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-4">
+              <figure href="/assets/FE_Internship/arp_sketch1.PNG" class="figure"  data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/arp_sketch1.PNG"
+                  alt="Initial app view, with hologram placement required to start the app proper"  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Initial app view, with hologram placement required to start the app proper
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch2.PNG" class="figure"  data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer="Main Menu View, with options to either start a presentation or build one">
+                <img src="/assets/FE_Internship/arp_sketch2.PNG"
+                  alt="Main Menu View, with options to either start a presentation or build one" class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Main Menu View, with options to either start a presentation or build one
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch3.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery" data-footer="Presentation Selection View with presentation preview">
+                <img src="/assets/FE_Internship/arp_sketch3.PNG"
+                  alt="Presentation Selection View with presentation preview" class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Presentation Selection View with presentation preview
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch2.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
+          <div class="row">
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch4.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer="View of started presentation, including presentation controls">
+                <img src="/assets/FE_Internship/arp_sketch4.PNG"
+                  alt="View of started presentation, including presentation controls" class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  View of started presentation, including presentation controls
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch5.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer=" View of triggering an interaction on a piece of AR content">
+                <img src="/assets/FE_Internship/arp_sketch5.PNG"
+                  alt=" View of triggering an interaction on a piece of AR content" class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  View of triggering an interaction on a piece of AR content
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch6.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery" data-footer=" Close-in view of the standard AR Presenter UI Button">
+                <img src="/assets/FE_Internship/arp_sketch6.PNG"
+                  alt=" Close-in view of the standard AR Presenter UI Button" class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Close-in view of the standard AR Presenter UI Button
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch7.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer="Build Presentation View, including Parts Shelf storage area for pre-built AR objects">
+                <img src="/assets/FE_Internship/arp_sketch7.PNG"
+                  alt="Build Presentation View, including Parts Shelf storage area for pre-built AR objects"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Build Presentation View, including Parts Shelf storage area for pre-built AR objects
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch8.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery"
+                data-footer=" View of secondary AR Presenter concepts (floating AR nametags and Presentee Emergency Reset Button">
+                <img src="/assets/FE_Internship/arp_sketch8.PNG"
+                  alt=" View of secondary AR Presenter concepts (floating AR nametags and Presentee Emergency Reset Button"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  View of secondary AR Presenter concepts (floating AR nametags and Presentee Emergency Reset Button)
+                </figcaption>
+              </figure>
+            </div>
+            <div class=col-md-4>
+              <figure href="/assets/FE_Internship/arp_sketch9.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="fesketch-gallery" data-footer="AR Presenter System Architecture View">
+                <img src="/assets/FE_Internship/arp_sketch9.PNG" alt="AR Presenter System Architecture View"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  AR Presenter System Architecture View
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
+      </div>
 
 
-        <div class="row">
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch3.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch4.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch5.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch6.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch7.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch8.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <figure class="figure">
-              <img src="/assets/FE_Internship/arp_sketch9.PNG"
-                alt="Concept Shot of AR Presenter - First Person POV Shot of Presenter view, including Presentation Control Menu."
-                class="img-fluid">
-              <figcaption class="figure-caption text-center"></figcaption>
-            </figure>
-          </div>
-          <div class="col-3"></div>
-        </div>
-
-        <h4>AR Presenter Features</h4>
-        <ul>
-          <li><strong>Adaptive Location Selection: </strong>In order to navigate a potentially confusing trade/tech show
-            environment, the presenter has the option
-            of placing a "marker" hologram to designate the physical location that best suits the presentation at hand.
-          </li>
-          <li><strong>Controlled Presenter Experience: </strong>While in presentation mode, the presenter has full
-            control
-            over the experience,
-            with the ability to switch between pieces of AR content, and the ability to trigger specific interactions on
-            them, which are then reflected in the presentee view in real-time.</li>
-          <li><strong>Voice Chat </strong>Trade and Tech Show environments can be quite loud.  AR Presenter implements voice chat through the 
+      <h4>AR Presenter Features</h4>
+      <ul>
+        <li><strong>Adaptive Location Selection: </strong>In order to navigate a potentially confusing trade/tech show
+          environment, the presenter has the option
+          of placing a "marker" hologram to designate the physical location that best suits the presentation at hand.
+        </li>
+        <li><strong>Controlled Presenter Experience: </strong>While in presentation mode, the presenter has full
+          control
+          over the experience,
+          with the ability to switch between pieces of AR content, and the ability to trigger specific interactions on
+          them, which are then reflected in the presentee view in real-time.</li>
+        <li><strong>Voice Chat </strong>Trade and Tech Show environments can be quite loud. AR Presenter implements
+          voice chat through the
           Hololens microphone and speaker system to compenesate for the noise.</li>
-          <li><strong>Standalone Mode: </strong>In situations where a presenter isn't available, presentations can be
-            run
-            in
-            a "standalone" mode, with presentees able to use
-            simplified versions of the presenter controls to walk through the experience.</li>
-          <li><strong>"Parts" Ecosystem: </strong>The presentation system is modular. The AR Presenteer app has a
-            dedicated
-            mode for building presentations, utilizing a library
-            of AR content that can be expanded as needed.</li>
-          <li><strong>"Safe" Shared Experience Environment: </strong>Many trade show and other outreach environments has
-            factors that interfere
-            with the shared experiences as originally envisoned by Microsoft. Room scanning is disrupted by abrupt
-            changes
-            in venue space, poor lighting,
-            or simply high traffic flow (which can trick the Hololens into that the layout of the room has changed). AR
-            Presenter utilizes a sharing experience revolving
-            around a local wireless router packaged with the system, married to a single shared anchor placed when the
-            presentation is started. This ensures a usable
-            shared experience even in crowded venue spaces.</li>
-        </ul>
+        <li><strong>Standalone Mode: </strong>In situations where a presenter isn't available, presentations can be
+          run
+          in
+          a "standalone" mode, with presentees able to use
+          simplified versions of the presenter controls to walk through the experience.</li>
+        <li><strong>"Parts" Ecosystem: </strong>The presentation system is modular. The AR Presenteer app has a
+          dedicated
+          mode for building presentations, utilizing a library
+          of AR content that can be expanded as needed.</li>
+        <li><strong>"Safe" Shared Experience Environment: </strong>Many trade show and other outreach environments has
+          factors that interfere
+          with the shared experiences as originally envisoned by Microsoft. Room scanning is disrupted by abrupt
+          changes
+          in venue space, poor lighting,
+          or simply high traffic flow (which can trick the Hololens into that the layout of the room has changed). AR
+          Presenter utilizes a sharing experience revolving
+          around a local wireless router packaged with the system, married to a single shared anchor placed when the
+          presentation is started. This ensures a usable
+          shared experience even in crowded venue spaces.</li>
+      </ul>
       </p>
 
       </p>
@@ -473,7 +518,7 @@
         Analysis, mockups of the primary views in the
         application, and both a short-term plan (to develop an initial prototype), and a long-term plan (to develop
         secondary features an an ecoysystem of AR content).
-        <br>
+        <br><br>
         The client was overall pleased with the AR Presenter concept, and authorized the creation of an initial
         prototype.
         The client also provided additional Feedback
@@ -506,9 +551,10 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/FE_Internship/arp_process_flow.PNG" class="figure" data-toggle="lightbox"
+          data-footer="Sample of AR Presenter Process Flow Diagram.">
             <img src="/assets/FE_Internship/arp_process_flow.PNG"
-              alt="Photo showing personas setup near Sainy's workspace at Fast Effect" class="img-fluid">
+              alt="Sample of AR Presenter Process Flow Diagram." class="img-fluid">
             <figcaption class="figure-caption text-center">Sample of AR Presenter Process Flow Diagram.</figcaption>
           </figure>
         </div>
@@ -521,31 +567,44 @@
       </p>
 
       <ul>
-        <li>I developed the high-level logic for the custom network messages functionality that would allow the presenter 
-          Hololens to send messages to the presentee Hololens.  These messages were required to ensure that the presentees would see
+        <li>I developed the high-level logic for the custom network messages functionality that would allow the
+          presenter
+          Hololens to send messages to the presentee Hololens. These messages were required to ensure that the
+          presentees would see
           presenter changes in real-time.
         </li>
-        <li>I implemented voice chat functionality, based on code examples from the Microsoft Hololens team.  This functionality
-          would allow presenters to deal with loud trade show environments by being able to send their voice directly to the presentee Hololens.
+        <li>I implemented voice chat functionality, based on code examples from the Microsoft Hololens team. This
+          functionality
+          would allow presenters to deal with loud trade show environments by being able to send their voice directly to
+          the presentee Hololens.
         </li>
-        <li>I assisted the primary programmer on the implementation of the Sharing service.  This service, again based on Microsoft code, would allow the 
-          presenter to place and run their presentation at a specified location in the physical environment.  The primary challenge here was actually stripping
-          functionality out of the Sharing service. The service normally scans a physical environment repeatedly in order to maintain and update
-          its understanding, but our stakeholder analysis had revealed that this repeated scanning caused problems in a highly-trafficed environment.  We wanted 
-          the Sharing service to scan the room only once (at the beginning of the session) and to forgot all physical environment data between presentations.
+        <li>I assisted the primary programmer on the implementation of the Sharing service. This service, again based on
+          Microsoft code, would allow the
+          presenter to place and run their presentation at a specified location in the physical environment. The primary
+          challenge here was actually stripping
+          functionality out of the Sharing service. The service normally scans a physical environment repeatedly in
+          order to maintain and update
+          its understanding, but our stakeholder analysis had revealed that this repeated scanning caused problems in a
+          highly-trafficed environment. We wanted
+          the Sharing service to scan the room only once (at the beginning of the session) and to forgot all physical
+          environment data between presentations.
         </li>
       </ul>
 
       <div class="row">
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/FE_Internship/sprint_custom_message.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Working with our developer on the logic for the custom
+          messages">
             <img src="/assets/FE_Internship/sprint_custom_message.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Working with our developer on the logic for the custom
               messages</figcaption>
           </figure>
         </div>
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/FE_Internship/sprint_unity_sharing_services.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Me working out the deeper logic for how the presentee
+          Hololenses should react to messages from the presenter.">
             <img src="/assets/FE_Internship/sprint_unity_sharing_services.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Me working out the deeper logic for how the presentee
               Hololenses should react to messages from the presenter.</figcaption>
@@ -555,15 +614,19 @@
 
 
       <h3> Client Demo</h3>
-      <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo.  We walked the client through our demo scenario and collected additional feedback.
-        We did have to babysit the sharing function a bit by clearing out the room data one last time, but our client was able to walk through the saved presentation, trigger an interaction on a 
-      car model, and hear each other through the voice chat functionality.  </p>
+      <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo. We walked
+        the client through our demo scenario and collected additional feedback.
+        We did have to babysit the sharing function a bit by clearing out the room data one last time, but our client
+        was able to walk through the saved presentation, trigger an interaction on a
+        car model, and hear each other through the voice chat functionality. </p>
 
 
       <h2>Final Steps</h2>
-      <p>Based on the success of the demo, our client authorized the creation of a full Version 1 of AR Presenter.  With that, I had achieved the overall
-        goal of my appointment at Fast Effect.  I left my employers with a project plan for managing the deployment of the rest of the feature set initially
-      envisioned for AR Presenter.     </p>
+      <p>Based on the success of the demo, our client authorized the creation of a full Version 1 of AR Presenter. With
+        that, I had achieved the overall
+        goal of my appointment at Fast Effect. I left my employers with a project plan for managing the deployment of
+        the rest of the feature set initially
+        envisioned for AR Presenter. </p>
 
 
     </div>

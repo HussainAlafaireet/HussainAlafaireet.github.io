@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css"
-    href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <title>
-    Sainy Alafaireet's Portfolio Website
-  </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
-  </script>
-</head>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+          href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+        <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <!--Lightbox CSS from Ekko Lightbox-->
+        <link rel="stylesheet" href="/css/main.css">
+        <title>
+          Sainy Alafaireet's Portfolio Website
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+          integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+          integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+          //lightbox javascript from Ekko Lightbox
+        </script>
+      
+        <script>
+          $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({alwaysShowClose: true,});
+          });
+        </script>
+      </head>
 
 <body>
   <main class="container">
@@ -47,7 +60,9 @@
                     <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
                     <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
                     <a class="dropdown-item" href="/Projects/VR_Diorama.html">VR Diorama Prototyping Tool *In-Progress*</a>
-                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming Soon*</a>
+                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming
+                      Soon*</a>
+                      <a class="dropdown-item" href="/Projects/litreflect.html">VR/AR Literature Reflections *In Progress*</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/aboutme.html">About Me</a>
@@ -56,11 +71,11 @@
                   <a class="nav-link" href="/resume.html">Resume</a>
                 </li>
                 <!--<li class="nav-item">
-                  <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
-                </li>-->
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
               </ul>
             </div>
           </nav>
@@ -98,13 +113,13 @@
 
       <h2>Problem to be Solved - How Can We Make AR Controllable on the Web?</h2>
       <p>Cascading Style Sheets (CSS) are used today to control the overall
-      look and feel of webpages. However, in thinking about the concept of an XR Browser, it becomes obvious that
-      today's CSS
-      specifications dont cover the use of AR content integrated into the Web. For web programmers to integrate and
-      control AR content using their
-      existing skillsets, the CSS specifications need to be extended to cover AR. My goal for this project was to
-      develop a vision of how this new specification
-      would function.</p>
+        look and feel of webpages. However, in thinking about the concept of an XR Browser, it becomes obvious that
+        today's CSS
+        specifications dont cover the use of AR content integrated into the Web. For web programmers to integrate and
+        control AR content using their
+        existing skillsets, the CSS specifications need to be extended to cover AR. My goal for this project was to
+        develop a vision of how this new specification
+        would function.</p>
       <h2>Brainstorming - Building the Walls of the Room Model </h2>
       <h3>The AR Cube - How do we control individual pieces of AR content?</h3>
       <p>My first step was to look at pre-existing work in the space of AR layout control, and beging brainstorming
@@ -118,14 +133,17 @@
 
       <div class="row">
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/rm_cube_01.jpg" class="figure" data-toggle="lightbox"
+            data-footer="The Anchor model that acted as the basis of the Room Model">
             <img src="/assets/RoomModel/rm_cube_01.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">The Anchor model that acted as the basis of the Room Model
             </figcaption>
           </figure>
         </div>
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/rm_cube_02.jpg" class="figure" data-toggle="lightbox"
+          data-footer="An expanded sketch of the Anchor Model, with styling
+          discussion. ">
             <img src="/assets/RoomModel/rm_cube_02.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">An expanded sketch of the Anchor Model, with styling
               discussion. </figcaption>
@@ -173,7 +191,9 @@
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8">
-            <figure class="figure">
+            <figure href="/assets/RoomModel/window_sketch.jpg" class="figure" data-toggle="lightbox"
+            data-footer="Brainstorming sketch of the “Window” anchor type, and what
+            kinds of styling options it might have.">
               <img src="/assets/RoomModel/window_sketch.jpg" alt="" class="img-fluid">
               <figcaption class="figure-caption text-center">Brainstorming sketch of the “Window” anchor type, and what
                 kinds of styling options it might have.</figcaption>
@@ -238,7 +258,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/css_prototype-01.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Room Model - Initial Object Scan">
             <img src="/assets/RoomModel/css_prototype-01.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Room Model - Initial Object Scan</figcaption>
           </figure>
@@ -254,7 +275,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/css_prototype-02.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Room Model - Establishing a Room">
             <img src="/assets/RoomModel/css_prototype-02.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Room Model - Establishing a Room</figcaption>
           </figure>
@@ -270,7 +292,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/css_prototype-03.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Room Model - Detecting Possible Anchor Points">
             <img src="/assets/RoomModel/css_prototype-03.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Room Model - Detecting Possible Anchor Points</figcaption>
           </figure>
@@ -287,7 +310,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/RoomModel/css_prototype-04.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Room Model - Established Room with Anchor Points Identified">
             <img src="/assets/RoomModel/css_prototype-04.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Room Model - Established Room with Anchor Points Identified
             </figcaption>
@@ -468,9 +492,11 @@
           <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-              <figure class="figure">
+              <figure href="/assets/RoomModel/corecssmockup.PNG" class="figure" data-toggle="lightbox"
+              data-footer="Example CSS Mockup code for the core definition of a
+              Physic Model AR Object">
                 <img src="/assets/RoomModel/corecssmockup.PNG" alt="" class="img-fluid">
-                <figcaption class="figure-caption text-center">Example CSS Mockup code for the core definintion of a
+                <figcaption class="figure-caption text-center">Example CSS Mockup code for the core definition of a
                   Physic Model AR Object</figcaption>
               </figure>
             </div>
@@ -531,7 +557,8 @@
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8">
-            <figure class="figure">
+            <figure href="/assets/RoomModel/ceilingcssmockup.PNG" class="figure" data-toggle="lightbox"
+            data-footer="Example CSS Mockup code for the AnchorType CSS property.">
               <img src="/assets/RoomModel/ceilingcssmockup.PNG" alt="" class="img-fluid">
               <figcaption class="figure-caption text-center">Example CSS Mockup code for the AnchorType CSS property.
               </figcaption>
@@ -567,7 +594,8 @@
 
       <h2>Final Steps</h2>
       <p>
-        The results of this project were presented to my primary academic stakeholder, and will be used as the basis for further research
+        The results of this project were presented to my primary academic stakeholder, and will be used as the basis for
+        further research
         into the future of the XR Browser.
 
 

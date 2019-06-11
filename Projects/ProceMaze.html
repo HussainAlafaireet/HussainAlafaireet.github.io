@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css"
-    href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <title>
-    Sainy Alafaireet's Portfolio Website
-  </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
-  </script>
-</head>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+          href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+        <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+        <!--Lightbox CSS from Ekko Lightbox-->
+        <link rel="stylesheet" href="/css/main.css">
+        <title>
+          Sainy Alafaireet's Portfolio Website
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+          integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+          integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+          //lightbox javascript from Ekko Lightbox
+        </script>
+      
+        <script>
+          $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({alwaysShowClose: true,});
+          });
+        </script>
+      </head>
 
 <body>
   <main class="container">
@@ -47,7 +60,9 @@
                     <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
                     <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
                     <a class="dropdown-item" href="/Projects/VR_Diorama.html">VR Diorama Prototyping Tool *In-Progress*</a>
-                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming Soon*</a>
+                    <a class="dropdown-item" href="/Projects/Garden_Portfolio.html">Zen Garden VR Portfolio *Coming
+                      Soon*</a>
+                      <a class="dropdown-item" href="/Projects/litreflect.html">VR/AR Literature Reflections *In Progress*</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/aboutme.html">About Me</a>
@@ -56,11 +71,11 @@
                   <a class="nav-link" href="/resume.html">Resume</a>
                 </li>
                 <!--<li class="nav-item">
-                  <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
-                </li>-->
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
               </ul>
             </div>
           </nav>
@@ -136,7 +151,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/ProcMaz/pmaze_initial_scoping.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Brainstorming the initial scope for the Maze experience.">
             <img src="/assets/ProcMaz/pmaze_initial_scoping.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Brainstorming the initial scope for the Maze experience.
             </figcaption>
@@ -184,14 +200,16 @@
             <br>
             <div class="row">
               <div class="col-6">
-                <figure class="figure">
+                <figure href="/assets/ProcMaz/european_inspiration.png" class="figure" data-toggle="lightbox"
+                data-footer="Reference Images for European supernatural theme.">
                   <img src="/assets/ProcMaz/european_inspiration.png" alt="" class="img-fluid">
                   <figcaption class="figure-caption text-center">Reference Images for European supernatural theme.
                   </figcaption>
                 </figure>
               </div>
               <div class="col-6">
-                <figure class="figure">
+                <figure href="/assets/ProcMaz/japanese_inspiration.png" class="figure" data-toggle="lightbox"
+                data-footer="Reference Images for Japanese supernatural theme.">
                   <img src="/assets/ProcMaz/japanese_inspiration.png" alt="" class="img-fluid">
                   <figcaption class="figure-caption text-center">Reference Images for Japanese supernatural theme.
                   </figcaption>
@@ -249,7 +267,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/ProcMaz/p_initial clues.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Brainstorming Clue System">
             <img src="/assets/ProcMaz/p_initial clues.jpg" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Brainstorming Clue System
             </figcaption>
@@ -277,7 +296,8 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <figure class="figure">
+          <figure href="/assets/ProcMaz/proc_maze_lantern_shot.PNG" class="figure" data-toggle="lightbox"
+          data-footer="Initial Lantern Prefab">
             <img src="/assets/ProcMaz/proc_maze_lantern_shot.PNG" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Initial Lantern Prefab
             </figcaption>
@@ -299,14 +319,16 @@
 
       <div class="row">
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/ProcMaz/proc_maze_mask_shot.PNG" class="figure" data-toggle="lightbox"
+          data-footer="Japanese Mask used as wall ornament.">
             <img src="/assets/ProcMaz/proc_maze_mask_shot.PNG" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Japanese Mask used as wall ornament.
             </figcaption>
           </figure>
         </div>
         <div class="col-6">
-          <figure class="figure">
+          <figure href="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" class="figure" data-toggle="lightbox"
+          data-footer="Japanese Mask added to lantern as clue indicator.">
             <img src="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Japanese Mask added to lantern as clue indicator.
             </figcaption>
@@ -338,7 +360,9 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <figure class="figure">
+          <figure  href="/assets/ProcMaz/proc_maze_bfs_path.PNG" class="figure" data-toggle="lightbox"
+          data-footer="Overhead view and POV view of BFS-marked tiles leading to the
+          end tile.">
             <img src="/assets/ProcMaz/proc_maze_bfs_path.PNG" alt="" class="img-fluid">
             <figcaption class="figure-caption text-center">Overhead view and POV view of BFS-marked tiles leading to the
               end tile.
