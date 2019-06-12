@@ -15,6 +15,10 @@ h1 ,.navbar-light .navbar-brand, a h5{
   color: #415071;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 h2 h3 h4 h5 {
   font-family: 'Oxygen', sans-serif;
 }
