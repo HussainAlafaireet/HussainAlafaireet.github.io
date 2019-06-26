@@ -9,7 +9,7 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-h1 ,.navbar-light .navbar-brand, a h5{
+h1 ,.navbar-light .navbar-brand, a h5, lead strong{
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
   color: #415071;
@@ -23,7 +23,7 @@ h2 h3 h4 h5 h6 {
   font-family: 'Oxygen', sans-serif;
 }
 
-strong,.card-text,h3  {
+strong,.card-text,h3,  {
   color: #415071;
 }
 
