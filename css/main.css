@@ -23,7 +23,11 @@ h2 h3 h4 h5 h6 {
   font-family: 'Oxygen', sans-serif;
 }
 
-strong,.card-text,h3,  {
+strong,.card-text,h3  {
+  color: #415071;
+}
+
+h3 {
   color: #415071;
 }
 
@@ -158,4 +162,27 @@ figure:hover {
 .embed-responsive {
   margin: 2em;
 
+}
+
+.btn-outline-primary{
+  border-color:#415071;
+  color:black;
+}
+
+.btn-outline-primary:hover{
+  background-color:#415071;
+  border-color:#415071;
+}
+
+.callout { 
+  border-left: thick solid #415071;
+  border-left-width:4px;
+  padding: 5px;
+  height:40px;
+}
+
+.callout blockquote {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
 }
