@@ -50,9 +50,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Projects
               </a>
@@ -84,9 +84,9 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col-9">
-        <figure href="/assets/FE_Internship/ar_presenter_venue_view.png" class="figure" data-toggle="lightbox"
+        <figure href="/assets/FE_Internship/ar_pres_screenshot4.png" class="figure" data-toggle="lightbox"
           data-footer="AR Presenter Prototype - Venue View">
-          <img src="/assets/FE_Internship/ar_presenter_venue_view.png"
+          <img src="/assets/FE_Internship/ar_pres_screenshot4.png"
             alt="Concept Shot of AR Presenter - Tech Show presenter wearing a Hololens controls an AR presentation, while attendees wearing their own Hololens view the holograms the presenter is controlling"
             class="img-fluid">
           <figcaption class="figure-caption text-center"></figcaption>
@@ -159,14 +159,9 @@
     <a name="process"></a>
     <h2 class="text-center">Process</h2>
 
-
-    <br>
-
     <div class="callout">
       <blockquote>The typical AR app performs badly in the trade show environment.</blockquote>
     </div>
-
-    <br>
 
     <p>I worked on behalf of Fast Effect with one of their pre-existing clients, a car technology manufacturer in the
       Detroit, MI area. The client had multiple Hololens wireless AR headsets, and had previously tried to perform
@@ -190,9 +185,20 @@
 
 
 
-    <h2 class="text-center">Stakeholder Analysis - What do you REALLY want?</h2>
+   
+    <br>
+
+  
+
+
     <p>
-      <h3 class="text-center">Stakeholder Interviews</h3>
+      <h3>Stakeholder Interviews</h3>
+
+      <div class="callout">
+          <blockquote>The client needed an AR app that was visitor-friendly, easy to maintain, and venue-agnostic.
+          </blockquote>
+        </div>
+
       In order to understand the previous app history and it's corresponding effect on the stakeholder desires for a new
       app, I conducted a set of
       semi-structured stakeholder interviews. I interviewed the heads of the two client departments using the previous
@@ -200,8 +206,6 @@
       With permission from the client, the interview's audio was recorded.
       <br>
       <br>
-
-      <h3 class="text-center">Interview Analysis</h3>
 
       Once the interviews were complete, I introduced Fast Effect to the concepts of <strong>interpretation
         sessions</strong>
@@ -238,167 +242,100 @@
 
       <div class="row">
         <div class="col-6">
-            <h4><small>A controlled, easy-to-use experience was paramount for the client AR app</small></h4>
-            <ul>
-              <li>The client's end users had minimal AR app experience.</li>
-              <li>High vistor throughput left no time to train even basic app use.</li>
-            </ul>
-            
-            
-            
+          <h4><small>A controlled, easy-to-use experience was paramount for the client AR app</small></h4>
+          <ul>
+            <li>The client's end users had minimal AR app experience.</li>
+            <li>High visitor throughput left no time to train even basic app use.</li>
+          </ul>
+
+
+
+
         </div>
         <div class="col-6">
-            <h4><small>The client app needed to be a setup-free application that has minimal environment
-                requirements:</small></h4>
-                <ul>
-                    <li>Trade shoe environment presents many techinal issues for Hololens apps
-                      <ul>
-                      <li>Poor lighting</li>
-                      <li>Limited Wireless Access</li>
-                      <li>Traffic flow disrupting spatial tracking</li>
-                    </ul>
-                    </li>
-                    
-                  <li>Client reps running the app had minimal end-user Hololens expertise.</li>
-                  
-                </ul>
+          <h4><small>The client app needed to be a setup-free application that has minimal environment
+              requirements:</small></h4>
+          <ul>
+            <li>Trade show environment presents techinal issues for Hololens apps
+              <ul>
+                <li>Poor lighting</li>
+                <li>Limited Wireless Access</li>
+                <li>Traffic flow disrupting spatial tracking</li>
+              </ul>
+            </li>
+
+            <li>Client reps don't have the expertise to troubleshoot such challenges</li>
+
+          </ul>
         </div>
       </div>
 
       <div class="row">
-          <div class="col-6">
-              <h4><small>The client has a variety of use cases for AR/VR tech as a whole, with some use cases more
-              developed
-              than
-              others:</small></h4>This insights relates to the various views within the client organization regarding AR
-            technology. The marketings and outreach
-            departments were already onboard with the use of AR technology as a method of promoting the client
-            organization
-            as a technology company first, and a manufacturing
-            one second. However, many of the technical subject matter experts within the company, whose expertise would
-            eventually be provide product specifications, had significant
-            reservations about the use of AR. Fast Effect needed to be aware of these internal pressures as it built the
-            application.
-          </div>
-          <div class="col-6">
-              <strong>The client app should be composed of parts that can be put together to tell an overall
-                  story:</strong>Throughout the entire
-                stakeholder interview, the concept of a narrative was a central thread. This need manefisted itself in
-                several
-                ways. The client wanted to portray itself as forward-thinking, and wanted to use
-                AR technology to "wow and dazzle" those who didn't know much about the client. The selection of the Hololens
-                as
-                a platform was built on this basis, as it boasted a futuristic-looking design, was not tethered, and was not
-                isolating. However, the client did want the capability to create multiple narratives. During the interview,
-                we
-                provided the intial suggestion of "building" a presentation
-                out of "parts", similar to how a car is constructed. The client took an immediate liking to this idea, even
-                suggest a particular upcoming car
-                technology system that could be used to prototype the modular approach.</li>
-          </div>
+        <div class="col-6">
+          <h4><small>The client had a variety of use cases for AR/VR tech</small></h4>
+          <p>
+
+          </p>
+          <ul>
+            <li>Company was in an image transition from traditional manufacturing to technology firm.</li>
+            <li>AR used for both technical product demonstration and general educational outreach.</li>
+            <li>Client technical experts skeptical about the use of AR.</li>
+          </ul>
+
+
         </div>
-      
+        <div class="col-6">
+          <h4><small>The client app should be composed of parts that can be put together to tell an overall
+              story:</small></h4>
+          <ul>
+            <li> client wanted to portray itself as forward-thinking and wanted to use
+            </li>
+            <li>Client want AR technology to "wow and dazzle" visitors</li>
+            <li>Client was positive to the notion of "building" a presentation out of "car parts"</li>
+          </ul>
+        </div>
+      </div>
 
-      
 
-      Once the notes were completed, I lead the technical team in the creation of an affinity wall. From this affinity
-      wall, we
-      derived <strong>4 design principles</strong> that guided the entire project from that point:
-      <ol>
-        <li><strong>A controlled, easy-to-use experience was paramount for the client AR app:</strong>
-          The interviews revealed the previous AR app, while designed for trade/tech shows, had been repurposed as an
-          outreach solution for
-          student recruitment. This lead to the prospect that the new AR app would need to support a wide user base
-          who
-          possesed varying levels
-          of AR expertise. In addition, both the tech show and outreach environments required high vistor throughput,
-          which didn't leave time for even basic
-          vistor training on app use. To navigate this client base, the application would need to be simple for the
-          end-user to navigate, and highly-controllably by the client
-          in order to guaruntee a controlled, positive experience.
-        </li>
-        <li><strong>The client app should be a setup-free application that has minimal environment
-            requirements:</strong>The primary point for this insight was that the client had virtually no in-house
-          expertise in maintaining
-          Hololens applications. Fast Effect had previously handled all aspects of deployment and maintenance during
-          the
-          initial AR app deployment,
-          ,but the client had then used the app on its own, encountering multiple technical challenges, such poor
-          lighting
-          conditions, limited wireless access, and disrupted spatial tracking. Any solution we developed
-          would need to ensure that the client could negotiate these challenges with minimal expertise.</li>
-        <li><strong>The client has a variety of use cases for AR/VR tech as a whole, with some use cases more
-            developed
-            than
-            others:</strong>This insights relates to the various views within the client organization regarding AR
-          technology. The marketings and outreach
-          departments were already onboard with the use of AR technology as a method of promoting the client
-          organization
-          as a technology company first, and a manufacturing
-          one second. However, many of the technical subject matter experts within the company, whose expertise would
-          eventually be provide product specifications, had significant
-          reservations about the use of AR. Fast Effect needed to be aware of these internal pressures as it built the
-          application.</li>
-        <li><strong>The client app should be composed of parts that can be put together to tell an overall
-            story:</strong>Throughout the entire
-          stakeholder interview, the concept of a narrative was a central thread. This need manefisted itself in
-          several
-          ways. The client wanted to portray itself as forward-thinking, and wanted to use
-          AR technology to "wow and dazzle" those who didn't know much about the client. The selection of the Hololens
-          as
-          a platform was built on this basis, as it boasted a futuristic-looking design, was not tethered, and was not
-          isolating. However, the client did want the capability to create multiple narratives. During the interview,
-          we
-          provided the intial suggestion of "building" a presentation
-          out of "parts", similar to how a car is constructed. The client took an immediate liking to this idea, even
-          suggest a particular upcoming car
-          technology system that could be used to prototype the modular approach.</li>
-      </ol>
+
+
 
       <br>
-      Based on these insights, I developed four further recommendations to additional guide further design and
+      Based on these insights, I developed four further recommendations to additionally guide further design and
       development:
       <br>
       <br>
-      <ol>
-        <li><strong>Use only proven AR tracking technologies and avoid approaches that require the use of room-wide
-            spacial
-            mapping:</strong> The stakeholders revealed that we could not count on our client having access to a
-          pre-defined, well-lit, stable venue environment to run a Hololens solution in. Based on this, we knew not to
-          rely on
-          room-wide spatial scans to trigger AR content. Instead, we knew to use Image and Model Targets as our
-          primary
-          triggers, or possibly some local, temporary location spatial anchors at certain specified locations.</li>
-        <li><strong>Avoid targeting specific show venue designs, and instead develop generic solutions that work in
-            either
-            desktop or wall-mounted modes:</strong> This was another recommendation based on the lack of defined,
-          stable
-          venues for the client app to run in. I recommended following up with the client to determine a minimum
-          amount of
-          desk and wall-mounted space to support an app environment, and then build packaged versions of the app to
-          target
-          those sizes.</li>
-        <li><strong>Further with the client to come up with a distinct target audience and a coherent
-            message:</strong>As
-          revealed by Insight #3, our client did not have an overall vision for its use of AR/VR tech, even within the
-          public awareness sphere. One of the primary risks for the project is trying to satisfy so many potential
-          stakeholders at the client organization that we wouldn't satisfy any of them to an acceptable degree. I
-          recommended that we work further with the client to define a tight message and limited target user scope for
-          the
-          initial application.</li>
-        <li><strong>Build a modular storytelling approach into the upcoming app.</strong> While we could, and should
-          limit
-          the scope of the message and target audience for the application this summer, that does not mean we couldn't
-          think ahead to some degree for future messaging and purpose. I recommended building a generic data structure
-          backend that allows us to associate individual modules with a larger story. This data structure could then
-          be
-          adapted to serve other client needs at a rapid pace.</li>
-      </ol>
+
+      <div class="row">
+        <div class="col-6">
+          <h4><small>Use only proven AR tracking technologies, and avoid room-wide
+              spacial
+              mapping:</small></h4>
+        </div>
+        <div class="col-6">
+          <h4><small>Avoid as many assumptions about venue format as possible, and build adaptability into the
+              design</small></h4>
+        </div>
+      </div>
 
 
+      <div class="row">
+        <div class="col-6">
+          <h4><small>Tailor the initial prototype to a specific client message</small></h4>
+        </div>
+        <div class="col-6">
+          <h4><small>Build a modular storytelling approach into the app.</small></h4>
+        </div>
+      </div>
 
-    </p>
-    <h2>Ideation and Interaction Design</h2>
+    <br>
+    <h2 class="text-center">Ideation</h2>
+
+    <div class="callout">
+      <blockquote>User-Centered Brainstorming + Compelling Team Ownership = Design Success.</blockquote>
+    </div>
+
+
     <h3>Persona Development</h3>
     <p>Now that we had our initial set of application criteria completed, it was time to start ideating to determine
       the
@@ -436,6 +373,9 @@
 
     <h3>Brainstorming</h3>
 
+
+
+
     <p>After persona development, I once again gathered the technical team and facilitated a brainstormed session. The
       first phase
       of the session was completely free-form, with the intent to generate as many ideas as possible, without
@@ -471,7 +411,14 @@
     <br>
 
 
-    <h3>Interaction Design</h3>
+    <h2 class="text-center">Design </h2>
+    
+    <div class="callout">
+      <blockquote>The final design was a modular presentation app, with powerful, adaptive storytelling front and
+        center.</blockquote>
+    </div>
+    
+    <h3 class="text-center">Interaction Design</h3>
     <p>
       Thanks to the brainstorming, we had a solid initial idea, but we didn't have enough specifics to go to the
       client. I
@@ -594,45 +541,139 @@
 
 
 
-    <h4>AR Presenter Features</h4>
-    <ul>
-      <li><strong>Adaptive Location Selection: </strong>In order to navigate a potentially confusing trade/tech show
-        environment, the presenter has the option
-        of placing a "marker" hologram to designate the physical location that best suits the presentation at hand.
-      </li>
-      <li><strong>Controlled Presenter Experience: </strong>While in presentation mode, the presenter has full
-        control
-        over the experience,
-        with the ability to switch between pieces of AR content, and the ability to trigger specific interactions on
-        them, which are then reflected in the presentee view in real-time.</li>
-      <li><strong>Voice Chat </strong>Trade and Tech Show environments can be quite loud. AR Presenter implements
-        voice chat through the
-        Hololens microphone and speaker system to compenesate for the noise.</li>
-      <li><strong>Standalone Mode: </strong>In situations where a presenter isn't available, presentations can be
-        run
-        in
-        a "standalone" mode, with presentees able to use
-        simplified versions of the presenter controls to walk through the experience.</li>
-      <li><strong>"Parts" Ecosystem: </strong>The presentation system is modular. The AR Presenteer app has a
-        dedicated
-        mode for building presentations, utilizing a library
-        of AR content that can be expanded as needed.</li>
-      <li><strong>"Safe" Shared Experience Environment: </strong>Many trade show and other outreach environments has
-        factors that interfere
-        with the shared experiences as originally envisoned by Microsoft. Room scanning is disrupted by abrupt
-        changes
-        in venue space, poor lighting,
-        or simply high traffic flow (which can trick the Hololens into that the layout of the room has changed). AR
-        Presenter utilizes a sharing experience revolving
-        around a local wireless router packaged with the system, married to a single shared anchor placed when the
-        presentation is started. This ensures a usable
-        shared experience even in crowded venue spaces.</li>
-    </ul>
-    </p>
+    <h4 class="text-center">Proposed AR Presenter Features</h4>
 
-    </p>
+    <div class="row">
+      <div class="col-4">
+        <h5>Adaptive Location Selection</h5>
+        <p>In order to navigate a potentially confusing trade/tech show
+          environment, the presenter has the option
+          of placing a "marker" hologram to designate the physical location that best suits the presentation at hand.
+        </p>
+      </div>
+      <div class="col-4">
+        <h5>Controlled Presenter Experience</h5>
+        <p>While in presentation mode, the presenter has full
+          control
+          over the experience,
+          with the ability to switch between pieces of AR content, and the ability to trigger specific interactions on
+          them, which are then reflected in the presentee view in real-time.</p>
+      </div>
+      <div class="col-4">
+        <h5>Voice Chat</h5>
+        <p>Trade and Tech Show environments can be quite loud. AR Presenter implements
+          voice chat through the
+          Hololens microphone and speaker system to compenesate for the noise.</p>
+      </div>
+    </div>
 
-    <h3>Client Pitch and Feedback</h3>
+    <div class="row">
+      <div class="col-4">
+        <h5>Standalone Mode</h5>
+        <p>In situations where a presenter isn't available, presentations can be
+          run
+          in
+          a "standalone" mode, with presentees able to use
+          simplified versions of the presenter controls to walk through the experience.</p>
+      </div>
+      <div class="col-4">
+        <h5>"Parts" Ecosystem</h5>
+        <p>The presentation system is modular. The AR Presenteer app has a
+          dedicated
+          mode for building presentations, utilizing a library
+          of AR content that can be expanded as needed.</p>
+      </div>
+      <div class="col-4">
+        <h5>"Safe" Shared Experience Environment</h5>
+        <p> AR Presenter utilizes a sharing experience revolving
+          around a local wireless router packaged with the system, married to a single shared anchor placed when the
+          presentation is started. This ensures a usable
+          shared experience even in crowded venue spaces with poor lighting conditions.</p>
+      </div>
+    </div>
+
+
+
+    <h3 class="text-center">Lo-Fi Prototyping</h3>
+
+    To clarify the vision of AR Presenter to our client, I developed a series of lo-fi Photoshop shots for use in a
+    client pitch presentation. These shots,
+    while still preliminary, created a clear, compelling view of AR Presenter and it's primary features.
+
+
+
+
+    <p></p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-4">
+            <figure href="/assets/FE_Internship/ar_presenter_venue_view.PNG" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_presenter_venue_view.PNG"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure href="/assets/FE_Internship/ar_presenter_presenter_view.PNG" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_presenter_presenter_view.PNG"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure href="/assets/FE_Internship/ar_presenter_attendee_view.PNG" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_presenter_attendee_view.PNG"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+              <figure href="/assets/FE_Internship/ar_presenter_standalone_view.PNG" class="figure"
+                data-toggle="lightbox" data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_presenter_standalone_view.PNG"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-4">
+              <figure href="/assets/FE_Internship/ar_presenter_parts_view.PNG" class="figure" data-toggle="lightbox"
+                data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_presenter_parts_view.PNG"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h3 class="text-center">Client Pitch and Feedback</h3>
     <p>After the initial interaction design had been worked out, it was time to present the AR Presenter concept to
       the
       client.
@@ -646,20 +687,34 @@
       The client also provided additional Feedback
       on the concept, which was incorporated into the planning for the initial prototype.
     </p>
+    <br>
 
 
-    <h2>Development and Demo - Putting It All Together</h2>
+    <h2 class="text-center">Development and Demo</h2>
+    
+    <div class="callout">
+      <blockquote>We were able to develop a successful prototype in a minimal amount of time, thanks to the correct
+        design and strong team cohesion.</blockquote>
+    </div>
 
-    <h3>Prototyping Development Planning</h3>
+  
+
+
+
+
+
+    <h3 class="text-center">Prototyping Development Planning</h3>
     <p>My next task was to plan the development cycle for the intial AR prototype. We had committed to having the
-      prototype in two weeks. With help
-      from my company mentor, I developed plans for two one-week sprints. These sprints were broken down by functional
+      prototype in two weeks. I developed plans for two one-week sprints. These sprints were broken down by
+      functional
       area, with Graphic Design, Application Development, and 3-D Artist
       each receiving tasks. My role within the sprints was two-fold. I acted as overall project/design lead, with
       final
       say over any design decisions that needed to be made during the sprints.
       I also acted as a secondary application developer, assisting the primary developer on the creation of the core
-      application functinality.
+      application functionality.
+      <br>
+      <br>
 
       Once I had developed a plan, I held a kick-off meeting with the technical team to present the client feedback
       and
@@ -683,7 +738,7 @@
       <div class="col-2"></div>
     </div>
 
-    <h3>Development Sprints</h3>
+    <h3 class="text-center">Development Sprints</h3>
 
     <p>During the AR prototype development sprints, I contributed to the development code in the following areas:
     </p>
@@ -697,16 +752,20 @@
       </li>
       <li>I implemented voice chat functionality, based on code examples from the Microsoft Hololens team. This
         functionality
-        would allow presenters to deal with loud trade show environments by being able to send their voice directly to
+        would allow presenters to deal with loud trade show environments by being able to send their voice directly
+        to
         the presentee Hololens.
       </li>
-      <li>I assisted the primary programmer on the implementation of the Sharing service. This service, again based on
+      <li>I assisted the primary programmer on the implementation of the Sharing service. This service, again based
+        on
         Microsoft code, would allow the
-        presenter to place and run their presentation at a specified location in the physical environment. The primary
+        presenter to place and run their presentation at a specified location in the physical environment. The
+        primary
         challenge here was actually stripping
         functionality out of the Sharing service. The service normally scans a physical environment repeatedly in
         order to maintain and update
-        its understanding, but our stakeholder analysis had revealed that this repeated scanning caused problems in a
+        its understanding, but our stakeholder analysis had revealed that this repeated scanning caused problems in
+        a
         highly-trafficed environment. We wanted
         the Sharing service to scan the room only once (at the beginning of the session) and to forgot all physical
         environment data between presentations.
@@ -734,17 +793,81 @@
       </div>
     </div>
 
+
+    <h3 class="text-center"> Client Demo</h3>
     <a name="output"></a>
-    <h3> Client Demo</h3>
-    <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo. We walked
-      the client through our demo scenario and collected additional feedback.
-      We did have to babysit the sharing function a bit by clearing out the room data one last time, but our client
-      was able to walk through the saved presentation, trigger an interaction on a
-      car model, and hear each other through the voice chat functionality. </p>
+
+    <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo. We
+        walked
+        the client through our demo scenario and collected additional feedback.
+        We did have to babysit the sharing function a bit by clearing out the room data one last time, but our client
+        was able to walk through the saved presentation, trigger an interaction on a
+        car model, and hear each other through the voice chat functionality. </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-6">
+            <figure href="/assets/FE_Internship/ar_pres_screenshot1.png" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_pres_screenshot1.png"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+                Initial Presentation Menu, demoing hexogonal UI design and initial menu.
+              </figcaption>
+            </figure>
+          </div>
+            <div class="col-md-6">
+              <figure href="/assets/FE_Internship/ar_pres_screenshot2.png" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_pres_screenshot2.png"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+                  Demo of road scenario, with animation and UI highlights
+              </figcaption>
+            </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+            <figure href="/assets/FE_Internship/ar_pres_screenshot3.png" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_pres_screenshot3.png"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+                Close up demo of high-detail model, complete with animation.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure href="/assets/FE_Internship/ar_pres_screenshot4.png" class="figure" data-toggle="lightbox"
+              data-gallery="feprot-gallery"
+              data-footer="Initial app view, with hologram placement required to start the app proper">
+              <img src="/assets/FE_Internship/ar_pres_screenshot4.png"
+                alt="Initial app view, with hologram placement required to start the app proper"
+                class="img-fluid border border-secondary">
+              <figcaption class="figure-caption text-center">
+                Demo of the AR Presenter main control panel
+              </figcaption>
+            </figure>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
 
-    <h2>Final Steps</h2>
-    <p>Based on the success of the demo, our client authorized the creation of a full Version 1 of AR Presenter. With
+    <h2 class="text-center">Reflection and Final Steps</h2>
+    <p>Based on the success of the demo, our client authorized the creation of a full Version 1 of AR Presenter.
+      With
       that, I had achieved the overall
       goal of my appointment at Fast Effect. I left my employers with a project plan for managing the deployment of
       the rest of the feature set initially

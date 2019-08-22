@@ -9,7 +9,7 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-h1 ,.navbar-light .navbar-brand, a h5, lead strong{
+h1 ,.navbar-light .navbar-brand, a h5, lead strong, .nav-link{
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
   color: #415071;
@@ -164,6 +164,10 @@ figure:hover {
 
 }
 
+.bg-light {
+  background-color: #FFFF !important;
+}
+
 .btn-outline-primary{
   border-color:#415071;
   color:black;
@@ -179,6 +183,10 @@ figure:hover {
   border-left-width:4px;
   padding: 5px;
   height:100%;
+}
+
+.callout {
+  margin: 2rem;
 }
 
 .callout blockquote {
