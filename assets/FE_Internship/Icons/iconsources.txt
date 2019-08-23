@@ -1,0 +1,14 @@
+team icon:  https://www.flaticon.com/free-icon/team_476700#term=people%20group&page=1&position=3
+convention icon: https://www.flaticon.com/free-icon/convention_1607579#term=convention%20hall&page=1&position=5
+question icon:  https://www.flaticon.com/free-icon/question_809495#term=business%20people%20group&page=1&position=61
+speech icon: https://www.flaticon.com/free-icon/speech_1312656#term=story&page=1&position=64
+radar icon: https://www.flaticon.com/free-icon/radar_2034585#term=radar&page=1&position=10
+storyboard icon: https://www.flaticon.com/free-icon/storyboard_1229802#term=storyboard&page=1&position=11
+headquarters icon:  https://www.flaticon.com/free-icon/headquarter_1605420#term=building%20group&page=1&position=9
+interaction icon:  https://www.flaticon.com/free-icon/interaction_653790
+vr icon: https://www.flaticon.com/free-icon/vr_1793387#term=virtual%20reality%20glasses&page=1&position=69
+interactivity icon:  https://www.flaticon.com/free-icon/interactivity_764173#term=virtual%20reality&page=1&position=2
+headset icon: https://www.flaticon.com/free-icon/headset_71733#term=voice%20chat&page=1&position=4
+hologram icon:  https://www.flaticon.com/free-icon/hologram_1401983#term=virtual%20reality%20hologram&page=1&position=9
+control icon:  https://www.flaticon.com/free-icon/interaction_2041580#term=virtual%20reality%20technology&page=1&position=54
+
