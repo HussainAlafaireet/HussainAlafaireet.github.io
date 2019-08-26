@@ -11,4 +11,7 @@ interactivity icon:  https://www.flaticon.com/free-icon/interactivity_764173#ter
 headset icon: https://www.flaticon.com/free-icon/headset_71733#term=voice%20chat&page=1&position=4
 hologram icon:  https://www.flaticon.com/free-icon/hologram_1401983#term=virtual%20reality%20hologram&page=1&position=9
 control icon:  https://www.flaticon.com/free-icon/interaction_2041580#term=virtual%20reality%20technology&page=1&position=54
+verified icon:  https://www.flaticon.com/free-icon/verified_907830#term=check%20mark&page=1&position=4
+information icon:  https://www.flaticon.com/free-icon/information_906794#term=question%20mark&page=1&position=1
+
 

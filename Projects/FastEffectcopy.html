@@ -585,7 +585,7 @@
           <h5>Voice Chat</h5>
           <p>Trade and Tech Show environments can be quite loud. AR Presenter implements
             voice chat through the
-            Hololens microphone and speaker system to compenesate for the noise.</p>
+            Hololens microphone and speaker system to compensate for the noise.</p>
         </div>
       </div>
 
@@ -701,7 +701,7 @@
         I prepared a pitch presentation deck, which included the main insights we had learned from the Stakeholder
         Analysis, mockups of the primary views in the
         application, and both a short-term plan (to develop an initial prototype), and a long-term plan (to develop
-        secondary features an an ecoysystem of AR content).
+        secondary features an an ecosystem of AR content).
         <br><br>
         The client was overall pleased with the AR Presenter concept, and authorized the creation of an initial
         prototype.
@@ -802,7 +802,7 @@
           order to maintain and update
           its understanding, but our stakeholder analysis had revealed that this repeated scanning caused problems in
           a
-          highly-trafficed environment. We wanted
+          highly-trafficked environment. We wanted
           the Sharing service to scan the room only once (at the beginning of the session) and to forgot all physical
           environment data between presentations.
         </li>
@@ -835,10 +835,10 @@
 
       <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo. We
         walked
-        the client through our demo scenario and collected additional feedback.
-        We did have to babysit the sharing function by 1clearing out the room data one last time, but our client
-        was able to walk through the saved presentation, trigger an interaction on a
-        car model, and hear each other through the voice chat functionality. </p>
+        the client through our demo scenario and then allowed them to experiment with the menu system, voice chat, and shared AR object control.
+      
+        The client was pleased with the demo's capabilities, and authorized the creation of a full version of AR Presenter.
+      </p>
 
       <div class="row justify-content-center">
         <div class="col-md-10">
@@ -902,12 +902,102 @@
 
 
       <h2 class="text-center">Reflection and Final Steps</h2>
-      <p>Based on the success of the demo, our client authorized the creation of a full Version 1 of AR Presenter.
-        With
-        that, I had achieved the overall
-        goal of my appointment at Fast Effect. I left my employers with a project plan for managing the deployment of
-        the rest of the feature set initially
-        envisioned for AR Presenter. </p>
+      <p>
+        
+
+
+        <div class="callout">
+        <blockquote>The proof-of-concept demo sucessfully achieved the primary objective: securing funds for the full version of AR Presenter.</blockquote>
+      </div>
+        
+       However, even with this success, I still needed to assess the lessons learned from both the development and demonstration processes.  My analysis yielded the following insights:
+      
+       <br>
+       <br>
+      
+      <h3 class="text-center">What Worked Well</h3>
+      <br>
+
+      <div class="row">
+          <div class="col-4">
+            <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+            <h4 class="text-center"><small>Shared Presenter/Presentee Functionality</small></h4>
+            <p class="text-center">
+              The client was particularly impressed with the demo's ability to have the presenter's actions immediately reflect on the presentee hologram.
+              They quite clearly saw the power of AR Presenter as a controlled live experience.
+            </p>
+          </div>
+
+          <div class="col-4">
+              <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+              <h4 class="text-center"><small>Menu Design Offset and Sizing</small></h4>
+              <p class="text-center">
+                We had carefully sized the presentation controls to be easily usable via Hololens gestures, and placed the controls 
+                so that the user could easily turn right to see them, without having them obscure the presentation content.  Client feedback
+                on this arrangement was positive, confirming the correctness of the menu design.
+              </p>
+            </div>
+
+            <div class="col-4">
+                <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+                <h4 class="text-center"><small>"Wow and Dazzle" Visual Fidelity</small></h4>
+                <p class="text-center">
+                  The client was impressed by the immersive factor of our demo scenario, and was onboard with using AR Presenter to tell compelling narratives.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+
+            <h3 class="text-center">What Needed Improvement</h3>
+            <br>
+
+            <div class="row">
+                <div class="col-4">
+                  <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                  <h4 class="text-center"><small>Attention Direction</small></h4>
+                  <p class="text-center">
+                    The client had difficulty knowing precisely where in the road scenario they should be looking at a particular time.
+                    Future scenarios would need to be much more clear as to where the "action" was happening.
+                  </p>
+                </div>
+      
+                <div class="col-4">
+                    <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                    <h4 class="text-center"><small>Left-Handed Presenter Controls</small></h4>
+                    <p class="text-center">
+                      The client pointed out that left-handed users might be less comfortable with the right-positioned presentation controls.
+                      We would need to offer a left-aligned menu as an option.
+                    </p>
+                  </div>
+      
+                  <div class="col-4">
+                      <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                      <h4 class="text-center"><small>"Scalable Holograms"</small></h4>
+                      <p class="text-center">
+                        The client stated a desire to have the presentation holograms be scalable, so that they could be adapted to the presentation area in use.
+                      </p>
+                    </div>
+                  </div>
+
+      <br>
+      The final phase of my assignment was designing a project plan to govern the development of the full version of AR Presenter.  
+      I suggested the full version be broken down into 3 main phases:
+
+      <ol>
+        <li><strong>Phase 1:  Demo clean-up and full presentation scenario:  </strong> In this phase, Fast Effect would implement the Standalone Mode, the Scaleable Holograms, and the Left-Handed Presentation Controls features.
+        It would also work with the client to develop a full product demonstration scenario that the client could start using, even as the rest of the app was being developed.</li>
+        <li><strong>Phase 2:  Parts Ecosystem Proof of Concept: </strong> In this phase, Fast Effect would develop all of the backend code required to support the Part Ecosystem, as well as developing a set of AR objects to demostrate 
+        what this system could really do.</li>
+        <li><strong>Phase 3:  "Safe Shared Environment" Finalization and Final UI Adjustments</strong>In this phase, Fast Effect would finalize the local network functionality required for the Safe Shared Experience Environment feature, 
+        and would test this feature in an actual show venue.  Fast Effect would also use this phase to finalize any features that needed polish.</li>
+      </ol>
+
+      With this final deliverable, I had successfully completed my assignment.  Fast Effect and their client were well on 
+      their way to developing a cutting-edge AR experience together.
+
+      </p>
 
 
       <!--  </div> -->
