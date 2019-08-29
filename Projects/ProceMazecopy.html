@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <!--Lightbox CSS from Ekko Lightbox-->
+  <link rel="stylesheet" href="/css/main.css">
+  <title>
+    Sainy Alafaireet's Portfolio Website
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+    //lightbox javascript from Ekko Lightbox
+  </script>
+
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true,
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="/index.html">
+          Sainy Alafaireet
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/Projects/FastEffect.html">"AR Presenter" Prototype</a>
+                <a class="dropdown-item" href="/Projects/Lifeasagym.html">Life as a Gym AR Concept</a>
+                <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
+                <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/resume.html">Resume</a>
+            </li>
+            <!--<li class="nav-item">
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <figure href="/assets/ProcMaz/proc_maze_cover_shot.png" class="figure" data-toggle="lightbox"
+          data-footer="AR Presenter Prototype - Venue View">
+          <img src="/assets/ProcMaz/proc_maze_cover_shot.png"
+            alt="Concept Shot of AR Presenter - Tech Show presenter wearing a Hololens controls an AR presentation, while attendees wearing their own Hololens view the holograms the presenter is controlling"
+            class="img-fluid">
+          <figcaption class="figure-caption text-center"></figcaption>
+        </figure>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+
+    <h1 class="text-center">VR "Clues" Maze</h1>
+
+
+    <h2 class="text-center"><small>VR Attention Direction Within a Random Maze</small></h2>
+
+    <br>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <a class="btn btn-outline-primary" href="#process" role="button">View Process</a>
+        &nbsp;
+        <a class="btn btn-outline-primary" href="#output" role="button">View Final Output</a>
+      </div>
+      <div class="col-4"></div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <h2 class="text-center"><strong>Project Overview</strong></h2>
+
+
+
+
+    <div class=project-intro-box>
+      <p><strong>Role: </strong> UX Designer, Full-Stack Developer &nbsp;|&nbsp; <strong>Duration: </strong>4 Weeks
+        <br>
+        <strong>Tools Used: </strong>Unity Game Engine, SteamVR (for running the Maze on a VR headset)
+        <br>
+        <strong>UX Skills Used: </strong>VR Prototyping, Usability Testing, VR UX Design
+        <br>
+        <br>
+        <strong>Summary: </strong> Virtual Reality presents a unique challenge for immersive experiences, as the user has the freedom to look in all directions at any time.  This freedom makes it
+        possible for the user to be looking in the wrong place at the wrong time, and miss seeing key portions of the experience.  The VR Clues Maze is an experiment in directing attention within a VR maze.
+        The VR Clues Maze generates a unique layout every time the software is run.  Dynamically added clues are then added to subtly direct the user out of the maze.
+
+        <br>
+        <br>
+        <strong>My Contributions: </strong> As the AR Product Design Lead, <strong>I was the guiding light
+        </strong> behind the AR Presenter
+        prototype. I
+        conducted stakeholder research to determine the real user needs, generated the interaction design for
+        AR Presenter, and oversaw it's development cycle. Along the way, I introduced Fast Effect to the
+        Interpretation
+        Session and Affinity Wall user-centered design technique, as well as <strong>fostering an enhanced degree of
+          ownership
+          and
+          teamwork within an interdisciplinary development team. </strong>
+      </p>
+    </div>
+
+    <br>
+
+    <a name="process"></a>
+    <h2 class="text-center"><strong>Process</strong></h2>
+
+    <div class="callout">
+      <blockquote>The typical AR app performs badly in the trade show environment.</blockquote>
+    </div>
+
+    <p>I worked on behalf of Fast Effect with one of their pre-existing clients, a car technology manufacturer in the
+      Detroit, MI area. The client had multiple Hololens wireless AR headsets, and had previously tried to perform
+      product demonstrations with them
+      via an AR app. The client had not been satisfied with the overall expereince of this previous app, and the
+      Hololens had been underutilized ever since.
+      <br>
+      <br>
+      My task was to determine the reasons for the disatisfaction, understand where the client wanted to next head with
+      Augmented Reality, and design a solution for that new direction.
+
+      <br>
+      <br>
+      Here's the process I used to arrive at AR Presenter:
+    </p>
+
+
+
+    <img src="/assets/FE_Internship/freprocessmap.png" alt="" class="img-fluid">
+
+
+
+
+
+    <br>
+
+
+
+    <h2>Explore</h2>
+    <p>
+      <h3>Stakeholder Interviews</h3>
+
+      <div class="callout">
+        <blockquote>The client needed an AR app that was visitor-friendly, easy to maintain, and venue-agnostic.
+        </blockquote>
+      </div>
+
+      In order to understand the previous app history and it's corresponding effect on the stakeholder desires for a new
+      app, I conducted a set of
+      semi-structured stakeholder interviews. I interviewed the heads of the two client departments using the previous
+      app: The head of R&D marketing, and the head of community outreach.
+      With permission from the client, the interview's audio was recorded.
+      <br>
+      <br>
+
+
+      <h3>Previous App Review</h3>
+      <p>
+        The Fast Effect development team had also observed the previous client team in action, and their overall observations
+        overlapped significantly with the client observations.  In addition, the development team was able to provide technical explanations as to 
+        why the issues observed had actually occured.  This would be of great help when I began the design process for AR Presenter, as I was able to avoid these technical
+        challenges from the start.
+      </p>
+      <br>
+      <br>
+
+      
+
+      
+
+      <a name="output"></a>
+      <h2 class="text-center"><strong>Final Output</strong></h2>
+      
+      <h2>Demo</h2>
+
+      <br>
+      
+      <h3> Client Walkthrough</h3>
+
+      <p>At the end of the second week of sprints, we invited our two client stakeholders in to test our demo. We
+        walked
+        the client through our demo scenario and then allowed them to experiment with the menu system, voice chat, and shared AR object control.
+      
+        The client was pleased with the demo's capabilities, and authorized the creation of a full version of AR Presenter.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-6">
+              <figure href="/assets/FE_Internship/ar_pres_screenshot1.png" class="figure" data-toggle="lightbox"
+                data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_pres_screenshot1.png"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Initial Presentation Menu, demoing hexogonal UI design and initial menu.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure href="/assets/FE_Internship/ar_pres_screenshot2.png" class="figure" data-toggle="lightbox"
+                data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_pres_screenshot2.png"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Demo of road scenario, with animation and UI highlights
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <figure href="/assets/FE_Internship/ar_pres_screenshot3.png" class="figure" data-toggle="lightbox"
+                data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_pres_screenshot3.png"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Close up demo of high-detail model, complete with animation.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure href="/assets/FE_Internship/ar_pres_screenshot4.png" class="figure" data-toggle="lightbox"
+                data-gallery="feprot-gallery"
+                data-footer="Initial app view, with hologram placement required to start the app proper">
+                <img src="/assets/FE_Internship/ar_pres_screenshot4.png"
+                  alt="Initial app view, with hologram placement required to start the app proper"
+                  class="img-fluid border border-secondary">
+                <figcaption class="figure-caption text-center">
+                  Demo of the AR Presenter main control panel
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <h2>Reflect</h2>
+      <p>
+        
+
+
+        <div class="callout">
+        <blockquote>The proof-of-concept demo sucessfully achieved the primary objective: securing funds for the full version of AR Presenter.</blockquote>
+      </div>
+
+      <h3>Post-Demo Analysis</h3>
+        
+       However, even with this success, I still needed to assess the lessons learned from both the development and demonstration processes.  My analysis yielded the following insights:
+      
+       <br>
+       <br>
+      
+      
+
+      <div class="row">
+          <div class="col-4">
+            <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+            <h4 class="text-center"><small>Shared Presenter/Presentee Functionality</small></h4>
+            <p class="text-center">
+              The client was particularly impressed with the demo's ability to have the presenter's actions immediately reflect on the presentee hologram.
+              They quite clearly saw the power of AR Presenter as a controlled live experience.
+            </p>
+          </div>
+
+          <div class="col-4">
+              <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+              <h4 class="text-center"><small>Menu Design Offset and Sizing</small></h4>
+              <p class="text-center">
+                We had carefully sized the presentation controls to be easily usable via Hololens gestures, and placed the controls 
+                so that the user could easily turn right to see them, without having them obscure the presentation content.  Client feedback
+                on this arrangement was positive, confirming the correctness of the menu design.
+              </p>
+            </div>
+
+            <div class="col-4">
+                <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+                <h4 class="text-center"><small>"Wow and Dazzle" Visual Fidelity</small></h4>
+                <p class="text-center">
+                  The client was impressed by the immersive factor of our demo scenario, and was onboard with using AR Presenter to tell compelling narratives.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+
+          
+            <div class="row">
+                <div class="col-4">
+                  <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                  <h4 class="text-center"><small>Attention Direction</small></h4>
+                  <p class="text-center">
+                    The client had difficulty knowing precisely where in the road scenario they should be looking at a particular time.
+                    Future scenarios would need to be much more clear as to where the "action" was happening.
+                  </p>
+                </div>
+      
+                <div class="col-4">
+                    <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                    <h4 class="text-center"><small>Left-Handed Presenter Controls</small></h4>
+                    <p class="text-center">
+                      The client pointed out that left-handed users might be less comfortable with the right-positioned presentation controls.
+                      We would need to offer a left-aligned menu as an option.
+                    </p>
+                  </div>
+      
+                  <div class="col-4">
+                      <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+                      <h4 class="text-center"><small>"Scalable Holograms"</small></h4>
+                      <p class="text-center">
+                        The client stated a desire to have the presentation holograms be scalable, so that they could be adapted to the presentation area in use.
+                      </p>
+                    </div>
+                  </div>
+
+      <br>
+      <h3>Project Plan</h3>
+      The final phase of my assignment was designing a project plan to govern the development of the full version of AR Presenter.  
+      I suggested the full version be broken down into 3 main phases:
+
+      <ol>
+        <li><strong>Phase 1:  Demo clean-up and full presentation scenario:  </strong> In this phase, Fast Effect would implement the Standalone Mode, the Scaleable Holograms, and the Left-Handed Presentation Controls features.
+        It would also work with the client to develop a full product demonstration scenario that the client could start using, even as the rest of the app was being developed.</li>
+        <li><strong>Phase 2:  Parts Ecosystem Proof of Concept: </strong> In this phase, Fast Effect would develop all of the backend code required to support the Part Ecosystem, as well as developing a set of AR objects to demostrate 
+        what this system could really do.</li>
+        <li><strong>Phase 3:  "Safe Shared Environment" Finalization and Final UI Adjustments</strong>In this phase, Fast Effect would finalize the local network functionality required for the Safe Shared Experience Environment feature, 
+        and would test this feature in an actual show venue.  Fast Effect would also use this phase to finalize any features that needed polish.</li>
+      </ol>
+
+      With this final deliverable, I had successfully completed my assignment.  Fast Effect and their client were well on 
+      their way to developing a cutting-edge AR experience together.
+
+      </p>
+
+
+      <!--  </div> -->
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p>&copy; 2019 Sainy Alafaireet</p>
+    </div>
+  </footer>
+</body>
+
+</html>

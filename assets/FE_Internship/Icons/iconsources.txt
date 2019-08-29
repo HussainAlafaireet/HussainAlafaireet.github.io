@@ -13,5 +13,6 @@ hologram icon:  https://www.flaticon.com/free-icon/hologram_1401983#term=virtual
 control icon:  https://www.flaticon.com/free-icon/interaction_2041580#term=virtual%20reality%20technology&page=1&position=54
 verified icon:  https://www.flaticon.com/free-icon/verified_907830#term=check%20mark&page=1&position=4
 information icon:  https://www.flaticon.com/free-icon/information_906794#term=question%20mark&page=1&position=1
+social reach icon:  https://www.flaticon.com/free-icon/social-reach_1999360#term=social%20reach&page=1&position=3
 
 
