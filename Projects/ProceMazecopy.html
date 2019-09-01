@@ -84,9 +84,9 @@
     <div class="row">
       <div class="col-12">
         <figure href="/assets/ProcMaz/proc_maze_cover_shot.png" class="figure" data-toggle="lightbox"
-          data-footer="AR Presenter Prototype - Venue View">
+          data-footer="VR Clues Maze - View of Clue Lamp">
           <img src="/assets/ProcMaz/proc_maze_cover_shot.png"
-            alt="Concept Shot of AR Presenter - Tech Show presenter wearing a Hololens controls an AR presentation, while attendees wearing their own Hololens view the holograms the presenter is controlling"
+            alt="VR Clues Maze - View of Clue Lamp"
             class="img-fluid">
           <figcaption class="figure-caption text-center"></figcaption>
         </figure>
@@ -189,7 +189,12 @@
     <br>
     <br>
     <h2>Ideation</h2>
-    <br>
+
+    <div class="callout">
+        <blockquote>Our brainstorming generated two main design pillars for the project:  a maze with randomly-generated layouts, and a dynamic clues system to guide the player through the maze.
+        </blockquote>
+      </div>
+
     <h3>Brainstorming</h3>
 
     <p>
@@ -205,14 +210,16 @@
     <p>
       <div class="row">
         <div class="col-4">
-          <h4><small>Oculus/Unity Platform</small></h4>
+            <img src="/assets/ProcMaz/icons/headset.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Oculus/Unity Platform</small></h4>
           <ul>
             <li>Oculus Rift was the most capable VR platform we had access to.</li>
             <li>Unity Game Engine was the best balance of technical features and ease of use.</li>
           </ul>
         </div>
         <div class="col-4">
-          <h4><small>Randomly-Generated Maze</small></h4>
+            <img src="/assets/ProcMaz/icons/labyrinth.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Randomly-Generated Maze</small></h4>
           <ul>
             <li>Our Maze wouuld generate a random layout each time the app ran.</li>
             <li>Fascinating challenge to direct attention within randomized layouts</li>
@@ -220,7 +227,8 @@
           </ul>
         </div>
         <div class="col-4">
-          <h4><small>Atmospheric Lighting</small></h4>
+            <img src="/assets/ProcMaz/icons/camera.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Atmospheric Lighting</small></h4>
           <ul>
             <li>We saw the lights in the environment as a key attention direction tool.</li>
             <li>We knew correct optimization of lighting was needed to ensure smooth VR performance.</li>
@@ -229,7 +237,8 @@
       </div>
       <div class="row">
         <div class="col-4">
-          <h4><small>Supernatural Theme</small></h4>
+            <img src="/assets/ProcMaz/icons/oni.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Supernatural Theme</small></h4>
           <ul>
             <li>Supernatural Look and Feel would enhance the maze experience, allowing for more
               creative lighting and interactions.</li>
@@ -238,7 +247,8 @@
           </ul>
         </div>
         <div class="col-4">
-          <h4><small>Dynamic Clue System</small></h4>
+            <img src="/assets/ProcMaz/icons/glass.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Dynamic Clue System</small></h4>
           <ul>
             <li>To guide attention, we would buidl a system that would add clues to the maze, to direct players on where
               to go.</li>
@@ -249,7 +259,8 @@
           </ul>
         </div>
         <div class="col-4">
-          <h4><small>Player Interactions</small></h4>
+            <img src="/assets/ProcMaz/icons/joystick.png" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Player Interactions</small></h4>
           <ul>
             <li>We did want player interactions, both as a design challenge, and to increase player immersion.</li>
             <li>We knew that this area had the potential to overwhelm us.</li>
@@ -273,33 +284,16 @@
     <h3>Timeline</h3>
     <p>
       As our overall development window was quite short for a project this ambitious, Vlad and I designed a
-      timetable that would allow us to deliver a complete package, removing any features that proved too big a
-      challenge. Our timeline was as follows:
-      <br>
-      <br>
-      Week 1: Scoping. We would explore the two main two main features that our app would be built on: the random maze
-      generation and the atmospheric lighting. Success or failure in these
-      two areas would determine how feasible the overall project was.
-      <br>
-      <br>
-      Weeks 2-3: Iteration 1 and Initial User Test: Once we determined if the main features were feasible, we would
-      develop an initial version of our app. At the end of this time period, we would run an initial walkthrough with
-      other
-      users to assess the overall effectiveness of the maze and attention direction tools.
-      <br>
-      <br>
-      Week 4: Our final week would be spent adjusting the app based on the feedback from the initial user test, and
-      performing any other polishing work needed for the
-      second (and final) demo.
-    </p>
+      timetable that would allow us to deliver a complete package, while assessing our status, and pruning our feature 
+      set as needed.  Our timeline design produced the process/timeline map above.
     <br>
     <br>
 
     <h2>Scoping</h2>
-    <br>
 
     <div class="callout">
-        <blockquote>Insert stuff here
+        <blockquote>The primary design challenge was to integrate a way to give player clues into a maze system that 
+          changed layout. 
         </blockquote>
       </div>
 
@@ -499,6 +493,11 @@
 
     <h3>Initial User Testing </h3>
 
+    <div class="callout">
+        <blockquote>VR Clues Maze Usability Testing revealed the need for additional navigation aids.
+        </blockquote>
+      </div>
+
     <p>
       As planned, we tested our Version 1 on users to gain initial feedback. We tested with 3 users, also participated
       in the design challenge. Testing consisted of undirected
@@ -514,6 +513,7 @@
       <br>
       <div class="row">
         <div class="col-6">
+            <img src="/assets/ProcMaz/icons/lamp-of-stone-temple.png" class="mx-auto d-block img-fluid">
           <h4 class="text-center"><small>Users used Lights As Navigation Aids</small></h4>
           <ul>
             <li>Users cited the lamps as the primary navigation aids they used to understand the maze structure.</li>
@@ -521,6 +521,7 @@
           </ul>
         </div>
         <div class="col-6">
+            <img src="/assets/ProcMaz/icons/lost.png" class="mx-auto d-block img-fluid">
           <h4 class="text-center"><small>Users Were Easily Disorientated</small></h4>
           <ul>
             <li>Users became easily disorientated when explored the maze.</li>
@@ -543,6 +544,7 @@
       </div>
       <div class="row">
         <div class="col-6">
+            <img src="/assets/ProcMaz/icons/solution.png" class="mx-auto d-block img-fluid"> 
           <h4 class="text-center"><small>"Least Explored" Pathfinding Strategy</small></h4>
           <ul>
             <li>Users navigated the maze with a least-explored strategy, always attempting to go where they had not
@@ -552,6 +554,7 @@
           </ul>
         </div>
         <div class="col-6">
+            <img src="/assets/ProcMaz/icons/map-of-roads.png" class="mx-auto d-block img-fluid">  
           <h4 class="text-center"><small>Users Wanted to Build a Mental Maze Map</small></h4>
           <ul>
             <li>Users stated a need to build an internal mental map of how the Maze was laid out, and were frustrated
