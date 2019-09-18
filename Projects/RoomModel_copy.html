@@ -117,9 +117,8 @@
     <h2 class="text-center"><strong>Project Overview</strong></h2>
 
     <div class="callout">
-            <blockquote> How can we
-                  extend the specifications of CSS to control the look, behavior, and position of this AR content in an
-                  intelligent way?</blockquote>
+            <blockquote> How can we help web programmers control Augmented Reality the same way they control web pages?
+                  </blockquote>
           </div>
 
 
@@ -133,28 +132,20 @@
         <strong>UX Skills Used: </strong>
         <br>
         <br>
-        <strong>Summary: </strong> I participated in a research project controlled by Mozilla and the University of Michigan. The overall aim
+        <strong>Summary: </strong> I was an academic UX researcher for a project sponsored by Mozilla and the University of Michigan. The overall aim
                 of the project was to develop visions and future directions for the concept of a <strong> Mixed Reality internet
                   browser</strong>
                 - a browser that can intermix traditional 2-D internet content with Augmented and Virtual Reality content.
         
+                
                 <br>
-                <br>
-                I worked on one question within this overall vision. How can we
-                extend the specifications of CSS to control the look, behavior, and position of this AR content in an
-                intelligent way?
+                <p>I worked on one question within this overall vision. <strong>How can we
+                adapt everyday web technology CSS to control the look, behavior, and position of this AR content intelligently?</strong></p>
 
         <br>
-        <br>
-        <strong>My Contributions: </strong> I made 3 main contributions to this project:
-        <ol>
-          <li>I developed the concept of the "Room Model" - a multi-faceted model for intelligent AR object placement.
-          </li>
-          <li>I developed a "playground" with which to explore the idea of controlling AR object layouts via simulated
-            physics.</li>
-          <li>I generated a view of how a future CSS specification might be written to cover both of the above concepts
-          </li>
-        </ol>
+        <strong>My Contributions: </strong> I made 3 main contributions to this project.  First, I <strong>developed the "Room Model"</strong> - a flexible model for intelligent AR object placement.
+        Secondly, <strong>I developed a physics "playground"</strong> with which to explore the idea of controlling AR object layouts via simulated
+        physics.  Finally, <strong>I merged the the Room Model and the Playground to create the "Physics CSS Browser"</strong> - a model that allows web programmers to control AR objects directly.
       </p>
     </div>
 
@@ -166,7 +157,14 @@
     
 
     <p>
-     Insert Summary and Process Discussion here
+     I worked as an academic researcher on a project sponsored by the University of Michigan.  The goal of the project was 
+     to explore design concepts for a mixed reality browser - an internet browser designed to merge normal web content with
+     Augmented Reality (AR) content.  My specific goal within the project was to develop a method by which web technology could 
+     be used to directly control the size and positioning of AR objects.  Achieving this goal would allow anyone with web programming experience
+     to use AR content.  The result of my work was the <strong>Physics CSS Browser</strong>.
+     <br>
+     <br>
+     Here's the process I used to develop the Physics CSS Browser:
     </p>
 
 
@@ -176,7 +174,89 @@
     <br>
     <br>
     <br>
-    <h2>Major Process Sub-heading</h2>
+    <h2>Explore</h2>
+    <h3>Brainstorming</h3>
+
+    <p>
+
+    Cascading Style Sheets (CSS) are used today to control the overall
+        look and feel of webpages. However, in thinking about the concept of an XR Browser, it becomes obvious that
+        today's CSS
+        specifications dont cover the use of AR content integrated into the Web. For web programmers to integrate and
+        control AR content using their
+        existing skillsets, the CSS specifications need to be extended to cover AR. My goal for this project was to
+        develop a vision of how this new specification
+        would function.
+    The AR Cube, like the Box Model before it, encloses content (in this case AR content) within a bounded area.
+      The basics
+      of the AR cube are quite similar to the Box model, with an inner "content" area, and an external border (which
+      can be invisible or visible).
+      However, even at this early stage, new, AR specific elements were worked in. For example, I was considering a
+      concept in which the AR cube has a
+      "forcefield" around item. This forcefield concept roughly corresponds to the "margin" property in CSS, as a
+      preventative measure to ensure content pieces don't overlap with each other. The forcefield around a piece of AR
+      content would "bounce" other AR content away from its designated area.
+      <br>
+      Even at this early stage, ideas like the forcefield showed how naturally the use of simulated physics fit into
+      the mix of CSS extension. Use of physics
+      would return multiple times over the course of the project.
+
+
+      <br>
+      <br>
+      After building a concept for how each individual AR object might look in an extended CSS, it was time to develop
+      how an
+      entire room might look like. Fortunately, previous research into "spatial AR" (Thomas et al. 2014) helped
+      develop a concept.
+      In the concept of spatial AR, all AR content in a physical space is anchored above flat surfaces such as tables.
+      Placing AR objects near surfaces like these
+      gives users specific locations and context that helps them understand how the AR object works.
+      <br>
+      <br>
+      Taking the idea of spatial AR and applying to the concept of CSS AR Extensions, I developed the core concept of
+      the Room Model - also a model about spatial placement based on context.
+      The Room Model is built around the concept of <strong>anchors</strong>. Anchors refer to physical objects in a
+      given environment that have some kind of context with which
+      to justify placing an AR object near. In keeping with spatial AR, tables are the most common example of anchors.
+      However, the Room Model posits the idea of
+      a wider variety of anchors. Posters, windows, monitors, and light sources are all additional examples of anchor
+      type. The Room Model further posits that specific types
+      of anchors afford different AR interactions to be controlled with CSS. A table might have a volumetric cube
+      hovering above it, a poster might have plane-shaped AR placed above it, etc.
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure href="/assets/RoomModel/window_sketch.jpg" class="figure" data-toggle="lightbox"
+          data-footer="Brainstorming sketch of the “Window” anchor type, and what
+          kinds of styling options it might have.">
+            <img src="/assets/RoomModel/window_sketch.jpg" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Brainstorming sketch of the “Window” anchor type, and what
+              kinds of styling options it might have.</figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      Here is an example of one specific type of anchor - one built to overlay a physical window. This "window anchor"
+      is shaped as a 2-D plane, in keeping
+      with the idea that a see-through window is usable on either side. The window anchor has two unique behaviors to
+      be controlled by CSS. The first is the ability to "flip"
+      the AR content in order to reverse what AR content is being shown on each side of the window. The second unique
+      behavior is to control if the window anchor is in fact double-sided, or if only one side of
+      the plane should have active AR content.</p>
+    <h3>Initial Coding</h3>
+
+    <h2>Design</h2>
+    <h3>Photoshop Markup</h3>
+    <h3>Concept Demo</h3>
+
+    <h2>Prototype</h2>
+    <h3>Prototype Development</h3>
+    <h3>Final Design Specification</h3>
+
+    <h2>Reflect</h2>
+    <h3>Lessons Learned</h3>
 
     <div class="callout">
         <blockquote>Our brainstorming generated two main design pillars for the project:  a maze with randomly-generated layouts, and a dynamic clues system to guide the player through the maze.
