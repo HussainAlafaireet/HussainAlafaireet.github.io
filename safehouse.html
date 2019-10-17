@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+     <script src="https://rawgit.com/Utopiah/googlepoly-load-component/master/googlepoly-load-component.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+      </a-assets>
+      <!-- Out of the box environment! -->
+      <a-entity environment="preset: tron; dressingAmount: 75"></a-entity>
+      <a-entity id="staircase" position="0.2477 0.13737 -13.19289" gpoly="polyid:5d6YLYba1ql;API_KEY:AIzaSyAvchkb7QS5ZatB2NttfnCKXtqvyB-NQOo" shadow="" obj-model="obj:https://poly.googleapis.com/downloads/fp/1571219170002422/5d6YLYba1ql/b4Shgi2-Dhx/SM_StairCase_02.obj;mtl:https://poly.googleapis.com/downloads/fp/1571219170002422/5d6YLYba1ql/b4Shgi2-Dhx/SM_StairCase_02.mtl" rotation="0 -180 0" scale="0.5 0.5 1"></a-entity>
+      <a-box color="gray" position="-1.82271 0.52192 -4.35254" material="" geometry="depth:30;height:3;width:0.5"></a-box>
+      <a-box color="gray" position="17.8836 0.52192 -4.35254" material="" geometry="depth:30;height:3;width:0.5"></a-box>
+      <a-box color="gray" position="8.23281 0 -19.49554" material="" geometry="width:21;height:4.47"></a-box>
+      <a-box color="gray" position="8.23281 0 11.16378" material="" geometry="width:21;height:4.47"></a-box>
+      <a-box color="brown" position="8.13805 2.50232 -3.13616" material="" geometry="width:20;depth:33.01"></a-box>
+      <a-light type="ambient" color="#222"></a-light>
+    </a-scene>
+  </body>
+</html>
