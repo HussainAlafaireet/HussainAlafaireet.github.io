@@ -216,20 +216,24 @@ figure:hover {
 }
 
 
-.sumtitle {
-  font-size: 2.5vw;
+.sumh1title {
+  font-size: 50pt;
+}
+
+.sumh2title {
+  font-size: 32pt;
 }
 
 .sumtext  {
-  font-size: 1.75vw;
+  font-size: 16pt;
 }
 
 .sumexplain {
-  font-size: 1.25vw;
+  font-size: 14pt;
 }
 
 .sumtabtitle{
-  font-size: 1.25vw;
+  font-size: 1.15vw;
 }
 
 .sumtabtext {

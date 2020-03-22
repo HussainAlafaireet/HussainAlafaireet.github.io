@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <!--Lightbox CSS from Ekko Lightbox-->
+  <link rel="stylesheet" href="/css/main.css">
+  <title>
+    Sainy Alafaireet's Portfolio Website
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+    //lightbox javascript from Ekko Lightbox
+  </script>
+
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true,
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+          <a class="navbar-brand" href="/index.html">
+            Sainy Alafaireet
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/Projects/FastEffect.html">"AR Presenter" Prototype</a>
+                  <a class="dropdown-item" href="/Projects/Lifeasagym.html">Life as a Gym AR Concept</a>
+                  <a class="dropdown-item" href="/Projects/RoomModel.html">Physics CSS Browser Concept</a>
+                  <a class="dropdown-item" href="/Projects/ProceMaze.html">VR "Clues" Maze</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/aboutme.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/resume.html">Resume</a>
+              </li>
+              <!--<li class="nav-item">
+                      <a class="nav-link" href="/vrusab.html">VR Usability Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/vrdemos">VR/AR Demos</a>
+                    </li>-->
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+
+
+
+    <!--main image-->
+
+
+
+    <!--main title-->
+    <!--<div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" loop autoplay>
+        <source src="/assets/MandalaBall/mbintro.mp4" type="video/mp4">
+      </video>
+    </div>-->
+
+
+    <div class="container m1">
+      <img src="/assets/MandalaBall/mbintro.jpg" alt="" class="mx-auto d-block">
+
+
+      <h1 class="text-center sumh1title">Mandala Ball</h1>
+
+      <!--project subtitle here-->
+      <h2 class="text-center"><small>ADHD Neurofeedback Training using Mind over Matter</small></h2>
+
+
+      <!--buttons-->
+      <br>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <a class="btn btn-outline-primary" href="#process" role="button">View Process</a>
+          &nbsp;
+          <a class="btn btn-outline-primary" href="#output" role="button">View Final Output</a>
+        </div>
+        <div class="col-4"></div>
+
+      </div>
+
+    </div>
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title"><strong>Project Overview</strong></h2>
+
+      <div class="callout">
+        <blockquote>Can VR be used to control ADHD?</blockquote>
+      </div>
+
+      <!--project into box-->
+
+      <div class=project-intro-box>
+        <p class="sumtext"><strong>Role: </strong> UX Designer, VR Developer, Team Lead &nbsp;|&nbsp;
+          <strong>Duration: </strong>6 Weeks
+          <br>
+          <strong>Tools Used: </strong>Microsoft Mixed Reality Toolkit, Unity, Oculus Integration Kit
+          <br>
+          <strong>UX Skills Used: </strong> Crazy-8 Brainstorming, UX Design, VR Prototyping
+          <br>
+          <br>
+          <strong>Summary: </strong> MMandala Ball is a VR medical therapy game for the Oculus Quest. The game trains
+          children with ADHD to manage their ADHD symptoms. Mandala Ball is built around the idea of the “Mind has
+          Power”. Mandala Ball simulates “mind
+          powers” though handtracking input. By tying the use of these “powers” to control of ADHD, we motivate our
+          players to actively manage their ADHD condition.
+          <br>
+          <br>
+          This project was an entry to the <a href="https://devpost.com/software/mandala-ball">Virtual Medicine
+            Conference
+            2020 Online Hackathon</a>.
+
+          <br>
+          <br>
+          <strong>My Contributions: </strong>
+          <br>
+          <br>
+
+
+          <strong>As Team Lead</strong>, I managed a remote team of video producers, medical researchers, and 3-D
+          artists towards a
+          single vision of VR therapy.
+          I acted as the team lead, primary UX designer, and primary developer for Mandala Ball.
+          <br>
+          <br>
+
+          <strong>As UX Designer</strong>, I generated the primary design concept for Mandala Ball, including the
+          Mandala Ball social
+          companion, the key stakeholders, the primary features, and the technical architecture.
+
+          <br>
+          <br>
+
+          As <strong>VR Developer</strong>, I coded the Mandala Ball VR app, using a combination of Unity, Microsoft
+          Mixed Reality
+          Toolkit, and custom game code.
+
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="container m1">
+      <a name="process"></a>
+      <h2 class="text-center sumh2title"><strong>Process</strong></h2>
+      <br>
+      <img src="/assets/MandalaBall/mbprocessmap.png" alt="" class="img-fluid">
+    </div>
+
+
+
+
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title">Explore</h2>
+      <h3>Brainstorming</h3>
+      <p class="sumtext">
+        I worked with <a href="https://devpost.com/vicely07">Vi Li</a>, <a href="https://devpost.com/joseroserois">Jose
+          Rosero</a>, and <a href="https://devpost.com/eric100">Eric Tao</a> on this project. As a Hackathon team, our
+        first task was to determine a scope and a core idea that we could build a VR app
+        around. Our initial meeting
+        establish two scoping parameters:
+      </p>
+      <ul class="sumtext">
+        <li><strong>Hand Tracking: </strong>We were interested in using hand tracking technology
+          to replace controllers in VR apps.</li>
+        <li><strong>Pediatric Care: </strong>As a team, we were most interested in supporting pediatric patients, as we
+          felt an emotional connection towards helping them.
+        </li>
+      </ul>
+      <p class="sumtext">
+        Once we had our initial areas of interest, we spent the next week brainstorming ideas.
+
+        The core idea we rallied around was a VR neurofeedback training game to control ADHD. In ADHD neurofeedback
+        training, users attempt to maintain concentration and focus, and receive
+        real-time feedback in the form of EEG brain measurements. By engaging in this feedback loop, users learn to
+        control their brain, and their ADHD symptoms.
+        <br>
+        <br>
+
+        Our game would add VR handtracking elements
+        to simulate telekinetic superpowers. In this way, we would create an interactive, motivating ADHD training game
+        that our target audience would be delighted to play.
+
+      </p>
+
+    </div>
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title">Investigate</h2>
+
+      <h3>Secondary Research</h3>
+      <p class="sumtext">To flesh out our core idea, we conducted secondary research on pediatric ADHD, neurofeedback
+        training,
+        and the use of VR to treat ADHD. This research included an academic paper review, a comparative analysis of
+        existing neurofeedback training products, and an interview with an elementary school teacher with ADHD
+        training.
+
+        <br>
+        <br>
+        Our research review led to the following insights:
+
+
+        <ol class="sumtext">
+          <li>Our design needed to include school-related settings, but with an approach that did not trigger existing
+            social stigma concerns our players might have.
+          </li>
+          <li>Some level of social interaction would be needed to guide, praise, and encourage our players.</li>
+          <li>Listening, reading, and taking turn activities would be particularly difficult tasks for our players.</li>
+          <li>Most tasks should be small, with plenty of room for breaks and task switching.</li>
+          <li>Therapists and doctors would need a way to monitor training progression over time.</li>
+        </ol>
+      </p>
+
+
+      <h3>Initial Prototype</h3>
+
+      <p class="sumtext">
+        To establish a base development pipeline, I used the <a
+          href="https://github.com/provencher/MRTK-Quest">MRTK-Quest handtracking kit</a> and Unity to create a
+        prototype of our game. This version included:
+        <ul class="sumtext">
+          <li>A "concentration sphere" that would be the visual indicator for EEG data. While no EEG data was involved
+            in
+            this build, I provided a vision of the indicator we might use through the use of a color change and a sound
+            to
+            indicate good concentration.</li>
+          <li>An example "telekinesis" activity involving the placement of a coffee cup in a box.</li>
+          <li>A basic living room environment (sourced from Google Poly) with a distracting kitchen background sound.
+          </li>
+        </ul>
+
+      </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Iqwl1I76DUE" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title">Design</h2>
+
+      <p class="sumtext"> It was now time to expand out the core idea into
+        a true vision of the game.
+        I synthesized our brainstorming and secondary research to develop "Mandala Ball" - an VR app that uses the idea
+        of
+        "The Mind Has Power" to create <strong>an empowering tool for children with ADHD.</strong>
+        <br>
+        <br>
+        The Mandala Ball design concept has the following <strong>5 main features</strong>:
+
+        <div class="container m1">
+          <h3>Mandala Ball Companion</h3>
+
+          <p class="sumtext">
+            The Mandala Ball is the central design feature of our app. Inspired by the <a
+              href="https://en.wikipedia.org/wiki/Mandala">mandala meditation
+              diagrams from Eastern religion</a>
+            , the Mandala Ball is an ever-present companion. Mandala Ball interact with the player in two ways:
+            <ul class="sumtext">
+              <li>talking to the player, providing instructions and encouragement.</li>
+              <li>glowing to indicate player concentration. The better the player concentrates, the more intense the
+                glow.
+              </li>
+            </ul>
+
+            <figure href="" class="figure">
+              <img src="/assets/MandalaBall/mandalaballpg.png" alt="" class="img-fluid">
+              <figcaption class="figure-caption text-center">Mandala Ball: Real-life Inspiration, Sketch, and In-Game
+                Model
+              </figcaption>
+            </figure>
+            <br>
+            <br>
+
+
+            <video loop autoplay="autoplay" class="img-fluid">
+              <source src="/assets/MandalaBall/mb_level1.mp4" type="video/mp4">
+            </video>
+            <p class="figure-caption text-center">Mandala Ball Concentration Glow
+            </p>
+
+          </p>
+
+        </div>
+
+        <div class="container m1">
+          <h3>Session Activities</h3>
+
+          <p class="sumtext">
+            Mandala Ball activities come in two types: Concentration and Telekinesis
+          </p>
+          <p class="sumtext">Concentration activities are neurofeedback exercises managed by the Mandala Ball. As the
+            player
+            concentrates,
+            EEG output is fed to the Mandala Ball. The Ball then begins glowing and providing encouragement to promote
+            further
+            concentration.</p>
+        </div>
+
+
+
+        <video loop autoplay class="img-fluid">
+          <source src="/assets/MandalaBall/mbconcen.mp4" type="video/mp4">
+        </video>
+        <p class="figure-caption text-center">Concentration Exercise</p>
+
+        <div class="container m1">
+
+          <p class="sumtext">Telekinesis activities ask the player to complete manipulation tasks via hand-tracking.</p>
+        </div>
+        <video loop autoplay class="img-fluid">
+          <source src="/assets/MandalaBall/mbtele.mp4" type="video/mp4">
+        </video>
+        <p class="figure-caption text-center">Telekinesis exercise</p>
+
+    </div>
+
+
+
+    <div class="container m1">
+      <h3>Scaling Environments</h3>
+      <p class="sumtext">
+        Mandala Ball comes with 3 virtual environments: a living room, a school hallway, and a school classroom. These
+        environments were selected for their relevance to
+        everyday ADHD challenges our target audience would face.
+      </p>
+
+
+
+      <p class="sumtext">
+        In addition to the session settings, each environment has it's own set of audio/visual distractions that can be
+        added for additional challenge.
+      </p>
+
+    </div>
+
+
+    <div class="container m1">
+
+      <h3>Simulation Control User Interface</h3>
+      <p class="sumtext">Parents, therapist, and doctors can monitor
+        and control Mandala Ball sessions via a real-time video feed and pre-session setup controls.</p>
+
+    </div>
+
+    <div class="container m1">
+
+      <h3>Data Analytics Dashboard</h3>
+      <p class="sumtext">Mandala Ball comes with a Data Analytics Dashboard that
+        allows all stakeholders to see progression of VR therapy. Each stakeholder receives a visualization that
+        matches their specific needs.</p>
+
+    </div>
+
+
+
+
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title">Develop</h2>
+
+      <p class="sumtext">
+        Due to time constraints, our Hackathon demo would not include all features from the Mandala Ball design concept.
+        For our demo, we implemented:
+        <ul class="sumtext">
+          <li>"Telekinesis" Hand Tracking</li>
+          <li>A prototype Version of the Mandala Ball Companion, using visual design, Unity animations, and voice
+            acting.</li>
+          <li>A prototype training session, including both a Concentration and Telekinesis activity. While direct EEG
+            integration was not part of this demo,
+            the visual indicators used to give feedback were present in the Mandala Ball companion.</li>
+        </ul>
+      </p>
+
+      <p class="sumtext">During a 1.5 week sprint, I coded the game in Unity. I used Simon Says as the inspiration for
+        our Telekinesis activity, integrating the visual assets produced
+        by the team's technical artist.</p>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="container m1">
+      <a name="output"></a>
+      <h2 class="text-center sumh2title"><strong>Final Output</strong></h2>
+
+      <h2 class="text-center sumh2title">Demo</h2>
+      <h3>Marketing Reel</h3>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sJ1mLkgvWw4" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h3> App Demo</h3>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mXIC7ec03xM" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="container m1">
+      <h2 class="text-center sumh2title">Reflect</h2>
+
+
+      <div class="row">
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">Short Timeframe - Compelling Vision</h4>
+          <p class="text-center sumexplain">
+            With a combination of technical pre-work, professional video construction, and custom coding, <strong>we were able 
+            to create a compelling vision of need, and how our product would solve that need</strong>.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">Successful Design Synthesis</h4>
+          <p class="text-center sumexplain">
+            I was able to <strong>synthesize our secondary research and brainstorming into a unified design concept</strong>, and 
+            correctly communicate this concept to the rest of my team.  This communication unleashed my teammates' potential, by giving them a 
+            framework to built on.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">Handtracking Technical Development</h4>
+          <p class="text-center sumexplain">
+           Thanks to this project, <strong>I now have experience with MRTK-enabled handtracking in Unity</strong>.  I can now add that to my prototyping skillset.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">Limited User Research</h4>
+          <p class="text-center sumexplain">
+            The remote nature and compressed timeframe of the Hackathon made <strong>direct user research difficult to integrate.</strong>  For 
+            future Hackathons, I will build a project plan that explicitly includes user research cycles.
+        </div>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">Remote VR Design/Development Challenge</h4>
+          <p class="text-center sumexplain">
+            Several aspects of VR design and development (particularly design brainstorming around intricate 3-D interaction) were challenging 
+            to implement due to the remote nature of the team.  For <strong>future remote work, I will leverage 360 sketching and basic object placement in AFrame
+            to create a remote meeting space for VR design work</strong>.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center">VR Technology Baselining</h4>
+          <p class="text-center sumexplain">
+            There was a <strong>disparity between team members in knowledge of VR technology basics</strong>.  This limited the ability of some members to easily contribute
+            to the product during the development stage.  For future hackathon work, I will build a "VR Basics" Powerpoint that will help equalize the VR knowledge of the team.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!--  </div> -->
+
+  </main>
+
+
+</body>
+
+</html>
