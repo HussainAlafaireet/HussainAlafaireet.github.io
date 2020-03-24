@@ -324,6 +324,7 @@
       </div>
 
       <h4>Dynamic Clue System</h4>
+      <p>
       While Vlad worked on the random generation system, <strong>I began work on
       adding the dynamic lighting/clue system</strong>. First, I needed to design how this system would work. The system needed
       <strong>3 main components</strong>:
@@ -478,6 +479,7 @@
     <p>Now that I had a system with which to mark the path, <strong>I could start adding clues to mark the path</strong>.
       The algorithm I developed for adding the clues <strong>stepped through each floor tile on the path</strong>, and performed <strong>two
       actions</strong> for each tile:
+      </p>
       <ul>
         <li>The algorithm <strong>checked to see if the tile was a "third tile"</strong> - every third tile on the path was a candidate
           for placing a clue This would add just enough clues to be useful, without making the Maze too easy to get out
@@ -485,7 +487,7 @@
         <li>If the tile was in fact a "third" tile, the algorithm would <strongcheck to see if the tile in question had a wall></strong>.
           If so, the algorithm <strong>replaced it with a wall that had a clue-lantern</strong>.</li>
       </ul>
-
+      <p>
       The algorithm was deployed just after the initial maze generation, and would add the clue lanterns just
       before the user was able to exploring the maze.
     </p>

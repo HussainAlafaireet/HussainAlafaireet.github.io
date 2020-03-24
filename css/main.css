@@ -17,8 +17,39 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 50pt;
   font-weight:bold;
+}
+
+h2 {
+  font-size: 32pt;
+}
+
+h3 {
+  font-size: 28pt;
+}
+
+h4 {
+  font-size: 24pt;
+}
+
+h5 {
+  font-size: 20pt;
+}
+
+p {
+  font-size: 16pt;
+}
+
+ul {
+  font-size: 16pt;
+}
+
+ol {
+  font-size: 16pt;
+}
+.navbar-brand {
+  font-size: 16pt;
 }
 
 h2 h3 h4 h5 h6 {
