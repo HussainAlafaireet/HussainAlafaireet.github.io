@@ -81,655 +81,636 @@
     </header>
 
 
+    <div class="container m1">
+      <figure href="/assets/ProcMaz/proc_maze_cover_shot.png" class="figure" data-toggle="lightbox"
+        data-footer="VR Clues Maze - View of Clue Lamp">
+        <img src="/assets/ProcMaz/proc_maze_cover_shot.png" alt="VR Clues Maze - View of Clue Lamp" class="img-fluid">
+        <figcaption class="figure-caption text-center"></figcaption>
+      </figure>
 
-    <div class="row">
-      <div class="col-12">
-        <figure href="/assets/ProcMaz/proc_maze_cover_shot.png" class="figure" data-toggle="lightbox"
-          data-footer="VR Clues Maze - View of Clue Lamp">
-          <img src="/assets/ProcMaz/proc_maze_cover_shot.png"
-            alt="VR Clues Maze - View of Clue Lamp"
-            class="img-fluid">
-          <figcaption class="figure-caption text-center"></figcaption>
-        </figure>
-      </div>
-    </div>
+      <h1 class="text-center">VR Clues Maze</h1>
 
 
-    <h1 class="text-center">VR Clues Maze</h1>
-
-
-    <h2 class="text-center"><small>VR Attention Direction Within a Random Maze</small></h2>
-
-    <br>
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-        <a class="btn btn-outline-primary" href="#process" role="button">View Process</a>
-        &nbsp;
-        <a class="btn btn-outline-primary" href="#output" role="button">View Final Output</a>
-      </div>
-      <div class="col-4"></div>
-
-    </div>
-
-    <br>
-    <br>
-
-    <h2 class="text-center"><strong>Project Overview</strong></h2>
-
-    <div class="callout">
-        <blockquote>How can a Virtual Reality environment subtly, but effectively direct the users attention?</blockquote>
-      </div>
-
-
-
-    <div class=project-intro-box>
-      <p><strong>Role: </strong> UX Designer, Full-Stack Developer &nbsp;|&nbsp; <strong>Duration: </strong>4 Weeks
-        <br>
-        <strong>Tools Used: </strong>Unity Game Engine, SteamVR (for running the Maze on a VR headset)
-        <br>
-        <strong>UX Skills Used: </strong>VR Prototyping, Usability Testing, VR UX Design
-        <br>
-        <br>
-        <strong>Summary: </strong> Virtual Reality presents a unique challenge for immersive experiences, as <strong>the user
-        has the freedom to look in all directions at any time</strong>. This freedom makes it
-        possible for the <strong>user to be looking in the wrong place at the wrong time</strong>, and miss seeing key portions of the
-        experience.
-        <br>
-        <br>
-        The VR Clues Maze is an immersive experience that balances <strong>user freedom versus directed attention</strong>.
-        The VR Clues Maze <strong>generates a unique layout</strong> every time the software is run. <strong>Clues are then
-        intelligently added</strong> to subtly direct the user out of the maze.
-
-        <br>
-        <br>
-        <strong>My Contributions: </strong> I co-designed the VR Clues Maze with my partner on this
-        project, <a href="https://vladimirdesigns.me/">Vlad Potiyevskiy</a></strong>.
-        I designed the <strong>overall look-and-feel></strong> of the virtual environment, and <strong>developed the lighting setup</strong> required to achieve the desired atmosphere.
-       
-        <br>
-        <br>
-        As developer, <strong>I developed a path-finding solution that could
-        automatically
-        find a path through the randomized maze</strong>. I then <strong>implemented a system to dynamically add clues around this path</strong>,
-        providing the user guidance on how to get of the maze.
-      </p>
-    </div>
-
-    <br>
-
-    <a name="process"></a>
-    <h2 class="text-center"><strong>Process</strong></h2>
-
- 
-
-    <p>
-      My initial inspiration for this project was my experience with the <a
-        href="https://www.oculus.com/experiences/rift/1592039100813771/">Ghost in the Shell</a> VR app.
-      The app plays out like a short movie, centering around a chaotic fight scene in a large room. While using the app, <strong>I observed a repeated problem</strong>.
-      Since I had
-      full ability to look in all directions, <strong>I would often be looking in the wrong direction</strong> to see an important part of the scene. This brought on the realization
-      that <strong>VR experiences need some ability to effectively direct the users attention</strong>, while still allowing the users
-      complete viewing freedom.
-      <br>
-      <br>
-      The VR Clues Maze is a VR environment designed to <strong>direct the users attention through lighting and subtle
-      environment cues</strong>.
+      <h2 class="text-center"><small>VR Attention Direction Within a Random Maze</small></h2>
 
       <br>
-      <br>
-      Here's the <strong>process we used</strong> to develop the Maze:
-    </p>
-
-
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-          <img src="/assets/ProcMaz/pmprocessmap.png" alt="" class="img-fluid">
-      </div>
-      <div class="col-1"></div>
-   
-
-  </div>
-
-    <br>
-    <br>
-    <br>
-    <h2>Explore</h2>
-
-
-    <h3>Brainstorming</h3>
-
-    <p>
-      This project was occurring in the context of a design challenge with <strong>4 weeks allowed for design and development</strong>.
-
-      My partner and I had relatively free rein over the nature and content of the project, but we knew that <strong>scoping
-      would be critical</strong> to meet our deadline.
-      We therefore made a substantial effort during our first brainstorming session
-      to <strong>prioritize
-      our feature set</strong>.
-    </p>
-    <br>
-    <h4>Brainstormed VR Clues Maze Features</h4>
-    <p>
       <div class="row">
+        <div class="col-4"></div>
         <div class="col-4">
-            <img src="/assets/ProcMaz/icons/headset.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Oculus Rift/Unity Platform</small></h4>
-          <ul>
-            <li>The <strong>Oculus Rift</strong> headset was the <strong>most capable VR platform</strong> we had access to.</li>
-            <li>The <strong>Unity Game Engine</strong> for app development was the <strong>best balance of technical features and ease of use</strong>.</li>
-          </ul>
+          <a class="btn btn-outline-primary" href="#process" role="button">View Process</a>
+          &nbsp;
+          <a class="btn btn-outline-primary" href="#output" role="button">View Final Output</a>
         </div>
-        <div class="col-4">
-            <img src="/assets/ProcMaz/icons/labyrinth.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Randomly-Generated Maze</small></h4>
-          <ul>
-            <li>Our Maze would <strong>generate a random layout</strong> each time the app ran.  This would add <strong>significant replayability</strong> to the app.</li>
-            <li>This feature would be a technical challenge, but <strong>we had a <a href="">Unity tutorial</a> to work off of.</strong></li>
-          </ul>
-        </div>
-        <div class="col-4">
-            <img src="/assets/ProcMaz/icons/camera.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Atmospheric Lighting</small></h4>
-          <ul>
-            <li>We saw the <strong>lights in the environment</strong> as a key <strong>attention direction</strong> tool.</li>
-            <li>We knew <strong>correct optimization of lighting</strong> was needed to ensure <strong>smooth VR performance</strong>.</li>
-          </ul>
-        </div>
+        <div class="col-4"></div>
+
       </div>
-      <div class="row">
-        <div class="col-4">
-            <img src="/assets/ProcMaz/icons/oni.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Supernatural Theme</small></h4>
-          <ul>
-            <li>We went with a <strong>Japanese-based supernatural look-and feel</strong>, as this would provide a more unique immersive experience.</li>
-            <li>Supernatural theme would be kept "light" to <strong>avoid truly scaring users</strong>.  We would avoid gore and shock value in our design.</li>
-          </ul>
-        </div>
-        <div class="col-4">
-            <img src="/assets/ProcMaz/icons/glass.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Dynamic Clue System</small></h4>
-          <ul>
-            <li>To <strong>guide attention</strong>, we would build a <strong>system that would add clues</strong> to the maze.  These clues would direct players on where
-              to go.</li>
-            <li>Adding this feature to a randomly-generated maze was a <strong>significant design and technical challenge</strong>, as the
-              solution would need to work without
-              knowing the layout ahead of time.
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-            <img src="/assets/ProcMaz/icons/joystick.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Player Interactions</small></h4>
-          <ul>
-            <li>We did want player interactions, both as a design challenge, and to increase player immersion.</li>
-            <li>We knew that this area had the <strong>potential to overwhelm us</strong> .</li>
-            <li>Discussed interactions included:
-              <ul>
-                <li><strong>Torches</strong> for extra lighting sources </li>
-                <li><strong>Keys</strong> to open doors in the maze</li>
-                <li><strong>Non-player characters</strong> (NPCs) for the player to interact with.</li>
-              </ul>
-            </li>
 
-          </ul>
-        </div>
-      </div>
-    </p>
+    </div>
+    </div>
 
-    <br>
-  
+    <div class="container m1">
+      <h2 class="text-center"><strong>Project Overview</strong></h2>
 
-
-    <h3>Timeline</h3>
-    <p>
-      As our overall development window was quite short for a project this ambitious, Vlad and I designed a
-      timetable that would allow us to deliver a complete package, while assessing our status, and pruning our feature 
-      set as needed.  Our timeline design produced the process/timeline map above.
-    <br>
-    <br>
-
-    <h2>Scoping</h2>
-
-    <div class="callout">
-        <blockquote>How can we integrate a way to give player clues INTO a maze system that 
-          randomly changes layout every time the maze is created? 
+      <div class="callout">
+        <blockquote>How can a Virtual Reality environment subtly, but effectively direct the users attention?
         </blockquote>
       </div>
 
-    <h3>Technical Exploration</h3>
-    <br>
+
+
+      <div class=project-intro-box>
+        <p><strong>Role: </strong> UX Designer, VR Developer &nbsp;|&nbsp; <strong>Duration: </strong>4 Weeks
+          <br>
+          <strong>Tools Used: </strong>Unity Game Engine, SteamVR
+          <br>
+          <strong>UX Skills Used: </strong>VR Prototyping, Usability Testing, VR UX Design
+          <br>
+          <br>
+          <strong>Summary: </strong> Virtual Reality presents a unique challenge for immersive experiences, as
+          <strong>the user
+            has the freedom to look in all directions at any time</strong>. This freedom makes it
+          possible for the <strong>user to be looking in the wrong place at the wrong time</strong>, and miss seeing key
+          portions of the
+          experience.
+          <br>
+          <br>
+          The VR Clues Maze is an immersive experience that balances <strong>user freedom versus directed
+            attention</strong>.
+          The VR Clues Maze <strong>generates a unique layout</strong> every time the software is run. <strong>Clues are
+            then
+            intelligently added</strong> to subtly direct the user out of the maze.
+
+          <br>
+          <br>
+          <strong>My Contributions: </strong>
+          <br>
+          <br>
+
+          I co-designed the VR Clues Maze with my partner on this
+          project, <a href="https://vladimirdesigns.me/">Vlad Potiyevskiy</a></strong>.
+          <br>
+          <br>
+          As <strong>UX Designer</strong>, I generated the project concept and designed the look-and-feel of the virtual
+          environment.
+
+          <br>
+          <br>
+          As <strong>VR Developer</strong>, I developed a system that dynamically added navigation clues to a randomized
+          VR maze.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="container m1">
+      <a name="process"></a>
+      <h2 class="text-center"><strong>Process</strong></h2>
+
+
 
       <p>
-        Our first major phase of work on the project was the <strong>Technical Exploration phase</strong>.  In this phase, we would <strong>create proof-of-concepts versions of 
-        our two design pillars</strong>: Random Maze Generation, and a Dynamic Clue System.  By creating these proof-of-concepts, we would be able to tell whether or not
-        our project was feasible by our deadlines.  
+        My initial inspiration for this project was my experience with the <a
+          href="https://www.oculus.com/experiences/rift/1592039100813771/">Ghost in the Shell</a> VR app.
+        The app plays out like a short movie, centering around a chaotic fight scene in a large room. While using the
+        app,
+        <strong>I observed a repeated problem</strong>.
+        Since I had
+        full ability to look in all directions, <strong>I would often be looking in the wrong direction</strong> to see
+        an
+        important part of the scene.
       </p>
+      <br>
+        
+        <video loop autoplay="autoplay" class="img-fluid">
+          <source src="/assets/ProcMaz/pm_ghost_shell.mp4" type="video/mp4">
+        </video>
+        <p class="figure-caption text-center">I have no clue where I'm supposed to be looking here!
+        </p>
+        
+        
+        <br>
+        <p>
+        This brought on the realization
+        that <strong>VR experiences need some ability to effectively direct the users attention</strong>, while still
+        allowing the users
+        complete viewing freedom.
+        <br>
+        <br>
+        The VR Clues Maze is a VR environment designed to <strong>direct the users attention through lighting and subtle
+          environment cues</strong>.
+
+      </p>
+      <br>
+      <br>
 
 
-    <h4>Random Maze Generation</h4>
-    <p>Vlad took on the task of <strong>exploring the Unity random maze tutorial</strong>, and bringing it into our VR environment. The
-      tutorial was sound, and we were able to implement the majority of the maze in VR without
-      major issues. The <strong>implementation initially treated the maze as a 2-D maze, generating a series of flat tiles</strong>. The
-      implementation then
-      <strong>added walls, doors, and wall hangings</strong> to create a 3-D maze. My partner and I <strong>added additional wall and floor
-      textures,</strong> to make the maze more resemble the theming we were going for.
+          <img src="/assets/ProcMaz/pmprocessmap.png" alt="" class="img-fluid">
+      
 
-      <h5>Random Map Generation Demo</h5>
 
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Od-LyBgPvvA" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
+    </div>
+
+
+    <div class="container m1">
+      <h2 class="text-center">Explore</h2>
+
+
+      <h3>Brainstorming</h3>
+
+      <p>
+        This project was occurring in the context of a design challenge with <strong>4 weeks allowed for design and
+          development</strong>.
+        <br>
+        <br>
+
+        To maximize our time, our first brainstorming session concentrated on a prioritized feature set.
+      </p>
+      <br>
+      <h4>VR Clues Maze Features</h4>
+      <p>
+        <h4><small>Randomly-Generated Maze</small></h4>
+        <ul>
+          <li>Our Maze would <strong>generate a random layout</strong> each time the app ran. This would add
+            <strong>significant replayability</strong> to the app.</li>
+          <li>This feature would be a technical challenge, but <strong>we had a <a href="">Unity tutorial</a> to work
+              off of.</strong></li>
+        </ul>
+        <h4><small>Atmospheric Lighting</small></h4>
+        <ul>
+          <li>We saw the <strong>lights in the environment</strong> as a key <strong>attention direction</strong>
+            tool.</li>
+          <li>We knew <strong>correct optimization of lighting</strong> was needed to ensure <strong>smooth VR
+              performance</strong>.</li>
+        </ul>
+        <h4><small>Supernatural Theme</small></h4>
+        <ul>
+          <li>We went with a <strong>Japanese-based supernatural look-and feel</strong>, as this would provide a more
+            unique immersive experience.</li>
+          <li>Supernatural theme would be kept "light" to <strong>avoid truly scaring users</strong>. We would avoid
+            gore and shock value in our design.</li>
+        </ul>
+        <h4><small>Dynamic Clue System</small></h4>
+        <ul>
+          <li>To <strong>guide attention</strong>, we would build a <strong>system that would add clues</strong> to
+            the maze. These clues would direct players on where
+            to go.</li>
+          <li>Adding this feature to a randomly-generated maze was a <strong>significant design and technical
+              challenge</strong>, as the
+            solution would need to work without
+            knowing the layout ahead of time.
+          </li>
+        </ul>
+        <h4><small>Player Interactions</small></h4>
+        <ul>
+          <li>We did want player interactions, both as a design challenge, and to increase player immersion.</li>
+          <li>We knew that this area had the <strong>potential to overwhelm us</strong> .</li>
+          <li>Discussed interactions included:
+            <ul>
+              <li><strong>Torches</strong> for extra lighting sources </li>
+              <li><strong>Keys</strong> to open doors in the maze</li>
+              <li><strong>Non-player characters</strong> (NPCs) for the player to interact with.</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="container m1">
+      <h2 class="text-center">Scoping</h2>
+
+      <div class="callout">
+        <blockquote>How can we integrate a way to give player clues INTO a maze system that
+          randomly changes layout every time the maze is created?
+        </blockquote>
       </div>
 
+    </div>
+
+    <div class="container m1">
+
+      <h3>Technical Exploration</h3>
+      <br>
+
+      <p>
+        Our first major phase of work on the project was the <strong>Technical Exploration phase</strong>. In this
+        phase, we would <strong>create proof-of-concepts versions of
+          our two design pillars</strong>: Random Maze Generation, and a Dynamic Clue System.
+
+    </div>
+
+    <div class="container m1">
+
+
+      <h4>Random Maze Generation</h4>
+      <p>Vlad took on the task of <strong>exploring the Unity random maze tutorial</strong>, and bringing it into our VR
+        environment. We then <strong>added
+          additional wall and floor
+          textures,</strong> to make the maze more resemble the theming we were going for.
+          <br>
+          <br>
+
+          <video loop autoplay="autoplay" class="img-fluid">
+            <source src="/assets/ProcMaz/pm_mazefill.mp4" type="video/mp4">
+          </video>
+          <p class="figure-caption text-center">Random Maze Generation
+          </p>
+          <br>
+          <br>
+
+          <video loop autoplay="autoplay" class="img-fluid">
+            <source src="/assets/ProcMaz/pm_teleport.mp4" type="video/mp4">
+          </video>
+          <p class="figure-caption text-center">Initial Maze Look and Feel
+          </p>
+
+
+
+    <div class="container m1">
       <h4>Dynamic Clue System</h4>
       <p>
-      While Vlad worked on the random generation system, <strong>I began work on
-      adding the dynamic lighting/clue system</strong>. First, I needed to design how this system would work. The system needed
-      <strong>3 main components</strong>:
-      <ul>
-        <li>A <strong>designed set of clues</strong> that could be used to hint at the correct direction to get out of the maze.</li>
-        <li>A <strong>system to determine the "path" the user should follow</strong> to get out of the maze.</li>
-        <li>A system to <strong>dynamically insert clues around that path</strong>.</li>
-      </ul>
-    </p>
-
-    <br>
-
-    <p>I first began by creating the initial design for what form the clues should look. I had several ideas for how
-      the clues might look, including
-      stone lamps, fireflies, and light-reflecting metallic shapes.
-    </p>
+        <strong>I began work on
+          adding the dynamic lighting/clue system</strong>. The
+        system needed
+        <strong>3 main components</strong>:
+        <ul>
+          <li>A <strong>designed set of clues</strong> that could be used to hint at the correct direction to get out
+            of the maze.</li>
+          <li>A <strong>system to determine the "path" the user should follow</strong> to get out of the maze.</li>
+          <li>A system to <strong>dynamically insert clues around that path</strong>.</li>
+        </ul>
+      </p>
 
 
+      <br>
 
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <figure href="/assets/ProcMaz/p_initial clues.jpg" class="figure" data-toggle="lightbox"
-          data-footer="Brainstorming Clue System">
-          <img src="/assets/ProcMaz/p_initial clues.jpg" alt="" class="img-fluid">
-          <figcaption class="figure-caption text-center">Brainstorming Clue System
-          </figcaption>
-        </figure>
+      <p>I first began by creating the visual design for the appearance of the clues:
+      </p>
+
+      <figure href="/assets/ProcMaz/p_initial clues.jpg" class="figure" data-toggle="lightbox"
+        data-footer="Brainstorming Clue System">
+        <img src="/assets/ProcMaz/p_initial clues.jpg" alt="" class="img-fluid">
+        <figcaption class="figure-caption text-center">Brainstorming Clue System
+        </figcaption>
+      </figure>
+
+
+
+
+      <p>
+
+        Out of the three options, the stone lamp best integrated the function of a light source with a natural look. I
+        sourced an appropriate lamp model, and started integrating it into our VR
+        environment.
+        <br>
+        <br>
+
+        I tuned the ambient light with the maze to be a little dim. This lighting environment would naturally direct the
+        player towards the lamps, automatically exposing them to the clue system.
+        <br>
+        <br>
+        I then created <strong>a maze module with the lamp,
+          a
+          light source, and a wall</strong>. We then added this module to the list of modules the random maze
+        generator would use.
+        Now, our maze would have <strong>lamps randomly-placed to provide
+          a level of lighting support for the player</strong>.
+
+
+      </p>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure href="/assets/ProcMaz/proc_maze_lantern_shot.PNG" class="figure" data-toggle="lightbox"
+            data-footer="Initial Lantern Module">
+            <img src="/assets/ProcMaz/proc_maze_lantern_shot.PNG" alt="" class="img-fluid">
+            <figcaption class="figure-caption text-center">Initial Lantern Module
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-2"></div>
       </div>
-      <div class="col-2"></div>
+
+      <p>Now that we had lamps integrated into the maze, <strong>I needed to find a way to make the lamps
+          "clues"</strong> to guide the
+        player out.
+        <br>
+        <br>
+        I had sourced a Japanese Oni mask as part of a more generic
+        wall module that we were using to establish a Japanese theme for the maze. I created a <strong>new version of
+          the lantern module</strong> that had a <strong>tiny version of the Japanese Mask now embedded in it's
+          side</strong>.
+        <br>
+        <br>
+      </p>
+
+
+      <figure href="/assets/ProcMaz/proc_maze_mask_shot.PNG" class="figure" data-toggle="lightbox"
+        data-footer="Japanese Mask used as wall ornament.">
+        <img src="/assets/ProcMaz/proc_maze_mask_shot.PNG" alt="" class="img-fluid">
+        <figcaption class="figure-caption text-center">Japanese Mask used as wall ornament.
+        </figcaption>
+      </figure>
+
+      <figure href="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" class="figure" data-toggle="lightbox"
+        data-footer="Japanese Mask added to lantern as clue indicator.">
+        <img src="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" alt="" class="img-fluid">
+        <figcaption class="figure-caption text-center">Japanese Mask added to lantern as clue indicator.
+        </figcaption>
+      </figure>
+
+      <p>While seeming random, <strong> these "clue" lanterns would
+          actually be placed in the direction the user should go</strong> to get out of the maze.</p>
+
     </div>
 
 
+    <div class="container m1">
+      <h2 class="text-center">Iteration</h2>
 
-    <p>
-
-      Out of the three options, I went with the stone lamp.  The stone lamp balanced the use of a light to drive attention with the subtlety to look natural
-      in our overall environment.  I sourced an appropriate lamp model, and started integrating it into our VR environment.
+      <h3>Mazefinding Development</h3>
       <br>
-      <br>
-      
-      I began by <strong>tuning the ambient
-      lighting environment</strong> within the maze. I added a sourced night-sky skybox,
-      and adjusting the overall ambient lighting to be a little dim. <strong>These adjustments allowed the user to see, but not
-      incredibly well</strong>. This lighting
-      situation would cause our eventual light-based clues and player-interactable torches to have
-      immediate value to the player. I then created <strong>a maze module with the lamp,
-      a
-      light source, and a wall</strong>. We then added this module to the list of modules the random maze generator would use.
-      Now, our maze would have <strong>lamps randomly-placed to provide
-      a level of lighting support for the player</strong>.
-    </p>
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <figure href="/assets/ProcMaz/proc_maze_lantern_shot.PNG" class="figure" data-toggle="lightbox"
-          data-footer="Initial Lantern Module">
-          <img src="/assets/ProcMaz/proc_maze_lantern_shot.PNG" alt="" class="img-fluid">
-          <figcaption class="figure-caption text-center">Initial Lantern Module
-          </figcaption>
-        </figure>
-      </div>
-      <div class="col-2"></div>
-    </div>
 
-    <p>Now that we had lamps integrated into the maze, <strong>I needed to find a way to make the lamps "clues"</strong> to guide the
-      player out.
-      It occurred to me as I built the initial lamps that a more subtle way to handle adding clues was to use design
-      elements that were already present.
-      I had sourced a Japanese Oni mask as part of a more generic
-      wall module that we were using to establish a Japanese theme for the maze. <strong>I decided to combine the mask with
-      the lantern prefab to create a clue</strong>. I created a <strong>new version of the lantern module</strong>,
-      but with the exception of having a <strong>tiny version of the Japanese Mask now embedded in it's side</strong>. The intent was
-      to place these "clue" lanterns in addition to the random ones. While seeming random, <strong> these "clue" lanterns would
-      actually be placed in the direction the user should go</strong> to get out of the maze.
-    </p>
+      <p>Now that I had the visual
+        design of a clue worked out, <strong>it was time to figure out how to place the clues to guide the player
+          out</strong>.
+        To do this, I would need an algorithm to find a path out of each generated maze. I would then placed the clues
+        along this path.
 
-    <div class="row">
-      <div class="col-6">
-        <figure href="/assets/ProcMaz/proc_maze_mask_shot.PNG" class="figure" data-toggle="lightbox"
-          data-footer="Japanese Mask used as wall ornament.">
-          <img src="/assets/ProcMaz/proc_maze_mask_shot.PNG" alt="" class="img-fluid">
-          <figcaption class="figure-caption text-center">Japanese Mask used as wall ornament.
-          </figcaption>
-        </figure>
-      </div>
-      <div class="col-6">
-        <figure href="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" class="figure" data-toggle="lightbox"
-          data-footer="Japanese Mask added to lantern as clue indicator.">
-          <img src="/assets/ProcMaz/proc_maze_lanternclue_shot.PNG" alt="" class="img-fluid">
-          <figcaption class="figure-caption text-center">Japanese Mask added to lantern as clue indicator.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    </p>
-    <br>
-    <h3>Scoping Assessment</h3>
-    <p>At the end of the Technical Exploration phase, <strong>Vlad and I assessed our status</strong>. Our proof-of-concepts had worked out successfully,
-      so we made the determination that <strong>our project could be completed by the deadline</strong>.
-      Our next step was to iterate to a full Version 1 of the Maze, with <strong>each one of us
-      building out proof-of-concepts of the two remaining features</strong>. Vlad took on the Player Interactions component, while <strong>I took
-      on the Maze-Finding component</strong> of the Dynamic Clue System feature.  
-    </p>
-    <br>
+        <br>
+        <br>
+        I decided to use a <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html">breadth-first
+          search algorithm</a>, as this
+        algorithm was capable of handling the open courtyard spaces our maze produced.
+        <br>
+        <br>
+        <strong>The initial implementation I created
+          scanned the tiles in the Maze, and marked the tiles that lead to the exit</strong> by changing their colors.
+      </p>
 
-    <h2>Iteration</h2>
-  
 
-    <h3>Mazefinding Development</h3>
-    <br>
-
-    <p>For the first development iteration, I needed to finish up the Dynamic Clue System.  Now that I had the visual design of a clue worked out, <strong>it was time to figure out how to place the clue</strong>. 
-      To do this, I would need an algorithm to find a path out of each generated maze.  I would then placed the clues along this path.
-
-      <br>
-      <br>
-      I <strong>looked into several pre-existing algorithms</strong>, such as <a
-        href="http://www.primaryobjects.com/2013/05/13/solving-mazes-with-ai-pathfinding-techniques-a-vs-tremaux/">Tremaux's</a>
-      and <a href="http://traceymccabe.com/maze-solving/">Pledge's</a>, and tested an implementation
-      of Pledge's in the Maze. However, these algorithms - they only
-      worked for "simple" mazes that have only corridors. Our maze could generate small courtyard-style open spaces,
-      and Pledge's failed when hitting one of those locations.
-      <br>
-      <br>
-      Going back to the drawing board, I decided to try using <a
-        href="https://www.redblobgames.com/pathfinding/a-star/introduction.html">breadth-first search</a>, as this
-      algorithm was capable of handling the courtyard spaces.
-      I was
-      able to find several existing implementations of it for tile mazes, including one by
-      the <a href="https://catlikecoding.com/unity/tutorials/hex-map/part-16/">same individual that had developed the
-        procedural maze code we were using</a>. Based on these implementations, <strong>I was able to create an implementation
-      of my own,
-      scanning the tiles in the Maze, and marking the tiles that lead to the exit</strong> by changing their colors.
-    </p>
-
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <figure href="/assets/ProcMaz/proc_maze_bfs_path.PNG" class="figure" data-toggle="lightbox" data-footer="Overhead view and POV view of BFS-marked tiles leading to the
+      <figure href="/assets/ProcMaz/proc_maze_bfs_path.PNG" class="figure" data-toggle="lightbox" data-footer="Overhead view and POV view of BFS-marked tiles leading to the
           end tile.">
-          <img src="/assets/ProcMaz/proc_maze_bfs_path.PNG" alt="" class="img-fluid">
-          <figcaption class="figure-caption text-center">Overhead view and POV view of BFS-marked tiles leading to the
-            end tile.
-          </figcaption>
-        </figure>
-      </div>
-      <div class="col-1"></div>
-    </div>
+        <img src="/assets/ProcMaz/proc_maze_bfs_path.PNG" alt="" class="img-fluid">
+        <figcaption class="figure-caption text-center">Overhead view and POV view of BFS-marked tiles leading to the
+          end tile.
+        </figcaption>
+      </figure>
 
 
-    <p>Now that I had a system with which to mark the path, <strong>I could start adding clues to mark the path</strong>.
-      The algorithm I developed for adding the clues <strong>stepped through each floor tile on the path</strong>, and performed <strong>two
-      actions</strong> for each tile:
+
+      <p><strong>I could now start adding clues to mark the
+          path</strong>.
+        The algorithm I developed for adding the clues and
+        performed <strong>two
+          actions</strong> for each tile on the path:
       </p>
       <ul>
-        <li>The algorithm <strong>checked to see if the tile was a "third tile"</strong> - every third tile on the path was a candidate
-          for placing a clue This would add just enough clues to be useful, without making the Maze too easy to get out
+        <li>The algorithm <strong>checked to see if the tile was a "third tile"</strong> - every third tile on the path
+          was a candidate
+          for placing a clue. This would add just enough clues to be useful, without making the Maze too easy to get out
           of.</li>
-        <li>If the tile was in fact a "third" tile, the algorithm would <strongcheck to see if the tile in question had a wall></strong>.
+        <li>If the tile was in fact a "third" tile, the algorithm would <strong></strong>check to see if the tile in
+          question had
+          a wall</strong>.
           If so, the algorithm <strong>replaced it with a wall that had a clue-lantern</strong>.</li>
       </ul>
-      <p>
-      The algorithm was deployed just after the initial maze generation, and would add the clue lanterns just
-      before the user was able to exploring the maze.
-    </p>
-    <br>
+      <br>
+      <br>
 
-    <h4>Mazefinding Demo Video</h4>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SVn0lP_P8mo" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <video loop autoplay="autoplay" class="img-fluid">
+        <source src="/assets/ProcMaz/pm_pathgen.mp4" type="video/mp4">
+      </video>
+      <p class="figure-caption text-center">Showing Generated Path with Added Clue Lantern
+      </p>
+
     </div>
 
 
+    <div class="container m1">
+      <h3>Usability Testing </h3>
 
+      <p>
+        As planned, we tested our Version 1 on users to gain initial feedback. Testing consisted of undirected
+        use of the Maze, <strong>with users giving feedback as they played</strong>. The user's first-person view was
+        accessible via a separate monitor, which <strong>allowed us to directly observe their experiences</strong>.
+        <br>
+        <br>
 
-    <h3>Live Usability Testing </h3>
+        <h4>Testing Feedback</h4>
+        <br>
 
-    <p>
-      As planned, we tested our Version 1 on users to gain initial feedback. We <strong>tested with 3 users</strong>, also participating
-      in the design challenge. Testing consisted of undirected
-      use of the Maze, <strong>with users giving feedback as they played</strong>. The user's first-person view was
-      accessible via a separate monitor, which <strong>allowed for direct observation</strong>.
-      <br>
-      <br>
-      Our users had <strong>varying levels of VR background</strong>, but all had been <strong>trained in basic VR design best practices</strong>, which
-      allowed them to give a strong mix of user/expert feedback.
-      <br>
-      <h4>Live Usability Testing Feedback</h4>
-      <br>
-      <div class="row">
-        <div class="col-6">
-            <img src="/assets/ProcMaz/icons/lamp-of-stone-temple.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Users used Lights As Navigation Aids</small></h4>
-          <ul>
-            <li>Users cited the <strong>lamps as the primary navigation aids</strong> they used to understand the maze structure.</li>
-            <li>This use confirmed the decision to use the <strong>lamps as the focus</strong> for the clue system.</li>
-          </ul>
-        </div>
-        <div class="col-6">
-            <img src="/assets/ProcMaz/icons/lost.png" class="mx-auto d-block img-fluid">
-          <h4 class="text-center"><small>Users Were Easily Disorientated</small></h4>
-          <ul>
-            <li>Users became <strong>easily disorientated</strong> when exploring the maze.</li>
-            <li>Disorientation was due to <strong>5 design factors</strong>:
-              <ul>
-                <li>
-                  <strong>Floor textures were the same</strong> throughout the maze.
-                </li>
-                <li>
-                  VR Teleporting <strong>moved users instantly</strong> through space.
-                </li>
-                <li>
-                  The <strong>environment was too dark</strong> to pick out any landmarks.
-                </li>
-                <li>The <strong>clue lanterns were used too infrequently</strong> to act as guides.</li>
-                <li>There was <strong>not enough feedback when the user reached the end</strong> of the maze.</li>
-              </ul>
-            </li>
+        <h4><small>Players used the Lamp Clues As Primary Navigation Aids</small></h4>
+        <ul>
+          <li>Users cited the <strong>lamps as the primary navigation aids</strong> they used to understand the maze
+            structure.</li>
+          <li>This use confirmed the decision to use the <strong>lamps as the focus</strong> for the clue system.
+          </li>
+        </ul>
+        <h4><small>Players Became Too Easily Disorientated In the Maze</small></h4>
+        <ul>
+          <li>Disorientation was due to <strong>5 design factors</strong>:
+            <ul>
+              <li>
+                <strong>The floor textures were the same</strong> throughout the maze.
+              </li>
+              <li>
+                VR Teleporting <strong>moved users instantly</strong> through space.
+              </li>
+              <li>
+                The <strong>environment was too dark</strong> to pick out any landmarks.
+              </li>
+              <li>The <strong>clue lanterns were used too infrequently</strong> to act as guides.</li>
+              <li>There was <strong>not enough feedback when the user reached the end</strong> of the maze.</li>
+            </ul>
+          </li>
+        </ul>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-            <img src="/assets/ProcMaz/icons/solution.png" class="mx-auto d-block img-fluid"> 
-          <h4 class="text-center"><small>"Least Explored" Path-finding Strategy</small></h4>
-          <ul>
-            <li>Users <strong>navigated the maze with a least-explored strategy</strong>, always attempting to go where they had not
-              been before.</li>
-            <li>This strategy only had limited success, as <strong>users were not able to tell easily where they had been</strong>.
-            </li>
-          </ul>
-        </div>
-        <div class="col-6">
-            <img src="/assets/ProcMaz/icons/map-of-roads.png" class="mx-auto d-block img-fluid">  
-          <h4 class="text-center"><small>Users Wanted to Build a Mental Maze Map</small></h4>
-          <ul>
-            <li> <strong>Users were frustrated</strong>
-              that the app did not support their need to <strong>build an internal mental map</strong> of the Maze.</li>
-            <li>Users stressed the <strong>need to have "safe" landmarks</strong> to fall back on, so that they were never totally lost.</li>
-          </ul>
-        </div>
-      </div>
+        <h4><small>Players used a "Least Explored" Path-finding Strategy</small></h4>
+        <ul>
+          <li>Users <strong>navigated the maze with a least-explored strategy</strong>, always attempting to go
+            where they had not
+            been before.</li>
+          <li>This strategy only had limited success, as <strong>users were not able to tell easily where they had
+              been</strong>.
+          </li>
+        </ul>
 
-
+        <h4><small>Users Wanted to Build a Mental Maze Map</small></h4>
+        <ul>
+          <li> <strong>Users were frustrated</strong>
+            that the app did not support their need to <strong>build an internal mental map</strong> of the Maze.
+          </li>
+          <li>Users stressed the <strong>need to have "safe" landmarks</strong> to fall back on, so that they were
+            never totally lost.</li>
+        </ul>
+    </div>
+    </div>
     </p>
-    <h3>Feedback Iteration </h3>
+    </div>
+    </div>
 
-    <p>For our final iteration, Vlad and I tried to address as many of the feedback points as possible, as well as
-      adding two minor features for greater user enjoyment.</p>
+    <div class="container m1">
+      <h3>Feedback Iteration </h3>
 
-    <br>
-    <h4>Feedback Iteration Changes</h4>
+      <p>For our final iteration, Vlad and I tried to address as many of the feedback points as possible, as well as
+        adding two minor features for greater user enjoyment.</p>
 
-    <div class="row">
-      <div class="col-4">
+      <br>
+
+
+      <div class="container m1">
+        <h4>Additional Clue Type</h4>
         <figure href="/assets/ProcMaz/proc_maze_floorclue.PNG" class="figure" data-toggle="lightbox"
           data-footer="Floor-type Clue">
           <img src="/assets/ProcMaz/proc_maze_floorclue.PNG" alt="" class="img-fluid border border-secondary">
           <figcaption class="figure-caption text-center">
           </figcaption>
         </figure>
-        <h4 class="text-center"><small>Additional Clue Type</small></h4>
-        <p>To address the need for more clues, <strong>I added a new clue type </strong> that could be embedded into floor tiles.
-         I also <strong>increased the frequency of clues</strong> to every other tile.</p>
+        <p>To address the need for more clues, <strong>I added a new clue type </strong> that could be embedded into
+          floor tiles.
+          I also <strong>increased the frequency of clues</strong> to every other tile.</p>
       </div>
-      <div class="col-4">
+
+      <div class="container m1">
+        <h4>End of User Celebration Area</h4>
         <figure href="/assets/ProcMaz/proc_maze_celeb.PNG" class="figure" data-toggle="lightbox"
           data-footer="Celebration Area">
           <img src="/assets/ProcMaz/proc_maze_celeb.PNG" alt="" class="img-fluid border border-secondary">
           <figcaption class="figure-caption text-center">
           </figcaption>
         </figure>
-        
-        <h4 class="text-center"><small>End of User Celebration Area</small></h4>
-        <p>To provide <strong>better end-of-maze feedback</strong>, I <strong>added a Japanese-themed celebration area</strong> that the user would see upon maze completion. </p>
+        <p>To provide <strong>better end-of-maze feedback</strong>, I <strong>added a Japanese-themed celebration
+            area</strong> that the user would see upon maze completion. </p>
       </div>
-      <div class="col-4">
-          <figure href="/assets/ProcMaz/proc_maze_overheadview.PNG" class="figure" data-toggle="lightbox"
+
+
+      <div class="container m1">
+        <h4>Overhead View Implementation</h4>
+        <figure href="/assets/ProcMaz/proc_maze_overheadview.PNG" class="figure" data-toggle="lightbox"
           data-footer="Overhead View">
           <img src="/assets/ProcMaz/proc_maze_overheadview.PNG" alt="" class="img-fluid border border-secondary">
           <figcaption class="figure-caption text-center">
           </figcaption>
         </figure>
-        <h4 class="text-center"><small>Overhead View Implementation</small></h4>
-        <p>We demoed the game using the Unity editor directly, and we noticed an interesting behavior from users. <strong>Demo-goers not wearing the headset were able to view the active player's position
-          on the overhead view in Unity</strong>, and could guide the active player through the maze. We added this as a formal feature to optionally aid navigation.</p>
+        <p>We demoed the game using the Unity editor directly, and we noticed an interesting behavior from users.
+          <strong>Demo-goers not wearing the headset were able to view the active player's position
+            on the overhead view in Unity</strong>, and could guide the active player through the maze. We added this
+          as a formal feature to optionally aid navigation.</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-4">
 
+
+      <div class="container m1">
+        <h4>Tutorial Area</h4>
         <figure href="/assets/ProcMaz/proc_maze_tutorial.PNG" class="figure" data-toggle="lightbox"
           data-footer="Tutorial Area">
           <img src="/assets/ProcMaz/proc_maze_tutorial.PNG" alt="" class="img-fluid border border-secondary">
           <figcaption class="figure-caption text-center">
           </figcaption>
         </figure>
-        <h4 class="text-center"><small>Tutorial Area</small></h4>
-        <p>My partner <strong>added an initial tutorial zone</strong> that the player enters prior to the maze itself. This tutorial area
-          had instructions for <strong>player controls</strong>, the goal of <strong>finding the end of the maze</strong>, <strong>player interactables</strong>, and the <strong>need to look for
-          clues</strong>.</p>
+        <p>My partner <strong>added an initial tutorial zone</strong> that the player enters prior to the maze itself.
+          This tutorial area
+          had instructions for <strong>player controls</strong>, the goal of <strong>finding the end of the
+            maze</strong>, <strong>player interactables</strong>, and the <strong>need to look for
+            clues</strong>.</p>
       </div>
-      <div class="col-4">
-          <figure href="/assets/ProcMaz/proc_maze_playerlight.PNG" class="figure" data-toggle="lightbox"
-          data-footer="PLayer Light">
-          <img src="/assets/ProcMaz/proc_maze_playerlight.PNG" alt="" class="img-fluid border border-secondary">
-          <figcaption class="figure-caption text-center">
-          </figcaption>
-        </figure>
-        <h4 class="text-center"><small>Player Light</small></h4>
-        <p> To <strong>address the darkness of the environment</strong>, I added a dim light to the player module. This created a <strong>small but constant light source</strong> that guaranteed the player could always see.</p>
-      </div>
-      <div class="col-2"></div>
+
+      <div class="container m1">
+        <h4>Player Light</h4>
+      <figure href="/assets/ProcMaz/proc_maze_playerlight.PNG" class="figure" data-toggle="lightbox"
+        data-footer="PLayer Light">
+        <img src="/assets/ProcMaz/proc_maze_playerlight.PNG" alt="" class="img-fluid border border-secondary">
+        <figcaption class="figure-caption text-center">
+        </figcaption>
+      </figure>
+      <p> To <strong>address the darkness of the environment</strong>, I added a dim light to the player module.
+        This created a <strong>small but constant light source</strong> that guaranteed the player could always see.
+      </p>
     </div>
 
-    <a name="output"></a>
-    <h2 class="text-center"><strong>Final Output</strong></h2>
-
-
-    <h2>Demo</h2>
-    <br>
-    
-    <h3>Final User Walkthrough</h3>
-    <br>
-
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/93cel46DyiU" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <p>We conducted a <strong>second round of live usability testing</strong> on Version 2 of the Maze.  10 participants of similar background to the first testing participated.
-    Several of the primary users were <strong>paired with a second participant</strong> who used the Overhead View to guide the user around the maze. 
-       </p>
-
-    <h2>Reflect</h2>
-
-    <br>
+    <div class="container m1">
+      <a name="output"></a>
+      <h2 class="text-center"><strong>Final Output</strong></h2>
 
 
-    <h3>Post-Demo Analysis</h3>
-    <br>
+      <h2 class="text-center">Demo</h2>
 
 
-    <div class="row">
-      <div class="col-4">
-        <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
-        <h4 class="text-center"><small>Improved Maze Navigation</small></h4>
-        <p class="text-center">
-          With the <strong>addition of the tutorial, lighting, and additional clues</strong>, our users were able to <strong>navigate our maze
-          far easier than Version 1</strong>. They were able
-          to <strong>backtrack far easier</strong>, and reached the end of the maze with far more frequency.
-        </p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/93cel46DyiU" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      <br>
 
-      <div class="col-4">
-        <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
-        <h4 class="text-center"><small>The Overview Map allowed for a fun optional experience.</small></h4>
-        <p class="text-center">
-          With the use of the overview map, we were able to add a second user as a helper to the experience. <strong>Users
-          enjoyed the interplay between user and helper.</strong> The presence of the helper
-          allowed users with weaker navigation skills to still enjoy the overall experience.
-        </p>
-      </div>
+      <p>We conducted a <strong>second round of live usability testing</strong> on Version 2 of the Maze. 10
+        participants of similar background to the first testing participated.
+        Several of the primary users were <strong>paired with a second participant</strong> who used the Overhead View
+        to guide the user around the maze.
+      </p>
 
-      <div class="col-4">
-        <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
-        <h4 class="text-center"><small>The Celebration Experience Brought Proper Closure To The Experience.</small>
-        </h4>
-        <p class="text-center">
-          With the celebration area, users had a <strong>clear feedback mechanism for telling that they had succeeded</strong>. The
-          aesthetic design of the area also made it a fun reward for the users.
-        </p>
-      </div>
     </div>
 
-    <br>
+    <div class="container m1">
 
+      <h2 class="text-center">Reflect</h2>
 
+      <div class="row">
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Improved Maze Navigation</small></h4>
+          <ul>
+            <li>Users were able to navigate the maze far easier and with less frustration.</li>
+          </ul>
+        </div>
 
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-4">
-        <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
-        <h4 class="text-center"><small>Clue Attention Direction</small></h4>
-        <p class="text-center">
-          The <strong>clues remained of only limited use</strong>. While the greater frequency made them more likely to be noticed, the
-          <strong>visual design of the clues was too subtle</strong>. Some users picked up on them,
-          but some never recognized them at all.
-        </p>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>The Overview Map allowed for a fun optional experience.</small></h4>
+          <ul>
+            <li>Users enjoyed the interplay between player and helper.</li>
+            <li>Helper allowed players with weaker navigation skills to still enjoy the experience.</li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/verified.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>The Celebration Experience Brought Proper Closure To The Experience.</small>
+          </h4>
+          <ul>
+            <li>Players had a clear feedback mechanism for success.</li>
+            <li>Aesthetic design of the area made the feedback fun for players.</li>
+          </ul>
+        </div>
       </div>
 
+      <br>
 
-      <div class="col-4">
-        <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
-        <h4 class="text-center"><small>Users Wanted More Interactions/Interesting Environments</small></h4>
-        <p class="text-center">
-          Users who didn't find the maze exit relatively quickly tended to become bored with experience. These users
-          suggested <strong>having more interesting environment features and activities to do</strong>. We had
-          ended up not included those features due to feasibility concerns, but their absence was noticed.
-        </p>
+
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Clue Attention Direction</small></h4>
+          <ul>
+            <li>Visual design was still too subtle</li>
+            <li>Some users picked up on clues, but some never recongnized them at all.</li>
+          </ul>
+        </div>
+
+
+        <div class="col-4">
+          <img src="/assets/FE_Internship/Icons/information.png" alt="" class="mx-auto d-block img-fluid">
+          <h4 class="text-center"><small>Users Wanted More Interactions/Interesting Environments</small></h4>
+          <ul>
+            <li>Players who took longer to exit became bored with the experience.</li>
+            <li>These players wanted more interesting environment features and activities.</li>
+          </ul>
+        </div>
+        <div class="col-2"></div>
       </div>
-      <div class="col-2"></div>
 
 
   </main>
